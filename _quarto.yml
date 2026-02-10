@@ -24,6 +24,9 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - CNAME
+    - images/favicon.png
   render:
     - "*.qmd"
     - "projects/*.qmd"
@@ -31,6 +34,7 @@ project:
 website:
   title: "Shane Christian | Senior Data Analyst"
   description: "Senior Data Analyst portfolio — SQL, Power BI, and operational analytics"
+  favicon: favicon.png
 
   navbar:
     background: "#0F172A"
