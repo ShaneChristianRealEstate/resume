@@ -60,11 +60,7 @@ Customer Satisfaction
 
 ::: {.letter-body}
 
-I am writing to express my strong interest in the **Senior Data Analyst**
-position. With a career that spans from managing driver divisions at Knight
-Transportation to leading multi-system data reconciliation at Select Water
-Services, I offer a rare combination of deep transportation domain knowledge
-and advanced technical expertise in SQL and Power BI.
+I am writing to express my strong interest in joining your team. My professional background offers a unique intersection of hands-on operational management and advanced technical proficiency. Having progressed from managing front-line logistics divisions to leading enterprise-level data initiatives, I bring a rare perspective to the table: the ability to not only execute complex SQL and Power BI workflows but to ensure those technical solutions are grounded in real-world business logic and ROI. I specialize in bridging the gap between fragmented data and actionable strategy, ensuring that every insight drives departmental efficiency and bottom-line savings.
 
 ### From the Field to the Data Layer
 
@@ -104,7 +100,7 @@ consideration.
 
 **Edward Shane Christian**
 
-📧 [schristian625@aol.com](mailto:schristian625@aol.com) · 📱 615-852-0233 · 🔗 [LinkedIn](https://linkedin.com/in/yourprofile)
+📧 [schristian625@aol.com](mailto:schristian625@aol.com) · 📱 615-852-0233 · 🔗 [LinkedIn](https://www.linkedin.com/in/shane-christian-data/)
 
 :::
 :::

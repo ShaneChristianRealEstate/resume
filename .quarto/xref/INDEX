@@ -19,5 +19,8 @@
   },
   "projects/power-bi-migration.qmd": {
     "power-bi-migration.html": "8d6a8a33"
+  },
+  "references.qmd": {
+    "references.html": "a4810065"
   }
 }

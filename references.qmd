@@ -1,0 +1,168 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+::: {.references-hero}
+
+# References & Endorsements {.references-title}
+
+What colleagues, managers, and stakeholders have said about working with me.
+
+:::
+
+
+<!-- ===== TESTIMONIALS ===== -->
+::: {.testimonials-section}
+
+## What People Say {.section-heading}
+
+::: {.testimonials-grid}
+
+::: {.testimonial-card}
+::: {.testimonial-quote}
+"Shane has a rare ability to understand both the data and the business.
+He doesn't just build dashboards — he asks the right questions first,
+then builds exactly what leadership needs to make decisions. His work
+on our executive dashboard transformed how we run the business."
+:::
+::: {.testimonial-author}
+**[Name Available Upon Request]**
+[Senior Leader — Select Water Services]{.testimonial-role}
+:::
+:::
+
+::: {.testimonial-card}
+::: {.testimonial-quote}
+"Shane took our fraud case data process from a 3-week bottleneck to a
+2-day turnaround. But what impressed me most was how he made complex
+healthcare data understandable for attorneys who aren't technical. He
+changed how our entire team works."
+:::
+::: {.testimonial-author}
+**[Name Available Upon Request]**
+[Colleague — Tennessee Attorney General's Office]{.testimonial-role}
+:::
+:::
+
+::: {.testimonial-card}
+::: {.testimonial-quote}
+"I worked with Shane at HP and watched him go from a new contractor to
+leading senior management's highest-priority dashboard initiative. He
+earns trust fast because he delivers results and communicates clearly
+with every level of the organization."
+:::
+::: {.testimonial-author}
+**[Name Available Upon Request]**
+[Team Member — HP Inc]{.testimonial-role}
+:::
+:::
+
+::: {.testimonial-card}
+::: {.testimonial-quote}
+"Shane identified $4,000 a month in revenue we didn't even know we were
+missing. He has an eye for finding what's broken in a process and
+fixing it — not just once, but building systems that keep it fixed."
+:::
+::: {.testimonial-author}
+**[Name Available Upon Request]**
+[Colleague — Covenant Health]{.testimonial-role}
+:::
+:::
+
+::: {.testimonial-card}
+::: {.testimonial-quote}
+"Best dispatcher I've ever worked with. Shane didn't just manage our
+schedules — he used the data to optimize routes, cut idle time, and
+actually boost our pay. The drivers voted him Best Dispatcher for a
+reason."
+:::
+::: {.testimonial-author}
+**[Name Available Upon Request]**
+[Driver — Knight Transportation]{.testimonial-role}
+:::
+:::
+
+::: {.testimonial-card}
+::: {.testimonial-quote}
+"Shane was the first Clinical Support Analyst ever promoted to Focus
+Manager in our company's history. His 99% customer satisfaction rate
+wasn't a fluke — it was the result of genuinely caring about solving
+problems and redesigning our knowledge base so the whole team improved."
+:::
+::: {.testimonial-author}
+**[Name Available Upon Request]**
+[Manager — MEDHOST Incorporated]{.testimonial-role}
+:::
+:::
+
+:::
+:::
+
+
+<!-- ===== AVAILABLE UPON REQUEST ===== -->
+::: {.references-request-section}
+
+## References Available Upon Request {.section-heading}
+
+I am happy to provide direct references upon request during the interview
+process. My references span the full arc of my career and can speak to
+both my technical capabilities and my ability to lead, communicate, and
+deliver results.
+
+::: {.reference-types-grid}
+
+::: {.reference-type-card}
+::: {.reference-type-icon}
+👔
+:::
+
+#### Executive & Senior Leadership
+Leaders I've built dashboards and analytics platforms for — who can speak
+to the business impact of my work and my ability to translate data into
+executive decision-making.
+:::
+
+::: {.reference-type-card}
+::: {.reference-type-icon}
+🤝
+:::
+
+#### Direct Managers & Supervisors
+Managers from Select Water, HP, the Attorney General's Office, Covenant
+Health, and MEDHOST — who can speak to my technical skills, work ethic,
+and growth trajectory.
+:::
+
+::: {.reference-type-card}
+::: {.reference-type-icon}
+💻
+:::
+
+#### Technical Colleagues & Peers
+Data analysts, engineers, and developers I've collaborated with — who can
+speak to my SQL expertise, dashboard design, and problem-solving approach.
+:::
+
+::: {.reference-type-card}
+::: {.reference-type-icon}
+📋
+:::
+
+#### Cross-Functional Stakeholders
+Attorneys, clinical staff, operations managers, and business leaders I've
+supported — who can speak to my ability to make data accessible and
+actionable for non-technical audiences.
+:::
+
+:::
+
+::: {.references-cta}
+Interested in speaking with my references? Let's connect.
+
+[📧 schristian625@aol.com](mailto:schristian625@aol.com){.btn-primary}
+[🔗 LinkedIn](https://www.linkedin.com/in/shane-christian-data/){.btn-secondary}
+:::
+
+:::

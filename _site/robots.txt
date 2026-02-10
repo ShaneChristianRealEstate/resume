@@ -1,1 +1,1 @@
-Sitemap: https://ShaneChristianRealEstate.github.io/resume/sitemap.xml
+Sitemap: https://resume.shanechristian.me/sitemap.xml

@@ -14,7 +14,7 @@ toc-depth: 2
 [Senior Data Analyst]{.resume-tagline}
 
 ::: {.resume-contact}
-📍 Tennessee Ridge, TN · 📧 [schristian625@aol.com](mailto:schristian625@aol.com) · 📱 615-852-0233 · 🔗 [LinkedIn](https://linkedin.com/in/yourprofile)
+📍 Tennessee Ridge, TN · 📧 [schristian625@aol.com](mailto:schristian625@aol.com) · 📱 615-852-0233 · 🔗 [LinkedIn](https://www.linkedin.com/in/shane-christian-data/)
 :::
 
 ::: {.resume-download}

@@ -57,9 +57,11 @@ website:
             href: projects/data-reconciliation.qmd
           - text: "Medicare Fraud Analytics"
             href: projects/medicare-fraud.qmd
+      - text: "References"
+        href: references.qmd
     right:
       - icon: linkedin
-        href: https://linkedin.com/in/yourprofile
+        href: https://www.linkedin.com/in/shane-christian-data/
         target: _blank
       - icon: envelope
         href: mailto:schristian625@aol.com
