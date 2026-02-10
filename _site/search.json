@@ -1,0 +1,261 @@
+[
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Edward Shane Christian",
+    "section": "",
+    "text": "Senior Data Analyst\n\n📍 Tennessee Ridge, TN · 📧 schristian625@aol.com · 📱 615-852-0233 · 🔗 LinkedIn\n\n\n⬇ Download PDF"
+  },
+  {
+    "objectID": "resume.html#professional-summary",
+    "href": "resume.html#professional-summary",
+    "title": "Edward Shane Christian",
+    "section": "Professional Summary",
+    "text": "Professional Summary\nAccomplished Senior Data Analyst with a unique dual background in transportation operations and complex data architecture. Proven track record of evaluating transportation systems to identify inefficiencies, having previously managed a fleet of 60+ drivers and optimized fuel/speed compliance to boost revenue by 12%. Expert in SQL, Power BI, and Dataverse, with a demonstrated ability to translate complicated analytics into actionable insights for non-technical stakeholders. Dedicated to maintaining high data integrity and security through robust governance frameworks and automated reconciliation."
+  },
+  {
+    "objectID": "resume.html#career-highlights",
+    "href": "resume.html#career-highlights",
+    "title": "Edward Shane Christian",
+    "section": "Career Highlights",
+    "text": "Career Highlights\n\n\n$1.2M Saved\nLed enterprise-wide Domo → Power BI migration, eliminating external consulting fees\n\n\n3 wks → 2 days\nCut Medicare fraud case preparation turnaround at TN Attorney General’s Office\n\n\n12% Revenue Growth\nAccelerated gross revenue through fuel and speed management optimization\n\n\n$4K/mo Found\nIdentified unbilled medication revenue through government-required opioid audit\n\n\n55% → 20% Idle\nReduced fleet idle time managing 60+ drivers at Knight Transportation\n\n\n99% Satisfaction\nCustomer satisfaction rating at MEDHOST — first-ever promotion to Focus Manager"
+  },
+  {
+    "objectID": "resume.html#professional-experience",
+    "href": "resume.html#professional-experience",
+    "title": "Edward Shane Christian",
+    "section": "Professional Experience",
+    "text": "Professional Experience\n\n\nSenior Data Analyst\n\nSelect Water Services\n\n\nJuly 2024 – Present (CTR via Insight Global: May–July 2024)\n\n\n\nAdvanced SQL & Query Optimization: Write and maintain complex SQL queries across 40+ Postgres site inventory tables to retrieve, analyze, and validate high-volume operational data with 100% accuracy\nEnterprise BI Migration: Spearheaded the migration from Domo to Power BI, eliminating $1.2M in external consulting fees through internal resource optimization and technical leadership\nProcess Improvement: Evaluated regional operational workflows and developed a troubleshooting framework that streamlined data reconciliation across NE, Rockies, Permian, and MidCon regions\nData Governance & Quality: Enforced data quality frameworks by correcting misclassified site data within Dataverse, ensuring asset visibility and compliance with organizational governance policies\nActionable Business Insights: Translated complex multi-system datasets into Power BI dashboards, converting technical KPI metrics into clear insights for non-technical stakeholders\nSystem Integration: Analyzed data flows between Postgres databases and reporting layers to ensure seamless data movement, including TMS/WMS data structures\n\n\n\n\n\nBusiness Data Analyst\n\nHP Inc (via Insight Global)\n\n\nApril 2023 – April 2024\n\n\n\nDeveloped high-level dashboards with drill-through capabilities for global teams across multiple business units\nActed as liaison between business requirements and dashboard development, translating stakeholder needs into technical specifications\nCollaborated with data engineering teams to implement corrections and deploy new data pipelines\nPromoted to lead senior management’s highest-priority dashboard initiative based on performance\n\n\n\n\n\nLead Healthcare Data Analyst\n\nTennessee Attorney General’s Office\n\n\nFebruary 2021 – April 2023\n\n\n\nProduced analytical datasets supporting Medicare Fraud legal cases, directly contributing to prosecution outcomes\nDesigned new data organization processes to standardize attorney-facing reports for courtroom presentation\nGained direct TennCare database access, reducing dataset turnaround from 3 weeks to 2–3 days\nTransitioned team presentations from Excel to Power BI for improved clarity and compliance documentation\n\n\n\n\n\nSenior Application Analyst\n\nCovenant Health, Knoxville\n\n\nOctober 2018 – February 2021\n\n\n\nManaged EHR systems and departmental workflows to strengthen operational efficiency across clinical departments\nPerformed server maintenance, daily backups, and custom reporting using SQL tools\nIdentified $4K/month in uncharged medication revenue via government-required opioid audit\nImplemented new radiology procedures and automated backend nursing documentation forms\n\n\n\n\n\nFocus Manager\n\nMEDHOST Incorporated\n\n\nApril 2018 – October 2018\n\n\n\nIncreased customer satisfaction by 15% within three months through process improvements and communication channel redesign\nProvided executive visibility into hospital performance and future regulatory needs\nPromoted from Clinical Support Analyst — first such promotion in company history\n\n\n\n\nClinical Support Analyst Tier 1\n\nMEDHOST Incorporated\n\n\nJanuary 2016 – April 2018\n\n\n\nTroubleshot clinical software and HL7 interface issues with high accuracy across multiple hospital clients\nAchieved 99% customer satisfaction by resolving technical and operational issues\nRedesigned knowledge system that significantly improved first-call resolution rates\n\n\n\n\n\nDriver Development & Safety Division Manager\n\nKnight Transportation\n\n\nSeptember 2012 – August 2015\n\n\n\nLed and supervised 60+ drivers, overseeing contracts, scheduling, and operational compliance\nAccelerated gross revenue by 12% through fuel and speed management optimization\nReduced fleet idle time from 55% to 20% and significantly improved fuel component compliance\nReceived ‘Best Dispatcher’ award from drivers for leadership and operational excellence"
+  },
+  {
+    "objectID": "resume.html#technical-skills",
+    "href": "resume.html#technical-skills",
+    "title": "Edward Shane Christian",
+    "section": "Technical Skills",
+    "text": "Technical Skills\n\n\nData & Query Languages\nSQL · Postgres · Microsoft SQL · AS400 · Dataverse · Azure Databases\n\n\nBI & Visualization\nPower BI · Dashboard Design · Data Modeling · DAX · Quarto\n\n\nEngineering & Tools\nPython · DBT · DBeaver · Sequel ViewPoint · Automation Tools · ETL\n\n\nDomain & Industry\nEHR Systems · MEDHOST · TMS/WMS · HL7 Interfaces · Healthcare · Transportation\n\n\nWorkflow & Collaboration\nJira · Service Desk · MS Office Suite · QuickBooks · Agile\n\n\nCore Strengths\nStakeholder Communication · Data Governance · Process Optimization · Mentorship"
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Edward Shane Christian",
+    "section": "Education",
+    "text": "Education\n\nLebanon High School\n\nLebanon, TN"
+  },
+  {
+    "objectID": "projects/medicare-fraud.html",
+    "href": "projects/medicare-fraud.html",
+    "title": "Medicare Fraud Case Analytics",
+    "section": "",
+    "text": "Role: Lead Healthcare Data Analyst · Organization: Tennessee Attorney General’s Office · Timeline: February 2021 – April 2023\n\nSQL Power BI TennCare Healthcare Data Legal Analytics Data Standardization"
+  },
+  {
+    "objectID": "projects/medicare-fraud.html#the-problem",
+    "href": "projects/medicare-fraud.html#the-problem",
+    "title": "Medicare Fraud Case Analytics",
+    "section": "The Problem",
+    "text": "The Problem\nThe Tennessee Attorney General’s Office prosecutes Medicare fraud cases that involve large, complex healthcare datasets. When I joined the team, the analytical workflow had several critical bottlenecks:\n\n3-week turnaround for dataset requests — analysts had to submit requests through intermediaries to access TennCare (Tennessee’s Medicaid program) data, with no direct query capability\nExcel-based reporting for attorney-facing deliverables, which limited the depth of analysis and made it difficult to explore data interactively during case preparation\nNo standardized data organization — each analyst structured their outputs differently, creating inconsistencies across cases and making it difficult for attorneys to compare analyses\nTime pressure — fraud cases have legal deadlines, and a 3-week data turnaround meant analysts were often working with stale information or rushing to compensate for delays"
+  },
+  {
+    "objectID": "projects/medicare-fraud.html#the-approach",
+    "href": "projects/medicare-fraud.html#the-approach",
+    "title": "Medicare Fraud Case Analytics",
+    "section": "The Approach",
+    "text": "The Approach\nI tackled this from three angles simultaneously: access, tooling, and process standardization.\n\nSecuring Direct Database Access\nThe single highest-impact change was obtaining direct access to the TennCare database. This required:\n\nBuilding trust with the TennCare data team by demonstrating responsible data handling practices and understanding of HIPAA compliance requirements\nDocumenting the specific query patterns the AG’s office needed, showing that direct access would reduce burden on the TennCare team (fewer ad-hoc requests for them to fulfill)\nEstablishing protocols for secure data extraction and storage that met both agencies’ governance requirements\n\nThis alone collapsed the data turnaround from 3 weeks to 2–3 days — the time it takes to write, validate, and document a query rather than wait in a request queue.\n\n\nModernizing the Reporting Stack\nI transitioned the team’s attorney-facing deliverables from Excel to Power BI, which provided:\n\nInteractive exploration — attorneys could filter by provider, date range, procedure code, and billing pattern without requesting new reports\nVisual pattern detection — fraud patterns that were invisible in spreadsheet rows became obvious in visualizations (billing spikes, geographic clustering, procedure code anomalies)\nCompliance-ready formatting — standardized layouts that met courtroom presentation requirements\n\n\n\nStandardizing Data Organization\nI designed a consistent data organization framework for case analytics:\n\nStandard naming conventions for datasets, queries, and deliverables\nTemplate structures for common case types so new analyses started from a proven foundation rather than a blank page\nDocumentation requirements for every dataset — source, extraction date, query logic, and known limitations — so any analyst could pick up where another left off\n\n\n\n\n\n\nflowchart LR\n    A[Case Assignment] --&gt; B[Direct TennCare&lt;br&gt;Database Query]\n    B --&gt; C[Data Extraction&lt;br&gt;& Validation]\n    C --&gt; D[Standardized&lt;br&gt;Dataset Structure]\n    D --&gt; E[Power BI&lt;br&gt;Analysis & Visuals]\n    E --&gt; F[Attorney-Facing&lt;br&gt;Deliverable]\n    F --&gt; G[Case Prosecution]\n\n    style B fill:#3B82F6,color:#fff\n    style E fill:#3B82F6,color:#fff"
+  },
+  {
+    "objectID": "projects/medicare-fraud.html#working-with-sensitive-data",
+    "href": "projects/medicare-fraud.html#working-with-sensitive-data",
+    "title": "Medicare Fraud Case Analytics",
+    "section": "Working with Sensitive Data",
+    "text": "Working with Sensitive Data\nHealthcare fraud analytics involves protected health information (PHI) and legally sensitive case data. Every aspect of this project was designed with compliance in mind:\n\nAll data access followed HIPAA protocols and agency security policies\nDatasets were stored in secured, access-controlled environments\nPower BI reports were designed for internal use only with appropriate access restrictions\nQuery logic and analytical methods were documented for potential courtroom testimony and cross-examination\n\n\n\n\n\n\n\nTipRecruiter Note\n\n\n\nDue to the sensitive nature of this work (active legal cases, protected health information), I cannot share specific datasets, dashboards, or case details. I’m happy to discuss the methodology, technical approach, and analytical patterns in a conversation setting."
+  },
+  {
+    "objectID": "projects/medicare-fraud.html#results-impact",
+    "href": "projects/medicare-fraud.html#results-impact",
+    "title": "Medicare Fraud Case Analytics",
+    "section": "Results & Impact",
+    "text": "Results & Impact\n\n\n3 wks → 2 days\nDataset turnaround reduction\n\n\nDirect Access\nTennCare database query capability\n\n\nExcel → Power BI\nAttorney-facing reporting modernized\n\n\nStandardized\nData organization across all cases\n\n\n\nAdditional Outcomes\n\nStronger cases — faster access to fresher data meant analyses were based on current information rather than snapshots that were weeks old\nAttorney empowerment — interactive Power BI reports let attorneys explore the data themselves during case preparation, reducing back-and-forth with the analytics team\nTeam scalability — standardized processes and templates meant new analysts could become productive faster and produce consistent outputs\nCross-case pattern recognition — standardized data structures made it easier to identify patterns that spanned multiple cases or providers"
+  },
+  {
+    "objectID": "projects/medicare-fraud.html#lessons-learned",
+    "href": "projects/medicare-fraud.html#lessons-learned",
+    "title": "Medicare Fraud Case Analytics",
+    "section": "Lessons Learned",
+    "text": "Lessons Learned\n1. Access is the first bottleneck to solve. The most sophisticated analytical tools in the world don’t matter if you’re waiting 3 weeks for data. Securing direct database access was a relationship and trust-building exercise as much as a technical one — and it delivered the single largest time savings.\n2. Analysts aren’t the only users. Attorneys needed to interact with the data directly, not just receive static reports. Designing for their workflow (filtering by provider, exploring billing patterns, presenting in court) produced better outcomes than designing for analytical elegance.\n3. Standardization pays compound interest. The time invested in templates, naming conventions, and documentation standards felt slow at first, but it paid back exponentially as the team handled more cases in parallel with consistent quality."
+  },
+  {
+    "objectID": "projects/medicare-fraud.html#technical-stack",
+    "href": "projects/medicare-fraud.html#technical-stack",
+    "title": "Medicare Fraud Case Analytics",
+    "section": "Technical Stack",
+    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nData Source\nTennCare Database (direct access)\nMedicare/Medicaid claims, provider data\n\n\nQuery Layer\nSQL\nData extraction, validation, case-specific analysis\n\n\nVisualization\nPower BI\nInteractive attorney-facing dashboards\n\n\nPrior Tooling\nExcel (replaced)\nLegacy reporting format\n\n\nGovernance\nHIPAA-compliant protocols\nPHI handling, access controls\n\n\nProcess\nStandardized templates\nConsistent data organization across cases\n\n\n\n\n← Back to All Projects ← Prev: Data Reconciliation"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Project Showcase",
+    "section": "",
+    "text": "Real-world projects that demonstrate how I turn complex data problems into measurable business outcomes — from enterprise BI migrations to fraud analytics."
+  },
+  {
+    "objectID": "projects.html#skills-demonstrated-across-projects",
+    "href": "projects.html#skills-demonstrated-across-projects",
+    "title": "Project Showcase",
+    "section": "Skills Demonstrated Across Projects",
+    "text": "Skills Demonstrated Across Projects\n\n\n\n\n\n\n\n\n\n\n\n\nSkill Area\nInfra Dashboard\nData Recon\nFraud Analytics\nHP Dashboards\nCovenant\nKnight\n\n\n\n\nSQL & Query Development\n✅\n✅\n✅\n◻️\n✅\n◻️\n\n\nPower BI & Dashboard Design\n✅\n✅\n✅\n✅\n◻️\n◻️\n\n\nData Modeling & DAX\n✅\n◻️\n◻️\n✅\n◻️\n◻️\n\n\nData Governance & Quality\n✅\n✅\n✅\n◻️\n✅\n◻️\n\n\nStakeholder Communication\n✅\n✅\n✅\n✅\n✅\n✅\n\n\nProcess Optimization\n✅\n✅\n✅\n◻️\n✅\n✅\n\n\nHealthcare / EHR Systems\n◻️\n◻️\n✅\n◻️\n✅\n◻️\n\n\nOperations & Logistics\n✅\n✅\n◻️\n◻️\n◻️\n✅"
+  },
+  {
+    "objectID": "projects.html#the-thread-that-connects-it-all",
+    "href": "projects.html#the-thread-that-connects-it-all",
+    "title": "Project Showcase",
+    "section": "The Thread That Connects It All",
+    "text": "The Thread That Connects It All\n\nEvery role in my career shares a common thread: finding what’s broken and making it work better. At Knight Transportation, that meant cutting idle time and boosting revenue. At the Attorney General’s Office, it meant turning a 3-week legal data process into a 2-day turnaround. At Select Water, it means reconciling millions of records across regions so leadership can trust the numbers.\nI’m not a data analyst who learned operations — I’m an operations professional who mastered data. That distinction matters when the dashboard needs to reflect what’s actually happening on the ground."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hi, I’m Shane Christian",
+    "section": "",
+    "text": "I don’t just query data — I understand the operations behind it. From managing 60+ drivers on the road to reconciling multi-region inventory across Postgres and Dataverse, I bring a rare combination of frontline experience and advanced technical skill.\n\nView My Resume See My Work Download PDF"
+  },
+  {
+    "objectID": "index.html#dear-hiring-manager",
+    "href": "index.html#dear-hiring-manager",
+    "title": "Hi, I’m Shane Christian",
+    "section": "Dear Hiring Manager,",
+    "text": "Dear Hiring Manager,\n\nI am writing to express my strong interest in the Senior Data Analyst position. With a career that spans from managing driver divisions at Knight Transportation to leading multi-system data reconciliation at Select Water Services, I offer a rare combination of deep transportation domain knowledge and advanced technical expertise in SQL and Power BI.\n\nFrom the Field to the Data Layer\nIn my current role as a Senior Data Analyst at Select Water Services, I specialize in transforming complex operational data into clarity. I recently reconciled site inventory data across four major regions — NE, Rockies, Permian, and MidCon — documenting troubleshooting frameworks to resolve discrepancies and ensure reporting accuracy. This experience in maintaining data integrity within Dataverse and Postgres environments directly aligns with any organization’s need for an analyst who understands data quality frameworks and governance.\n\n\nOperations Intuition Meets Technical Depth\nWhat sets me apart is my foundational experience in the logistics industry. During my tenure at Knight Transportation, I led a fleet of 60+ drivers and successfully reduced idle time from 55% to 20% while increasing gross revenue by 12%. I understand the “day in the life” of transportation processes, which allows me to evaluate systems and identify inefficiencies that a purely technical analyst might overlook.\n\n\nMaking Data Speak to Everyone\nI have a proven ability to translate complicated analytics for non-technical stakeholders. Whether it was reducing Medicare fraud case preparation time from 3 weeks to 2 days for the Tennessee Attorney General’s Office, or developing global dashboards for HP, I focused on making data accessible and actionable. I also led the enterprise-wide migration from Domo to Power BI at Select Water, eliminating $1.2M in external consulting fees through internal resource optimization and technical leadership.\nI am eager to bring my entrepreneurial mindset and technical toolkit to help drive insights and operational excellence. Thank you for your time and consideration.\nSincerely,\nEdward Shane Christian\n📧 schristian625@aol.com · 📱 615-852-0233 · 🔗 LinkedIn"
+  },
+  {
+    "objectID": "index.html#what-i-bring-to-the-table",
+    "href": "index.html#what-i-bring-to-the-table",
+    "title": "Hi, I’m Shane Christian",
+    "section": "What I Bring to the Table",
+    "text": "What I Bring to the Table\n\n\n🔍 Data Reconciliation & Governance\nMulti-system data reconciliation across Postgres, Dataverse, and reporting layers. I build troubleshooting frameworks that make data integrity repeatable, not heroic.\n\n\n📊 Dashboard Design & BI Strategy\nPower BI dashboards with drill-through capabilities — from global HP initiatives to regional operational KPIs. I design for the decision-maker, not the data model.\n\n\n⚡ Process Optimization\nOperations background means I see inefficiencies others miss. I’ve turned 3-week processes into 2-day turnarounds and identified $4K/month in unbilled revenue hiding in plain sight.\n\n\n🤝 Stakeholder Translation\nAttorneys, executives, nurses, drivers — I’ve built analytics for all of them. I bridge the gap between technical complexity and business clarity."
+  },
+  {
+    "objectID": "index.html#core-toolkit",
+    "href": "index.html#core-toolkit",
+    "title": "Hi, I’m Shane Christian",
+    "section": "Core Toolkit",
+    "text": "Core Toolkit\n\n\nData & Query\nSQL · Postgres · Microsoft SQL · AS400 · Dataverse · Azure Databases\n\n\nBI & Visualization\nPower BI · Dashboard Design · Data Modeling · DAX · Quarto\n\n\nEngineering & Automation\nPython · DBT · Automation Tools · ETL Pipelines · DBeaver · Sequel ViewPoint\n\n\nWorkflow & Collaboration\nJira · Service Desk · MS Office Suite · Git · Agile Environments"
+  },
+  {
+    "objectID": "projects/data-reconciliation.html",
+    "href": "projects/data-reconciliation.html",
+    "title": "Multi-Region Data Reconciliation Framework",
+    "section": "",
+    "text": "Role: Senior Data Analyst · Organization: Select Water Services · Scope: NE, Rockies, Permian, MidCon Regions\n\nSQL Postgres Dataverse Power BI Data Governance Process Design"
+  },
+  {
+    "objectID": "projects/data-reconciliation.html#the-problem",
+    "href": "projects/data-reconciliation.html#the-problem",
+    "title": "Multi-Region Data Reconciliation Framework",
+    "section": "The Problem",
+    "text": "The Problem\nSelect Water Services operates across four major regions — Northeast, Rockies, Permian, and MidCon — each with its own operational cadence and data entry patterns. Site inventory data lived across 40+ Postgres tables, and discrepancies between the database layer and the Dataverse reporting layer were eroding trust in the numbers.\nThe specific challenges included:\n\nMisclassified site records in Dataverse that didn’t match the underlying Postgres data, making asset visibility unreliable for field operations and leadership reporting\nNo standardized process for identifying, diagnosing, or resolving discrepancies — each analyst had their own ad-hoc approach\nRegional inconsistencies in how data was entered, categorized, and maintained, making cross-region comparison unreliable\nHigh-volume data requiring queries that could handle complexity without sacrificing accuracy — there was no room for “close enough”"
+  },
+  {
+    "objectID": "projects/data-reconciliation.html#the-approach",
+    "href": "projects/data-reconciliation.html#the-approach",
+    "title": "Multi-Region Data Reconciliation Framework",
+    "section": "The Approach",
+    "text": "The Approach\nI designed a systematic reconciliation framework — not just a one-time cleanup, but a repeatable process the organization could use going forward.\n\nStep 1 — Map the Data Landscape\nBefore writing a single query, I mapped the relationships between the 40+ Postgres tables to understand how site inventory data flowed from source systems into the reporting layer. This included:\n\nDocumenting table relationships, key fields, and join logic\nIdentifying which tables were authoritative for which data elements\nCataloging known data quality issues by region\n\n\n\nStep 2 — Build Diagnostic Queries\nI developed a suite of SQL queries designed to surface discrepancies systematically rather than chasing individual errors:\n-- Example: Identify sites with mismatched status between\n-- Postgres source tables and Dataverse reporting layer\nSELECT\n    p.site_id,\n    p.site_name,\n    p.region,\n    p.operational_status  AS postgres_status,\n    d.operational_status  AS dataverse_status,\n    p.last_updated        AS source_updated,\n    d.last_modified       AS reporting_updated\nFROM site_inventory p\nINNER JOIN dataverse_sites d\n    ON p.site_id = d.site_id\nWHERE p.operational_status &lt;&gt; d.operational_status\nORDER BY p.region, p.site_name;\nThese queries were designed to be reusable — parameterized by region, date range, and data element so any analyst could run them going forward.\n\n\nStep 3 — Document the Troubleshooting Framework\nFor each category of discrepancy, I documented:\n\nWhat it looks like — the specific data pattern that indicates the issue\nWhy it happens — the root cause (data entry timing, system sync lag, classification error, etc.)\nHow to fix it — the specific correction steps in Dataverse or the source system\nHow to prevent it — process changes or validation rules to catch it earlier\n\n\n\nStep 4 — Correct and Validate\nWorking region by region, I applied corrections to misclassified site data in Dataverse, validating each change against the Postgres source of truth. Every correction was logged for audit purposes.\n\n\nStep 5 — Reporting Layer\nBuilt Power BI dashboards that surfaced reconciliation status by region, giving leadership visibility into data quality metrics alongside operational KPIs — making data integrity a visible, measurable priority rather than a background assumption."
+  },
+  {
+    "objectID": "projects/data-reconciliation.html#the-framework-in-practice",
+    "href": "projects/data-reconciliation.html#the-framework-in-practice",
+    "title": "Multi-Region Data Reconciliation Framework",
+    "section": "The Framework in Practice",
+    "text": "The Framework in Practice\nThe troubleshooting framework I documented followed a decision-tree pattern:\n\n\n\n\n\nflowchart TD\n    A[Discrepancy Detected] --&gt; B{Source data correct?}\n    B --&gt;|Yes| C{Dataverse record exists?}\n    B --&gt;|No| D[Trace to source system&lt;br&gt;& correct upstream]\n    C --&gt;|Yes| E[Update Dataverse&lt;br&gt;classification]\n    C --&gt;|No| F[Create Dataverse&lt;br&gt;record from source]\n    E --&gt; G[Validate correction&lt;br&gt;against Postgres]\n    F --&gt; G\n    D --&gt; G\n    G --&gt; H[Log correction&lt;br&gt;for audit trail]\n    H --&gt; I[Confirm in Power BI&lt;br&gt;reporting layer]\n\n\n\n\n\n\nThis turned reconciliation from a heroic individual effort into a repeatable team process."
+  },
+  {
+    "objectID": "projects/data-reconciliation.html#visual-walkthrough",
+    "href": "projects/data-reconciliation.html#visual-walkthrough",
+    "title": "Multi-Region Data Reconciliation Framework",
+    "section": "Visual Walkthrough",
+    "text": "Visual Walkthrough\n\n\n\n\n\n📋 Reconciliation Status Dashboard Data quality KPIs by region\n\n\n\n\n\n🛠️ Diagnostic Query Suite Parameterized queries for discrepancy detection\n\n\n\n\n\n📑 Troubleshooting Framework Doc Decision trees and root cause catalog\n\n\n\n\n\n✅ Validation Results View Before/after correction audit trail\n\n\n\n\n\n\n\n\n\nTipScreenshots Available\n\n\n\nAnonymized views of the reconciliation dashboards and framework documentation are available upon request during interviews."
+  },
+  {
+    "objectID": "projects/data-reconciliation.html#results-impact",
+    "href": "projects/data-reconciliation.html#results-impact",
+    "title": "Multi-Region Data Reconciliation Framework",
+    "section": "Results & Impact",
+    "text": "Results & Impact\n\n\n40+\nPostgres tables reconciled\n\n\n4 Regions\nNE · Rockies · Permian · MidCon\n\n\n100%\nQuery accuracy maintained\n\n\nReusable\nFramework adopted by team\n\n\n\nAdditional Outcomes\n\nRestored trust in reporting — leadership could make operational decisions knowing the data reflected reality\nReduced future reconciliation time — the documented framework and reusable queries meant subsequent reconciliation cycles were significantly faster\nImproved data entry practices — root cause documentation led to process changes that reduced new discrepancies at the source\nGovernance visibility — Power BI dashboards made data quality a measurable KPI, not an invisible assumption"
+  },
+  {
+    "objectID": "projects/data-reconciliation.html#why-this-project-matters",
+    "href": "projects/data-reconciliation.html#why-this-project-matters",
+    "title": "Multi-Region Data Reconciliation Framework",
+    "section": "Why This Project Matters",
+    "text": "Why This Project Matters\nMost organizations have data quality problems. What separates good analysts from great ones is whether the fix is a one-time cleanup or a lasting capability. This project delivered both — immediate corrections to restore reporting accuracy, and a framework that ensures the organization can maintain that accuracy going forward.\nThe key insight was treating data reconciliation as a process design problem, not just a SQL problem. The queries were necessary but not sufficient — the documentation, the decision trees, and the Power BI visibility layer are what made it sustainable."
+  },
+  {
+    "objectID": "projects/data-reconciliation.html#technical-stack",
+    "href": "projects/data-reconciliation.html#technical-stack",
+    "title": "Multi-Region Data Reconciliation Framework",
+    "section": "Technical Stack",
+    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nSource Data\nPostgres (40+ tables)\nSite inventory, operational data\n\n\nReporting Layer\nDataverse\nAsset classification, governance\n\n\nQuery Development\nSQL (Postgres)\nDiagnostic queries, validation\n\n\nVisualization\nPower BI\nReconciliation dashboards, KPI tracking\n\n\nDocumentation\nTroubleshooting framework\nDecision trees, root cause catalog\n\n\nProcess\nRegion-by-region validation\nSystematic correction and audit logging\n\n\n\n\n← Back to All Projects Next: Medicare Fraud Analytics →"
+  },
+  {
+    "objectID": "projects/power-bi-migration.html",
+    "href": "projects/power-bi-migration.html",
+    "title": "Executive Infrastructure Dashboard",
+    "section": "",
+    "text": "Role: Lead Developer & Analyst · Organization: Select Water Services · Status: Production — Used by Executive Leadership\n\nPower BI SQL Postgres Dataverse DAX Data Modeling KPI Design"
+  },
+  {
+    "objectID": "projects/power-bi-migration.html#the-problem",
+    "href": "projects/power-bi-migration.html#the-problem",
+    "title": "Executive Infrastructure Dashboard",
+    "section": "The Problem",
+    "text": "The Problem\nSelect Water Services operates across multiple business units and facilities, each generating its own stream of financial and operational data. The executive team needed a unified view to make informed, timely decisions — but what they had was fragmented:\n\nScattered reporting — financial performance, operational metrics, and capacity data lived in separate systems and separate reports, requiring manual consolidation to get a full picture\nLagging visibility — by the time data was compiled and formatted for leadership, it was often days or weeks old, limiting its usefulness for real-time decision-making\nNo drill-through capability — high-level summaries existed, but executives couldn’t easily drill from a portfolio-level view down to individual business units or facilities without requesting ad-hoc reports\nDisconnected financial and operational data — revenue and margin figures were tracked separately from utilization rates, capacity, and throughput, making it difficult to see the operational drivers behind financial outcomes"
+  },
+  {
+    "objectID": "projects/power-bi-migration.html#the-solution",
+    "href": "projects/power-bi-migration.html#the-solution",
+    "title": "Executive Infrastructure Dashboard",
+    "section": "The Solution",
+    "text": "The Solution\nI designed and built a comprehensive, real-time executive dashboard in Power BI that consolidated financial and operational performance into a single, interactive platform.\n\nDesign Philosophy\nThe guiding principle was: every screen answers a decision. Rather than building a data dump with every available metric, I worked with executive stakeholders to identify the specific decisions they make weekly and monthly, then designed each dashboard view to directly support those decisions.\n\n\nArchitecture\n\n\n\n\n\nflowchart LR\n    A[Postgres&lt;br&gt;Operational Data] --&gt; D[Data Model&lt;br&gt;Star Schema]\n    B[Dataverse&lt;br&gt;Asset & Site Data] --&gt; D\n    C[Financial Systems&lt;br&gt;Revenue & Cost] --&gt; D\n    D --&gt; E[DAX Measures&lt;br&gt;KPIs & Calculations]\n    E --&gt; F[Power BI Dashboard&lt;br&gt;Executive Views]\n    F --&gt; G[Business Unit&lt;br&gt;Drill-Through]\n    F --&gt; H[Facility-Level&lt;br&gt;Detail]\n    F --&gt; I[Trend & Variance&lt;br&gt;Analysis]\n\n\n\n\n\n\n\n\nWhat the Dashboard Delivers\nFinancial Performance Layer:\n\nRevenue by business unit and facility — with actuals vs. forecast comparison and variance highlighting so executives immediately see where results are tracking ahead or behind plan\nGross profit and margin percentages — broken down by segment to assess the profitability mix across the portfolio and identify which units are driving margin expansion or compression\nPeriod-over-period trending — monthly and quarterly views that surface trajectory, not just snapshots, enabling executives to distinguish between one-time blips and emerging trends\n\nOperational Performance Layer:\n\nUtilization rates — how effectively assets are being deployed across facilities, surfacing underutilized capacity that represents revenue opportunity or overutilized assets that signal risk\nCapacity and throughput metrics — real-time visibility into operational bottlenecks, enabling proactive resource allocation before constraints impact financial performance\nOperational volume tracking — activity-level metrics that provide context for the financial numbers, connecting revenue outcomes to the operational work that produces them\n\nExecutive Decision Support:\n\nDrill-through from portfolio to facility — executives start with a high-level view of all business units, then click through to individual facilities for granular detail without switching reports\nVariance analysis — automated flagging of actuals-to-forecast variances beyond threshold, so leadership focuses attention on the exceptions rather than reviewing every line item\nStrategic alignment views — progress tracking against strategic objectives, connecting daily operational metrics to quarterly and annual goals"
+  },
+  {
+    "objectID": "projects/power-bi-migration.html#implementation-approach",
+    "href": "projects/power-bi-migration.html#implementation-approach",
+    "title": "Executive Infrastructure Dashboard",
+    "section": "Implementation Approach",
+    "text": "Implementation Approach\n\nPhase 1 — Stakeholder Discovery\nBefore touching a data model, I spent time with the executive team to understand their decision-making cadence:\n\nWhat decisions do you make weekly? Monthly? Quarterly?\nWhat data do you wish you had when making those decisions?\nWhere do you currently go to find answers, and what’s frustrating about that process?\nWhat does “good” look like for each business unit?\n\nThis discovery shaped every subsequent design decision and ensured the dashboard solved real problems rather than displaying data for its own sake.\n\n\nPhase 2 — Data Modeling\nBuilt a star schema data model that unified financial and operational data into a single queryable structure:\n\nDesigned fact tables for financial transactions, operational volumes, and capacity metrics\nCreated dimension tables for business units, facilities, time periods, and asset categories\nDeveloped DAX measures for calculated KPIs — margin percentages, utilization rates, variance calculations, and period-over-period comparisons\n\n\n\nPhase 3 — Dashboard Development\nBuilt the dashboard in iterative cycles, validating each view with stakeholders before moving to the next:\n\nExecutive Summary — portfolio-level KPIs with traffic-light status indicators\nBusiness Unit Views — detailed performance by segment with drill-through to facilities\nOperational Detail — utilization, capacity, and throughput metrics with trend context\nVariance & Forecasting — actuals vs. forecast with automated exception flagging\n\n\n\nPhase 4 — Deployment & Adoption\n\nConfigured automated data refreshes to ensure the dashboard reflected current operational reality\nTrained executive users on navigation, drill-through, and filtering\nEstablished a feedback loop for iterating on views based on how leadership actually used the tool in practice"
+  },
+  {
+    "objectID": "projects/power-bi-migration.html#visual-walkthrough",
+    "href": "projects/power-bi-migration.html#visual-walkthrough",
+    "title": "Executive Infrastructure Dashboard",
+    "section": "Visual Walkthrough",
+    "text": "Visual Walkthrough\n\n\n\n\n📊 Executive Summary View Portfolio KPIs — revenue, gross profit, margin, utilization\n\n\n\n\n🏢 Business Unit Drill-Through Segment performance with actuals vs. forecast\n\n\n\n\n⚙️ Operational Metrics View Utilization rates, capacity, throughput by facility\n\n\n\n\n📈 Trend & Variance Analysis Period-over-period trends with variance flagging\n\n\n\n\n\n\n\n\n\nTipScreenshots Available\n\n\n\nAnonymized screenshots or a live walkthrough of the dashboard are available upon request during interviews. The dashboard contains proprietary financial and operational data."
+  },
+  {
+    "objectID": "projects/power-bi-migration.html#results-impact",
+    "href": "projects/power-bi-migration.html#results-impact",
+    "title": "Executive Infrastructure Dashboard",
+    "section": "Results & Impact",
+    "text": "Results & Impact\n\n\nReal-Time\nExecutive visibility into all business units\n\n\nUnified\nFinancial + operational data in one platform\n\n\nSelf-Service\nDrill-through eliminates ad-hoc requests\n\n\nAdopted\nUsed by executive team for weekly decisions\n\n\n\nWhat Changed for Leadership\n\nFaster decisions — executives no longer wait for compiled reports; they open the dashboard and have current data with drill-through capability at any time\nBetter decisions — connecting financial outcomes to operational drivers in a single view means leadership sees why numbers are moving, not just that they’re moving\nProactive management — variance flagging and trend views surface problems early, enabling intervention before small issues compound\nAligned organization — a shared dashboard creates a shared understanding of performance, reducing the “my spreadsheet says something different” problem in leadership meetings\nReduced ad-hoc burden — the analytics team saw a significant reduction in one-off data requests because leadership could self-serve through drill-through navigation"
+  },
+  {
+    "objectID": "projects/power-bi-migration.html#why-this-project-matters",
+    "href": "projects/power-bi-migration.html#why-this-project-matters",
+    "title": "Executive Infrastructure Dashboard",
+    "section": "Why This Project Matters",
+    "text": "Why This Project Matters\nThis wasn’t a reporting project — it was a decision-support platform. The difference matters. Reporting asks: “What happened?” Decision support asks: “What should we do about it?”\nBy combining financial KPIs with operational drivers, the dashboard gives executives the full picture: not just that revenue is up or down, but what’s driving it — utilization, capacity, throughput, mix. That operational context is what turns a number on a screen into an actionable insight.\nThe design approach — starting with stakeholder decisions, not available data — is something I bring to every project. The best dashboards aren’t the ones with the most data; they’re the ones that answer the right questions."
+  },
+  {
+    "objectID": "projects/power-bi-migration.html#technical-stack",
+    "href": "projects/power-bi-migration.html#technical-stack",
+    "title": "Executive Infrastructure Dashboard",
+    "section": "Technical Stack",
+    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nBI Platform\nPower BI\nInteractive dashboards, drill-through, scheduled refresh\n\n\nData Sources\nPostgres, Dataverse, Financial Systems\nOperational, asset, and financial data\n\n\nData Modeling\nStar schema (DAX)\nUnified fact/dimension model, calculated measures\n\n\nKPI Engine\nDAX measures\nMargin %, utilization rates, variance calculations\n\n\nQuery Layer\nSQL (Postgres)\nData extraction, validation, transformation\n\n\nGovernance\nDataverse\nAsset classification, data quality enforcement\n\n\nRefresh\nAutomated schedule\nNear-real-time data currency"
+  },
+  {
+    "objectID": "projects/power-bi-migration.html#key-skills-demonstrated",
+    "href": "projects/power-bi-migration.html#key-skills-demonstrated",
+    "title": "Executive Infrastructure Dashboard",
+    "section": "Key Skills Demonstrated",
+    "text": "Key Skills Demonstrated\n\n\nDashboard Architecture\nEnd-to-end design from data model through interactive executive views with drill-through navigation\n\n\nStakeholder Discovery\nInterview-driven design that starts with decisions, not data — ensuring every view has a purpose\n\n\nData Modeling\nStar schema design unifying financial and operational data into a single queryable model\n\n\nDAX & Calculated Measures\nComplex KPI calculations including margin percentages, utilization rates, and variance analysis\n\n\n\n← Back to All Projects Next: Data Reconciliation →"
+  }
+]

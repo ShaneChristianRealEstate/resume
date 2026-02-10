@@ -1,0 +1,202 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+::: {.projects-hero}
+
+# Project Showcase {.projects-title}
+
+Real-world projects that demonstrate how I turn complex data problems into
+measurable business outcomes — from enterprise BI migrations to fraud analytics.
+
+:::
+
+
+::: {.projects-grid}
+
+<!-- ===== PROJECT 1: INFRASTRUCTURE DASHBOARD ===== -->
+::: {.project-card .featured}
+
+::: {.project-badge}
+Featured
+:::
+
+### Executive Infrastructure Dashboard {.project-name}
+
+::: {.project-tags}
+`Power BI` `SQL` `Postgres` `Dataverse` `DAX` `Data Modeling`
+:::
+
+Designed and built a comprehensive, real-time executive dashboard consolidating
+financial and operational performance across all business units. Revenue, gross
+profit, margin, utilization, capacity, and throughput — unified in one
+interactive platform with drill-through from portfolio level to individual
+facilities.
+
+::: {.project-impact}
+**Impact:** Real-time executive visibility · Self-service drill-through · Adopted for weekly decisions
+:::
+
+[View Details →](projects/power-bi-migration.qmd){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 2: DATA RECONCILIATION ===== -->
+::: {.project-card}
+
+### Multi-Region Data Reconciliation Framework {.project-name}
+
+::: {.project-tags}
+`SQL` `Postgres` `Dataverse` `Power BI` `Data Governance`
+:::
+
+Reconciled site inventory data across 40+ Postgres tables spanning four
+major regions (NE, Rockies, Permian, MidCon). Built a reusable
+troubleshooting framework that standardized how the organization
+identifies and resolves data discrepancies.
+
+::: {.project-impact}
+**Impact:** 100% query accuracy · 4-region coverage · Reusable framework
+:::
+
+[View Details →](projects/data-reconciliation.qmd){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 3: MEDICARE FRAUD ===== -->
+::: {.project-card}
+
+### Medicare Fraud Case Analytics {.project-name}
+
+::: {.project-tags}
+`SQL` `Power BI` `TennCare` `Healthcare Data` `Legal Analytics`
+:::
+
+Built analytical datasets supporting Medicare Fraud prosecution at the
+Tennessee Attorney General's Office. Gained direct TennCare database
+access, redesigned data workflows, and transitioned the team from Excel
+to Power BI — cutting case preparation from 3 weeks to 2–3 days.
+
+::: {.project-impact}
+**Impact:** 3 weeks → 2 days turnaround · Directly supported prosecutions
+:::
+
+[View Details →](projects/medicare-fraud.qmd){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 4: HP DASHBOARDS ===== -->
+::: {.project-card}
+
+### Global Dashboard Initiative — HP Inc {.project-name}
+
+::: {.project-tags}
+`Power BI` `Data Pipelines` `Stakeholder Management` `Global Teams`
+:::
+
+Developed high-level dashboards with drill-through capabilities for global
+teams at HP. Promoted to lead senior management's highest-priority
+dashboard initiative based on performance. Collaborated with data
+engineering to deploy new pipelines.
+
+::: {.project-impact}
+**Impact:** Promoted to lead highest-priority initiative · Global adoption
+:::
+
+[View Details →](#){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 5: COVENANT HEALTH ===== -->
+::: {.project-card}
+
+### Opioid Audit & Revenue Recovery — Covenant Health {.project-name}
+
+::: {.project-tags}
+`SQL` `EHR` `Healthcare` `Compliance` `Automation`
+:::
+
+Identified $4K/month in uncharged medication revenue through a
+government-required opioid audit. Automated backend nursing documentation
+forms and implemented new radiology procedures to improve operational
+efficiency across clinical departments.
+
+::: {.project-impact}
+**Impact:** $4K/month revenue recovered · Automated clinical workflows
+:::
+
+[View Details →](#){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 6: KNIGHT TRANSPORTATION ===== -->
+::: {.project-card}
+
+### Fleet Optimization — Knight Transportation {.project-name}
+
+::: {.project-tags}
+`Operations` `Fleet Management` `KPI Tracking` `Process Improvement`
+:::
+
+Managed 60+ drivers across scheduling, contracts, and compliance.
+Applied data-driven fuel and speed management strategies that boosted
+gross revenue by 12% and slashed fleet idle time from 55% to 20%.
+This operational foundation informs every analytical decision I make today.
+
+::: {.project-impact}
+**Impact:** 12% revenue increase · 55% → 20% idle time · 'Best Dispatcher' award
+:::
+
+[View Details →](#){.project-link}
+
+:::
+
+:::
+
+
+<!-- ===== SKILLS MATRIX ===== -->
+::: {.skills-matrix-section}
+
+## Skills Demonstrated Across Projects {.section-heading}
+
+| Skill Area | Infra Dashboard | Data Recon | Fraud Analytics | HP Dashboards | Covenant | Knight |
+|:-----------|:---:|:---:|:---:|:---:|:---:|:---:|
+| SQL & Query Development | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ |
+| Power BI & Dashboard Design | ✅ | ✅ | ✅ | ✅ | ◻️ | ◻️ |
+| Data Modeling & DAX | ✅ | ◻️ | ◻️ | ✅ | ◻️ | ◻️ |
+| Data Governance & Quality | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ |
+| Stakeholder Communication | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Process Optimization | ✅ | ✅ | ✅ | ◻️ | ✅ | ✅ |
+| Healthcare / EHR Systems | ◻️ | ◻️ | ✅ | ◻️ | ✅ | ◻️ |
+| Operations & Logistics | ✅ | ✅ | ◻️ | ◻️ | ◻️ | ✅ |
+
+:::
+
+
+<!-- ===== CAREER NARRATIVE ===== -->
+::: {.career-narrative-section}
+
+## The Thread That Connects It All {.section-heading}
+
+::: {.narrative-body}
+
+Every role in my career shares a common thread: **finding what's broken
+and making it work better.** At Knight Transportation, that meant cutting
+idle time and boosting revenue. At the Attorney General's Office, it meant
+turning a 3-week legal data process into a 2-day turnaround. At Select
+Water, it means reconciling millions of records across regions so
+leadership can trust the numbers.
+
+I'm not a data analyst who learned operations — I'm an operations
+professional who mastered data. That distinction matters when the
+dashboard needs to reflect what's actually happening on the ground.
+
+:::
+:::

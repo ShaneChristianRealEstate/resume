@@ -1,0 +1,23 @@
+{
+  "resume.qmd": {
+    "resume.html": "9aa9a2d6"
+  },
+  "projects_power-bi-migration.qmd": {
+    "projects_power-bi-migration.html": "c52bf9b5"
+  },
+  "index.qmd": {
+    "index.html": "1017f533"
+  },
+  "projects.qmd": {
+    "projects.html": "0ee88ce2"
+  },
+  "projects/data-reconciliation.qmd": {
+    "data-reconciliation.html": "19cc0510"
+  },
+  "projects/medicare-fraud.qmd": {
+    "medicare-fraud.html": "9a17754e"
+  },
+  "projects/power-bi-migration.qmd": {
+    "power-bi-migration.html": "8d6a8a33"
+  }
+}

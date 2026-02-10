@@ -1,0 +1,84 @@
+# =============================================================================
+# Edward Shane Christian - Portfolio Website
+# =============================================================================
+#
+# Directory Structure:
+#   portfolio/
+#   ├── _quarto.yml              (this file)
+#   ├── index.qmd                (cover letter / landing)
+#   ├── resume.qmd               (full resume)
+#   ├── projects.qmd             (project showcase)
+#   ├── projects/
+#   │   ├── power-bi-migration.qmd
+#   │   ├── data-reconciliation.qmd
+#   │   └── medicare-fraud.qmd
+#   ├── styles_portfolio.css
+#   ├── assets/
+#   │   └── Shane_Christian_Resume.pdf   (optional downloadable PDF)
+#   └── _site/                   (generated output)
+#
+# Render:  quarto render
+# Preview: quarto preview
+# =============================================================================
+
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "projects/*.qmd"
+
+website:
+  title: "Shane Christian | Senior Data Analyst"
+  description: "Senior Data Analyst portfolio — SQL, Power BI, and operational analytics"
+
+  navbar:
+    background: "#0F172A"
+    foreground: "white"
+    title: "Shane Christian"
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Resume"
+        href: resume.qmd
+      - text: "Projects"
+        href: projects.qmd
+        menu:
+          - text: "All Projects"
+            href: projects.qmd
+          - text: "---"
+          - text: "Enterprise Power BI Migration"
+            href: projects/power-bi-migration.qmd
+          - text: "Multi-Region Data Reconciliation"
+            href: projects/data-reconciliation.qmd
+          - text: "Medicare Fraud Analytics"
+            href: projects/medicare-fraud.qmd
+    right:
+      - icon: linkedin
+        href: https://linkedin.com/in/yourprofile
+        target: _blank
+      - icon: envelope
+        href: mailto:schristian625@aol.com
+
+  page-footer:
+    left: "© 2026 Edward Shane Christian"
+    center: ""
+    right: "Built with Quarto"
+    background: "#0F172A"
+    foreground: "white"
+
+  page-navigation: true
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles_portfolio.css]
+    toc: false
+    code-fold: true
+    smooth-scroll: true
+    link-external-newwindow: true
+
+execute:
+  warning: false
+  message: false
+  echo: false

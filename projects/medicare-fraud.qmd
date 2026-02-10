@@ -1,0 +1,205 @@
+---
+title: "Medicare Fraud Case Analytics"
+subtitle: "Cutting legal case preparation from 3 weeks to 2 days through direct database access and Power BI modernization"
+page-layout: full
+toc: true
+toc-location: left
+toc-title: "Project Details"
+toc-depth: 2
+---
+
+::: {.project-hero}
+::: {.project-hero-content}
+
+# Medicare Fraud Case Analytics {.project-hero-title}
+
+**Role:** Lead Healthcare Data Analyst
+· **Organization:** Tennessee Attorney General's Office
+· **Timeline:** February 2021 – April 2023
+
+::: {.project-hero-tags}
+`SQL` `Power BI` `TennCare` `Healthcare Data` `Legal Analytics` `Data Standardization`
+:::
+
+:::
+:::
+
+
+## The Problem {.project-section-heading}
+
+The Tennessee Attorney General's Office prosecutes Medicare fraud cases that
+involve large, complex healthcare datasets. When I joined the team, the
+analytical workflow had several critical bottlenecks:
+
+- **3-week turnaround** for dataset requests — analysts had to submit requests
+  through intermediaries to access TennCare (Tennessee's Medicaid program)
+  data, with no direct query capability
+- **Excel-based reporting** for attorney-facing deliverables, which limited
+  the depth of analysis and made it difficult to explore data interactively
+  during case preparation
+- **No standardized data organization** — each analyst structured their
+  outputs differently, creating inconsistencies across cases and making it
+  difficult for attorneys to compare analyses
+- **Time pressure** — fraud cases have legal deadlines, and a 3-week data
+  turnaround meant analysts were often working with stale information or
+  rushing to compensate for delays
+
+
+## The Approach {.project-section-heading}
+
+I tackled this from three angles simultaneously: **access**, **tooling**,
+and **process standardization**.
+
+### Securing Direct Database Access
+
+The single highest-impact change was obtaining **direct access to the TennCare
+database**. This required:
+
+- Building trust with the TennCare data team by demonstrating responsible
+  data handling practices and understanding of HIPAA compliance requirements
+- Documenting the specific query patterns the AG's office needed, showing
+  that direct access would reduce burden on the TennCare team (fewer ad-hoc
+  requests for them to fulfill)
+- Establishing protocols for secure data extraction and storage that met
+  both agencies' governance requirements
+
+This alone collapsed the data turnaround from **3 weeks to 2–3 days** — the
+time it takes to write, validate, and document a query rather than wait in
+a request queue.
+
+### Modernizing the Reporting Stack
+
+I transitioned the team's attorney-facing deliverables from Excel to
+**Power BI**, which provided:
+
+- **Interactive exploration** — attorneys could filter by provider, date
+  range, procedure code, and billing pattern without requesting new reports
+- **Visual pattern detection** — fraud patterns that were invisible in
+  spreadsheet rows became obvious in visualizations (billing spikes,
+  geographic clustering, procedure code anomalies)
+- **Compliance-ready formatting** — standardized layouts that met
+  courtroom presentation requirements
+
+### Standardizing Data Organization
+
+I designed a consistent data organization framework for case analytics:
+
+- **Standard naming conventions** for datasets, queries, and deliverables
+- **Template structures** for common case types so new analyses started
+  from a proven foundation rather than a blank page
+- **Documentation requirements** for every dataset — source, extraction
+  date, query logic, and known limitations — so any analyst could pick up
+  where another left off
+
+```{mermaid}
+%%| fig-width: 8
+flowchart LR
+    A[Case Assignment] --> B[Direct TennCare<br>Database Query]
+    B --> C[Data Extraction<br>& Validation]
+    C --> D[Standardized<br>Dataset Structure]
+    D --> E[Power BI<br>Analysis & Visuals]
+    E --> F[Attorney-Facing<br>Deliverable]
+    F --> G[Case Prosecution]
+
+    style B fill:#3B82F6,color:#fff
+    style E fill:#3B82F6,color:#fff
+```
+
+
+## Working with Sensitive Data {.project-section-heading}
+
+Healthcare fraud analytics involves **protected health information (PHI)**
+and legally sensitive case data. Every aspect of this project was designed
+with compliance in mind:
+
+- All data access followed **HIPAA protocols** and agency security policies
+- Datasets were stored in secured, access-controlled environments
+- Power BI reports were designed for **internal use only** with appropriate
+  access restrictions
+- Query logic and analytical methods were documented for potential
+  **courtroom testimony** and cross-examination
+
+::: {.callout-tip}
+## Recruiter Note
+Due to the sensitive nature of this work (active legal cases, protected
+health information), I cannot share specific datasets, dashboards, or case
+details. I'm happy to discuss the methodology, technical approach, and
+analytical patterns in a conversation setting.
+:::
+
+
+## Results & Impact {.project-section-heading}
+
+::: {.impact-grid}
+
+::: {.impact-card}
+### 3 wks → 2 days {.impact-number}
+Dataset turnaround reduction
+:::
+
+::: {.impact-card}
+### Direct Access {.impact-number}
+TennCare database query capability
+:::
+
+::: {.impact-card}
+### Excel → Power BI {.impact-number}
+Attorney-facing reporting modernized
+:::
+
+::: {.impact-card}
+### Standardized {.impact-number}
+Data organization across all cases
+:::
+
+:::
+
+### Additional Outcomes
+
+- **Stronger cases** — faster access to fresher data meant analyses were
+  based on current information rather than snapshots that were weeks old
+- **Attorney empowerment** — interactive Power BI reports let attorneys
+  explore the data themselves during case preparation, reducing back-and-forth
+  with the analytics team
+- **Team scalability** — standardized processes and templates meant new
+  analysts could become productive faster and produce consistent outputs
+- **Cross-case pattern recognition** — standardized data structures made it
+  easier to identify patterns that spanned multiple cases or providers
+
+
+## Lessons Learned {.project-section-heading}
+
+**1. Access is the first bottleneck to solve.**
+The most sophisticated analytical tools in the world don't matter if you're
+waiting 3 weeks for data. Securing direct database access was a relationship
+and trust-building exercise as much as a technical one — and it delivered
+the single largest time savings.
+
+**2. Analysts aren't the only users.**
+Attorneys needed to interact with the data directly, not just receive static
+reports. Designing for their workflow (filtering by provider, exploring
+billing patterns, presenting in court) produced better outcomes than
+designing for analytical elegance.
+
+**3. Standardization pays compound interest.**
+The time invested in templates, naming conventions, and documentation
+standards felt slow at first, but it paid back exponentially as the team
+handled more cases in parallel with consistent quality.
+
+
+## Technical Stack {.project-section-heading}
+
+| Component | Technology | Purpose |
+|:----------|:-----------|:--------|
+| Data Source | TennCare Database (direct access) | Medicare/Medicaid claims, provider data |
+| Query Layer | SQL | Data extraction, validation, case-specific analysis |
+| Visualization | Power BI | Interactive attorney-facing dashboards |
+| Prior Tooling | Excel (replaced) | Legacy reporting format |
+| Governance | HIPAA-compliant protocols | PHI handling, access controls |
+| Process | Standardized templates | Consistent data organization across cases |
+
+
+::: {.project-nav}
+[← Back to All Projects](../projects.qmd){.btn-secondary}
+[← Prev: Data Reconciliation](data-reconciliation.qmd){.btn-primary}
+:::

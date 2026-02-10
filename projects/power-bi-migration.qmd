@@ -1,0 +1,322 @@
+---
+title: "Executive Infrastructure Dashboard"
+subtitle: "A real-time operational and financial performance platform for executive decision-making across all business units"
+page-layout: full
+toc: true
+toc-location: left
+toc-title: "Project Details"
+toc-depth: 2
+---
+
+::: {.project-hero}
+::: {.project-hero-content}
+
+# Executive Infrastructure Dashboard {.project-hero-title}
+
+**Role:** Lead Developer & Analyst
+· **Organization:** Select Water Services
+· **Status:** Production — Used by Executive Leadership
+
+::: {.project-hero-tags}
+`Power BI` `SQL` `Postgres` `Dataverse` `DAX` `Data Modeling` `KPI Design`
+:::
+
+:::
+:::
+
+
+## The Problem {.project-section-heading}
+
+Select Water Services operates across multiple business units and facilities,
+each generating its own stream of financial and operational data. The executive
+team needed a unified view to make informed, timely decisions — but what they
+had was fragmented:
+
+- **Scattered reporting** — financial performance, operational metrics, and
+  capacity data lived in separate systems and separate reports, requiring
+  manual consolidation to get a full picture
+- **Lagging visibility** — by the time data was compiled and formatted for
+  leadership, it was often days or weeks old, limiting its usefulness for
+  real-time decision-making
+- **No drill-through capability** — high-level summaries existed, but
+  executives couldn't easily drill from a portfolio-level view down to
+  individual business units or facilities without requesting ad-hoc reports
+- **Disconnected financial and operational data** — revenue and margin
+  figures were tracked separately from utilization rates, capacity, and
+  throughput, making it difficult to see the operational drivers behind
+  financial outcomes
+
+
+## The Solution {.project-section-heading}
+
+I designed and built a **comprehensive, real-time executive dashboard** in
+Power BI that consolidated financial and operational performance into a
+single, interactive platform.
+
+### Design Philosophy
+
+The guiding principle was: **every screen answers a decision.** Rather than
+building a data dump with every available metric, I worked with executive
+stakeholders to identify the specific decisions they make weekly and monthly,
+then designed each dashboard view to directly support those decisions.
+
+### Architecture
+
+```{mermaid}
+%%| fig-width: 8
+flowchart LR
+    A[Postgres<br>Operational Data] --> D[Data Model<br>Star Schema]
+    B[Dataverse<br>Asset & Site Data] --> D
+    C[Financial Systems<br>Revenue & Cost] --> D
+    D --> E[DAX Measures<br>KPIs & Calculations]
+    E --> F[Power BI Dashboard<br>Executive Views]
+    F --> G[Business Unit<br>Drill-Through]
+    F --> H[Facility-Level<br>Detail]
+    F --> I[Trend & Variance<br>Analysis]
+```
+
+### What the Dashboard Delivers
+
+**Financial Performance Layer:**
+
+- **Revenue by business unit and facility** — with actuals vs. forecast
+  comparison and variance highlighting so executives immediately see where
+  results are tracking ahead or behind plan
+- **Gross profit and margin percentages** — broken down by segment to
+  assess the profitability mix across the portfolio and identify which
+  units are driving margin expansion or compression
+- **Period-over-period trending** — monthly and quarterly views that
+  surface trajectory, not just snapshots, enabling executives to
+  distinguish between one-time blips and emerging trends
+
+**Operational Performance Layer:**
+
+- **Utilization rates** — how effectively assets are being deployed across
+  facilities, surfacing underutilized capacity that represents revenue
+  opportunity or overutilized assets that signal risk
+- **Capacity and throughput metrics** — real-time visibility into
+  operational bottlenecks, enabling proactive resource allocation before
+  constraints impact financial performance
+- **Operational volume tracking** — activity-level metrics that provide
+  context for the financial numbers, connecting revenue outcomes to the
+  operational work that produces them
+
+**Executive Decision Support:**
+
+- **Drill-through from portfolio to facility** — executives start with
+  a high-level view of all business units, then click through to
+  individual facilities for granular detail without switching reports
+- **Variance analysis** — automated flagging of actuals-to-forecast
+  variances beyond threshold, so leadership focuses attention on the
+  exceptions rather than reviewing every line item
+- **Strategic alignment views** — progress tracking against strategic
+  objectives, connecting daily operational metrics to quarterly and
+  annual goals
+
+
+## Implementation Approach {.project-section-heading}
+
+### Phase 1 — Stakeholder Discovery
+
+Before touching a data model, I spent time with the executive team to
+understand their decision-making cadence:
+
+- What decisions do you make weekly? Monthly? Quarterly?
+- What data do you wish you had when making those decisions?
+- Where do you currently go to find answers, and what's frustrating
+  about that process?
+- What does "good" look like for each business unit?
+
+This discovery shaped every subsequent design decision and ensured the
+dashboard solved real problems rather than displaying data for its own sake.
+
+### Phase 2 — Data Modeling
+
+Built a **star schema data model** that unified financial and operational
+data into a single queryable structure:
+
+- Designed fact tables for financial transactions, operational volumes,
+  and capacity metrics
+- Created dimension tables for business units, facilities, time periods,
+  and asset categories
+- Developed DAX measures for calculated KPIs — margin percentages,
+  utilization rates, variance calculations, and period-over-period
+  comparisons
+
+### Phase 3 — Dashboard Development
+
+Built the dashboard in iterative cycles, validating each view with
+stakeholders before moving to the next:
+
+- **Executive Summary** — portfolio-level KPIs with traffic-light
+  status indicators
+- **Business Unit Views** — detailed performance by segment with
+  drill-through to facilities
+- **Operational Detail** — utilization, capacity, and throughput
+  metrics with trend context
+- **Variance & Forecasting** — actuals vs. forecast with automated
+  exception flagging
+
+### Phase 4 — Deployment & Adoption
+
+- Configured automated data refreshes to ensure the dashboard reflected
+  current operational reality
+- Trained executive users on navigation, drill-through, and filtering
+- Established a feedback loop for iterating on views based on how
+  leadership actually used the tool in practice
+
+
+## Visual Walkthrough {.project-section-heading}
+
+::: {.project-visuals}
+
+::: {.screenshot-grid}
+
+::: {.screenshot-item}
+::: {.screenshot-placeholder}
+[📊]{.placeholder-icon}
+[Executive Summary View]{.placeholder-title}
+[Portfolio KPIs — revenue, gross profit, margin, utilization]{.placeholder-text}
+:::
+:::
+
+::: {.screenshot-item}
+::: {.screenshot-placeholder}
+[🏢]{.placeholder-icon}
+[Business Unit Drill-Through]{.placeholder-title}
+[Segment performance with actuals vs. forecast]{.placeholder-text}
+:::
+:::
+
+::: {.screenshot-item}
+::: {.screenshot-placeholder}
+[⚙️]{.placeholder-icon}
+[Operational Metrics View]{.placeholder-title}
+[Utilization rates, capacity, throughput by facility]{.placeholder-text}
+:::
+:::
+
+::: {.screenshot-item}
+::: {.screenshot-placeholder}
+[📈]{.placeholder-icon}
+[Trend & Variance Analysis]{.placeholder-title}
+[Period-over-period trends with variance flagging]{.placeholder-text}
+:::
+:::
+
+:::
+
+::: {.callout-tip}
+## Screenshots Available
+Anonymized screenshots or a live walkthrough of the dashboard are available
+upon request during interviews. The dashboard contains proprietary financial
+and operational data.
+:::
+
+:::
+
+
+## Results & Impact {.project-section-heading}
+
+::: {.impact-grid}
+
+::: {.impact-card}
+### Real-Time {.impact-number}
+Executive visibility into all business units
+:::
+
+::: {.impact-card}
+### Unified {.impact-number}
+Financial + operational data in one platform
+:::
+
+::: {.impact-card}
+### Self-Service {.impact-number}
+Drill-through eliminates ad-hoc requests
+:::
+
+::: {.impact-card}
+### Adopted {.impact-number}
+Used by executive team for weekly decisions
+:::
+
+:::
+
+### What Changed for Leadership
+
+- **Faster decisions** — executives no longer wait for compiled reports;
+  they open the dashboard and have current data with drill-through
+  capability at any time
+- **Better decisions** — connecting financial outcomes to operational
+  drivers in a single view means leadership sees *why* numbers are moving,
+  not just *that* they're moving
+- **Proactive management** — variance flagging and trend views surface
+  problems early, enabling intervention before small issues compound
+- **Aligned organization** — a shared dashboard creates a shared
+  understanding of performance, reducing the "my spreadsheet says
+  something different" problem in leadership meetings
+- **Reduced ad-hoc burden** — the analytics team saw a significant
+  reduction in one-off data requests because leadership could self-serve
+  through drill-through navigation
+
+
+## Why This Project Matters {.project-section-heading}
+
+This wasn't a reporting project — it was a **decision-support platform**.
+The difference matters. Reporting asks: "What happened?" Decision support
+asks: "What should we do about it?"
+
+By combining financial KPIs with operational drivers, the dashboard gives
+executives the full picture: not just that revenue is up or down, but what's
+driving it — utilization, capacity, throughput, mix. That operational context
+is what turns a number on a screen into an actionable insight.
+
+The design approach — starting with stakeholder decisions, not available
+data — is something I bring to every project. The best dashboards aren't
+the ones with the most data; they're the ones that answer the right questions.
+
+
+## Technical Stack {.project-section-heading}
+
+| Component | Technology | Purpose |
+|:----------|:-----------|:--------|
+| BI Platform | Power BI | Interactive dashboards, drill-through, scheduled refresh |
+| Data Sources | Postgres, Dataverse, Financial Systems | Operational, asset, and financial data |
+| Data Modeling | Star schema (DAX) | Unified fact/dimension model, calculated measures |
+| KPI Engine | DAX measures | Margin %, utilization rates, variance calculations |
+| Query Layer | SQL (Postgres) | Data extraction, validation, transformation |
+| Governance | Dataverse | Asset classification, data quality enforcement |
+| Refresh | Automated schedule | Near-real-time data currency |
+
+
+## Key Skills Demonstrated {.project-section-heading}
+
+::: {.skills-grid}
+
+::: {.skill-category}
+#### Dashboard Architecture
+End-to-end design from data model through interactive executive views with drill-through navigation
+:::
+
+::: {.skill-category}
+#### Stakeholder Discovery
+Interview-driven design that starts with decisions, not data — ensuring every view has a purpose
+:::
+
+::: {.skill-category}
+#### Data Modeling
+Star schema design unifying financial and operational data into a single queryable model
+:::
+
+::: {.skill-category}
+#### DAX & Calculated Measures
+Complex KPI calculations including margin percentages, utilization rates, and variance analysis
+:::
+
+:::
+
+
+::: {.project-nav}
+[← Back to All Projects](../projects.qmd){.btn-secondary}
+[Next: Data Reconciliation →](data-reconciliation.qmd){.btn-primary}
+:::

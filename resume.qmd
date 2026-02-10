@@ -1,0 +1,342 @@
+---
+title: ""
+page-layout: full
+toc: true
+toc-location: left
+toc-title: "Resume"
+toc-depth: 2
+---
+
+::: {.resume-header}
+
+# Edward Shane Christian {.resume-name}
+
+[Senior Data Analyst]{.resume-tagline}
+
+::: {.resume-contact}
+📍 Tennessee Ridge, TN · 📧 [schristian625@aol.com](mailto:schristian625@aol.com) · 📱 615-852-0233 · 🔗 [LinkedIn](https://linkedin.com/in/yourprofile)
+:::
+
+::: {.resume-download}
+[⬇ Download PDF](assets/Shane_Christian_Resume.pdf){.btn-download download="Shane_Christian_Resume.pdf"}
+:::
+
+:::
+
+
+::: {.resume-section}
+
+## Professional Summary
+
+Accomplished Senior Data Analyst with a unique dual background in transportation
+operations and complex data architecture. Proven track record of evaluating
+transportation systems to identify inefficiencies, having previously managed a
+fleet of 60+ drivers and optimized fuel/speed compliance to boost revenue by
+12%. Expert in SQL, Power BI, and Dataverse, with a demonstrated ability to
+translate complicated analytics into actionable insights for non-technical
+stakeholders. Dedicated to maintaining high data integrity and security through
+robust governance frameworks and automated reconciliation.
+
+:::
+
+
+::: {.resume-section}
+
+## Career Highlights
+
+::: {.highlights-grid}
+
+::: {.highlight-card}
+### $1.2M Saved {.highlight-number}
+Led enterprise-wide Domo → Power BI migration, eliminating external consulting fees
+:::
+
+::: {.highlight-card}
+### 3 wks → 2 days {.highlight-number}
+Cut Medicare fraud case preparation turnaround at TN Attorney General's Office
+:::
+
+::: {.highlight-card}
+### 12% Revenue Growth {.highlight-number}
+Accelerated gross revenue through fuel and speed management optimization
+:::
+
+::: {.highlight-card}
+### $4K/mo Found {.highlight-number}
+Identified unbilled medication revenue through government-required opioid audit
+:::
+
+::: {.highlight-card}
+### 55% → 20% Idle {.highlight-number}
+Reduced fleet idle time managing 60+ drivers at Knight Transportation
+:::
+
+::: {.highlight-card}
+### 99% Satisfaction {.highlight-number}
+Customer satisfaction rating at MEDHOST — first-ever promotion to Focus Manager
+:::
+
+:::
+:::
+
+
+::: {.resume-section}
+
+## Professional Experience
+
+<!-- ===== SELECT WATER ===== -->
+::: {.experience-item}
+
+### Senior Data Analyst {.job-title}
+
+::: {.company}
+**Select Water Services**
+:::
+
+::: {.dates}
+July 2024 – Present (CTR via Insight Global: May–July 2024)
+:::
+
+::: {.job-details}
+
+- **Advanced SQL & Query Optimization:** Write and maintain complex SQL queries
+  across **40+ Postgres site inventory tables** to retrieve, analyze, and
+  validate high-volume operational data with 100% accuracy
+- **Enterprise BI Migration:** Spearheaded the migration from Domo to Power BI,
+  eliminating **$1.2M in external consulting fees** through internal resource
+  optimization and technical leadership
+- **Process Improvement:** Evaluated regional operational workflows and
+  developed a **troubleshooting framework** that streamlined data
+  reconciliation across NE, Rockies, Permian, and MidCon regions
+- **Data Governance & Quality:** Enforced data quality frameworks by correcting
+  misclassified site data within **Dataverse**, ensuring asset visibility and
+  compliance with organizational governance policies
+- **Actionable Business Insights:** Translated complex multi-system datasets
+  into **Power BI dashboards**, converting technical KPI metrics into clear
+  insights for non-technical stakeholders
+- **System Integration:** Analyzed data flows between Postgres databases and
+  reporting layers to ensure seamless data movement, including **TMS/WMS**
+  data structures
+
+:::
+:::
+
+
+<!-- ===== HP ===== -->
+::: {.experience-item}
+
+### Business Data Analyst {.job-title}
+
+::: {.company}
+**HP Inc** (via Insight Global)
+:::
+
+::: {.dates}
+April 2023 – April 2024
+:::
+
+::: {.job-details}
+
+- Developed high-level dashboards with **drill-through capabilities** for
+  global teams across multiple business units
+- Acted as liaison between business requirements and dashboard development,
+  translating stakeholder needs into technical specifications
+- Collaborated with data engineering teams to implement corrections and
+  deploy new data pipelines
+- **Promoted to lead** senior management's highest-priority dashboard
+  initiative based on performance
+
+:::
+:::
+
+
+<!-- ===== AG OFFICE ===== -->
+::: {.experience-item}
+
+### Lead Healthcare Data Analyst {.job-title}
+
+::: {.company}
+**Tennessee Attorney General's Office**
+:::
+
+::: {.dates}
+February 2021 – April 2023
+:::
+
+::: {.job-details}
+
+- Produced analytical datasets supporting **Medicare Fraud legal cases**,
+  directly contributing to prosecution outcomes
+- Designed new data organization processes to standardize attorney-facing
+  reports for courtroom presentation
+- Gained direct **TennCare database access**, reducing dataset turnaround
+  from **3 weeks to 2–3 days**
+- Transitioned team presentations from Excel to **Power BI** for improved
+  clarity and compliance documentation
+
+:::
+:::
+
+
+<!-- ===== COVENANT ===== -->
+::: {.experience-item}
+
+### Senior Application Analyst {.job-title}
+
+::: {.company}
+**Covenant Health, Knoxville**
+:::
+
+::: {.dates}
+October 2018 – February 2021
+:::
+
+::: {.job-details}
+
+- Managed **EHR systems** and departmental workflows to strengthen
+  operational efficiency across clinical departments
+- Performed server maintenance, daily backups, and custom reporting
+  using SQL tools
+- Identified **$4K/month in uncharged medication revenue** via
+  government-required opioid audit
+- Implemented new radiology procedures and automated backend nursing
+  documentation forms
+
+:::
+:::
+
+
+<!-- ===== MEDHOST ===== -->
+::: {.experience-item}
+
+### Focus Manager {.job-title}
+
+::: {.company}
+**MEDHOST Incorporated**
+:::
+
+::: {.dates}
+April 2018 – October 2018
+:::
+
+::: {.job-details}
+
+- Increased customer satisfaction by **15% within three months** through
+  process improvements and communication channel redesign
+- Provided executive visibility into hospital performance and future
+  regulatory needs
+- Promoted from Clinical Support Analyst — **first such promotion in
+  company history**
+
+:::
+:::
+
+::: {.experience-item}
+
+### Clinical Support Analyst Tier 1 {.job-title}
+
+::: {.company}
+**MEDHOST Incorporated**
+:::
+
+::: {.dates}
+January 2016 – April 2018
+:::
+
+::: {.job-details}
+
+- Troubleshot clinical software and **HL7 interface issues** with high
+  accuracy across multiple hospital clients
+- Achieved **99% customer satisfaction** by resolving technical and
+  operational issues
+- Redesigned knowledge system that significantly improved first-call
+  resolution rates
+
+:::
+:::
+
+
+<!-- ===== KNIGHT ===== -->
+::: {.experience-item}
+
+### Driver Development & Safety Division Manager {.job-title}
+
+::: {.company}
+**Knight Transportation**
+:::
+
+::: {.dates}
+September 2012 – August 2015
+:::
+
+::: {.job-details}
+
+- Led and supervised **60+ drivers**, overseeing contracts, scheduling,
+  and operational compliance
+- Accelerated gross revenue by **12%** through fuel and speed management
+  optimization
+- Reduced fleet idle time from **55% to 20%** and significantly improved
+  fuel component compliance
+- Received **'Best Dispatcher' award** from drivers for leadership and
+  operational excellence
+
+:::
+:::
+
+:::
+
+
+::: {.resume-section}
+
+## Technical Skills
+
+::: {.skills-grid}
+
+::: {.skill-category}
+#### Data & Query Languages
+SQL · Postgres · Microsoft SQL · AS400 · Dataverse · Azure Databases
+:::
+
+::: {.skill-category}
+#### BI & Visualization
+Power BI · Dashboard Design · Data Modeling · DAX · Quarto
+:::
+
+::: {.skill-category}
+#### Engineering & Tools
+Python · DBT · DBeaver · Sequel ViewPoint · Automation Tools · ETL
+:::
+
+::: {.skill-category}
+#### Domain & Industry
+EHR Systems · MEDHOST · TMS/WMS · HL7 Interfaces · Healthcare · Transportation
+:::
+
+::: {.skill-category}
+#### Workflow & Collaboration
+Jira · Service Desk · MS Office Suite · QuickBooks · Agile
+:::
+
+::: {.skill-category}
+#### Core Strengths
+Stakeholder Communication · Data Governance · Process Optimization · Mentorship
+:::
+
+:::
+:::
+
+
+::: {.resume-section}
+
+## Education
+
+::: {.education-item}
+
+### Lebanon High School {.degree}
+
+::: {.school}
+Lebanon, TN
+:::
+
+:::
+:::

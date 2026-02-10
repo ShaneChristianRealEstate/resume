@@ -1,0 +1,260 @@
+---
+title: "Multi-Region Data Reconciliation Framework"
+subtitle: "Building a repeatable framework for reconciling site inventory across 40+ Postgres tables and four operational regions"
+page-layout: full
+toc: true
+toc-location: left
+toc-title: "Project Details"
+toc-depth: 2
+---
+
+::: {.project-hero}
+::: {.project-hero-content}
+
+# Multi-Region Data Reconciliation {.project-hero-title}
+
+**Role:** Senior Data Analyst
+· **Organization:** Select Water Services
+· **Scope:** NE, Rockies, Permian, MidCon Regions
+
+::: {.project-hero-tags}
+`SQL` `Postgres` `Dataverse` `Power BI` `Data Governance` `Process Design`
+:::
+
+:::
+:::
+
+
+## The Problem {.project-section-heading}
+
+Select Water Services operates across four major regions — **Northeast,
+Rockies, Permian, and MidCon** — each with its own operational cadence and
+data entry patterns. Site inventory data lived across **40+ Postgres tables**,
+and discrepancies between the database layer and the Dataverse reporting layer
+were eroding trust in the numbers.
+
+The specific challenges included:
+
+- **Misclassified site records** in Dataverse that didn't match the underlying
+  Postgres data, making asset visibility unreliable for field operations and
+  leadership reporting
+- **No standardized process** for identifying, diagnosing, or resolving
+  discrepancies — each analyst had their own ad-hoc approach
+- **Regional inconsistencies** in how data was entered, categorized, and
+  maintained, making cross-region comparison unreliable
+- **High-volume data** requiring queries that could handle complexity without
+  sacrificing accuracy — there was no room for "close enough"
+
+
+## The Approach {.project-section-heading}
+
+I designed a **systematic reconciliation framework** — not just a one-time
+cleanup, but a repeatable process the organization could use going forward.
+
+### Step 1 — Map the Data Landscape
+
+Before writing a single query, I mapped the relationships between the 40+
+Postgres tables to understand how site inventory data flowed from source
+systems into the reporting layer. This included:
+
+- Documenting table relationships, key fields, and join logic
+- Identifying which tables were authoritative for which data elements
+- Cataloging known data quality issues by region
+
+### Step 2 — Build Diagnostic Queries
+
+I developed a suite of SQL queries designed to surface discrepancies
+systematically rather than chasing individual errors:
+
+```sql
+-- Example: Identify sites with mismatched status between
+-- Postgres source tables and Dataverse reporting layer
+SELECT
+    p.site_id,
+    p.site_name,
+    p.region,
+    p.operational_status  AS postgres_status,
+    d.operational_status  AS dataverse_status,
+    p.last_updated        AS source_updated,
+    d.last_modified       AS reporting_updated
+FROM site_inventory p
+INNER JOIN dataverse_sites d
+    ON p.site_id = d.site_id
+WHERE p.operational_status <> d.operational_status
+ORDER BY p.region, p.site_name;
+```
+
+These queries were designed to be **reusable** — parameterized by region,
+date range, and data element so any analyst could run them going forward.
+
+### Step 3 — Document the Troubleshooting Framework
+
+For each category of discrepancy, I documented:
+
+- **What it looks like** — the specific data pattern that indicates the issue
+- **Why it happens** — the root cause (data entry timing, system sync lag,
+  classification error, etc.)
+- **How to fix it** — the specific correction steps in Dataverse or the
+  source system
+- **How to prevent it** — process changes or validation rules to catch it
+  earlier
+
+### Step 4 — Correct and Validate
+
+Working region by region, I applied corrections to misclassified site data
+in Dataverse, validating each change against the Postgres source of truth.
+Every correction was logged for audit purposes.
+
+### Step 5 — Reporting Layer
+
+Built Power BI dashboards that surfaced reconciliation status by region,
+giving leadership visibility into data quality metrics alongside operational
+KPIs — making data integrity a visible, measurable priority rather than a
+background assumption.
+
+
+## The Framework in Practice {.project-section-heading}
+
+The troubleshooting framework I documented followed a decision-tree pattern:
+
+```{mermaid}
+%%| fig-width: 8
+flowchart TD
+    A[Discrepancy Detected] --> B{Source data correct?}
+    B -->|Yes| C{Dataverse record exists?}
+    B -->|No| D[Trace to source system<br>& correct upstream]
+    C -->|Yes| E[Update Dataverse<br>classification]
+    C -->|No| F[Create Dataverse<br>record from source]
+    E --> G[Validate correction<br>against Postgres]
+    F --> G
+    D --> G
+    G --> H[Log correction<br>for audit trail]
+    H --> I[Confirm in Power BI<br>reporting layer]
+```
+
+This turned reconciliation from a **heroic individual effort** into a
+**repeatable team process**.
+
+
+## Visual Walkthrough {.project-section-heading}
+
+::: {.project-visuals}
+
+::: {.screenshot-grid}
+
+::: {.screenshot-item}
+<!-- Replace with actual screenshot: ![](../images/recon-dashboard.png) -->
+::: {.screenshot-placeholder}
+[📋]{.placeholder-icon}
+[Reconciliation Status Dashboard]{.placeholder-title}
+[Data quality KPIs by region]{.placeholder-text}
+:::
+:::
+
+::: {.screenshot-item}
+<!-- Replace with actual screenshot: ![](../images/recon-query.png) -->
+::: {.screenshot-placeholder}
+[🛠️]{.placeholder-icon}
+[Diagnostic Query Suite]{.placeholder-title}
+[Parameterized queries for discrepancy detection]{.placeholder-text}
+:::
+:::
+
+::: {.screenshot-item}
+<!-- Replace with actual screenshot: ![](../images/recon-framework.png) -->
+::: {.screenshot-placeholder}
+[📑]{.placeholder-icon}
+[Troubleshooting Framework Doc]{.placeholder-title}
+[Decision trees and root cause catalog]{.placeholder-text}
+:::
+:::
+
+::: {.screenshot-item}
+<!-- Replace with actual screenshot: ![](../images/recon-validation.png) -->
+::: {.screenshot-placeholder}
+[✅]{.placeholder-icon}
+[Validation Results View]{.placeholder-title}
+[Before/after correction audit trail]{.placeholder-text}
+:::
+:::
+
+:::
+
+::: {.callout-tip}
+## Screenshots Available
+Anonymized views of the reconciliation dashboards and framework documentation
+are available upon request during interviews.
+:::
+
+:::
+
+
+## Results & Impact {.project-section-heading}
+
+::: {.impact-grid}
+
+::: {.impact-card}
+### 40+ {.impact-number}
+Postgres tables reconciled
+:::
+
+::: {.impact-card}
+### 4 Regions {.impact-number}
+NE · Rockies · Permian · MidCon
+:::
+
+::: {.impact-card}
+### 100% {.impact-number}
+Query accuracy maintained
+:::
+
+::: {.impact-card}
+### Reusable {.impact-number}
+Framework adopted by team
+:::
+
+:::
+
+### Additional Outcomes
+
+- **Restored trust in reporting** — leadership could make operational
+  decisions knowing the data reflected reality
+- **Reduced future reconciliation time** — the documented framework and
+  reusable queries meant subsequent reconciliation cycles were significantly
+  faster
+- **Improved data entry practices** — root cause documentation led to
+  process changes that reduced new discrepancies at the source
+- **Governance visibility** — Power BI dashboards made data quality a
+  measurable KPI, not an invisible assumption
+
+
+## Why This Project Matters {.project-section-heading}
+
+Most organizations have data quality problems. What separates good analysts
+from great ones is whether the fix is a one-time cleanup or a lasting
+capability. This project delivered both — immediate corrections to restore
+reporting accuracy, and a framework that ensures the organization can
+maintain that accuracy going forward.
+
+The key insight was treating data reconciliation as a **process design
+problem**, not just a SQL problem. The queries were necessary but not
+sufficient — the documentation, the decision trees, and the Power BI
+visibility layer are what made it sustainable.
+
+
+## Technical Stack {.project-section-heading}
+
+| Component | Technology | Purpose |
+|:----------|:-----------|:--------|
+| Source Data | Postgres (40+ tables) | Site inventory, operational data |
+| Reporting Layer | Dataverse | Asset classification, governance |
+| Query Development | SQL (Postgres) | Diagnostic queries, validation |
+| Visualization | Power BI | Reconciliation dashboards, KPI tracking |
+| Documentation | Troubleshooting framework | Decision trees, root cause catalog |
+| Process | Region-by-region validation | Systematic correction and audit logging |
+
+
+::: {.project-nav}
+[← Back to All Projects](../projects.qmd){.btn-secondary}
+[Next: Medicare Fraud Analytics →](medicare-fraud.qmd){.btn-primary}
+:::
