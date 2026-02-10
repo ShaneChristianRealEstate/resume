@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ShaneChristianRealEstate.github.io/resume/resume.html</loc>
-    <lastmod>2026-02-10T19:36:39.021Z</lastmod>
+    <lastmod>2026-02-10T22:30:00.533Z</lastmod>
   </url>
   <url>
-    <loc>https://ShaneChristianRealEstate.github.io/resume/projects/medicare-fraud.html</loc>
+    <loc>https://ShaneChristianRealEstate.github.io/resume/projects/power-bi-migration.html</loc>
     <lastmod>2026-02-10T19:36:39.020Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ShaneChristianRealEstate.github.io/resume/projects.html</loc>
-    <lastmod>2026-02-10T19:36:39.013Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ShaneChristianRealEstate.github.io/resume/index.html</loc>
-    <lastmod>2026-02-10T20:30:37.542Z</lastmod>
   </url>
   <url>
     <loc>https://ShaneChristianRealEstate.github.io/resume/projects/data-reconciliation.html</loc>
     <lastmod>2026-02-10T19:36:39.018Z</lastmod>
   </url>
   <url>
-    <loc>https://ShaneChristianRealEstate.github.io/resume/projects/power-bi-migration.html</loc>
+    <loc>https://ShaneChristianRealEstate.github.io/resume/index.html</loc>
+    <lastmod>2026-02-10T22:29:44.101Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ShaneChristianRealEstate.github.io/resume/projects.html</loc>
+    <lastmod>2026-02-10T19:36:39.013Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ShaneChristianRealEstate.github.io/resume/projects/medicare-fraud.html</loc>
     <lastmod>2026-02-10T19:36:39.020Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ShaneChristianRealEstate.github.io/resume/references.html</loc>
+    <lastmod>2026-02-10T22:30:20.836Z</lastmod>
   </url>
 </urlset>
