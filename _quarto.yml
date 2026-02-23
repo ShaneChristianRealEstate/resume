@@ -27,6 +27,7 @@ project:
   resources:
     - CNAME
     - images/favicon.png
+    - assets/**
   render:
     - "*.qmd"
     - "projects/*.qmd"
@@ -35,6 +36,19 @@ website:
   title: "Shane Christian | Senior Data Analyst"
   description: "Senior Data Analyst portfolio — SQL, Power BI, and operational analytics"
   favicon: favicon.png
+  site-url: https://resume.shanechristian.me
+  # google-analytics: "G-XXXXXXXXXX"  # Uncomment and add your ID after setup
+
+  open-graph:
+    locale: en_US
+    site-name: "Shane Christian | Senior Data Analyst"
+    description: "Senior Data Analyst with 10+ years spanning operations and data architecture. Expert in SQL, Power BI, and Dataverse. Explore my resume, projects, and references."
+    image: images/headshot.jpg
+  twitter-card:
+    card-style: summary
+    title: "Shane Christian | Senior Data Analyst"
+    description: "Operations-to-analytics career. SQL, Power BI, data governance. $1.2M saved. 3-week processes turned into 2-day turnarounds."
+    image: images/headshot.jpg
 
   navbar:
     background: "#0F172A"
@@ -57,8 +71,6 @@ website:
             href: projects/data-reconciliation.qmd
           - text: "Medicare Fraud Analytics"
             href: projects/medicare-fraud.qmd
-      - text: "References"
-        href: references.qmd
     right:
       - icon: linkedin
         href: https://www.linkedin.com/in/shane-christian-data/

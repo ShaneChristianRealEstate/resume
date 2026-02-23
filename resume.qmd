@@ -18,7 +18,7 @@ toc-depth: 2
 :::
 
 ::: {.resume-download}
-[⬇ Download PDF](assets/Shane_Christian_Resume.pdf){.btn-download download="Shane_Christian_Resume.pdf"}
+[⬇ Download PDF](assets/Shane_Christian_Resume.pdf){.btn-download target="_blank"}
 :::
 
 :::
