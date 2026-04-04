@@ -1,0 +1,263 @@
+---
+title: "AFE Portfolio Executive Dashboard"
+subtitle: "A comprehensive Power BI HTML visual giving executive leadership real-time visibility into capital project budgets, spend, and capitalization status"
+page-layout: full
+toc: true
+toc-location: left
+toc-title: "Project Details"
+toc-depth: 2
+---
+
+::: {.project-hero}
+::: {.project-hero-content}
+
+# AFE Portfolio Executive Dashboard {.project-hero-title}
+
+**Role:** Lead Developer & Analyst
+· **Organization:** Select Water Services
+· **Status:** Production — Executive Use
+
+::: {.project-hero-tags}
+`Power BI` `DAX` `HTML/CSS` `JavaScript` `Capital Project Analytics`
+:::
+
+:::
+:::
+
+
+## The Problem {.project-section-heading}
+
+Authorization for Expenditure (AFE) projects represent the company's
+capital investment pipeline — new facilities, equipment, infrastructure,
+and major operational projects. Executives overseeing this portfolio
+faced a common challenge:
+
+- **Fragmented visibility** — budget, committed spend, remaining budget,
+  and capitalization status lived in separate reports or required
+  manual consolidation
+- **No at-a-glance portfolio health** — leadership couldn't quickly see
+  which projects were on track, which were over budget, and which had
+  unresolved CIP (Construction in Progress) balances
+- **Schedule slippage invisible** — the difference between a project's
+  projected end date and targeted end date — a direct measure of delay
+  — had no visual representation
+- **No segment breakdown** — understanding how the portfolio split
+  across Infrastructure, Service, Other, and Rental required manual
+  analysis
+
+
+## The Solution {.project-section-heading}
+
+I built a fully self-contained Power BI HTML Content visual that gives
+executives a complete, interactive view of the AFE portfolio without
+requiring a separate reporting layer.
+
+### Dashboard Layout
+
+The dashboard is organized into three tiers — summary KPIs, trend
+charts, and detail tables — all within a single Power BI visual
+that responds to native slicers.
+
+**8 Executive KPI Cards:**
+
+| Metric | Purpose |
+|:-------|:--------|
+| Active AFEs | Total open capital projects |
+| Total Budget | Authorized spend across portfolio |
+| Committed Spend | Actual spend to date |
+| Remaining Budget | Budget availability |
+| Capitalized | Amount moved from CIP to fixed assets |
+| Open CIP | Construction in Progress not yet capitalized |
+| Projected Spend | Forecast based on current run rate |
+| Past Due | Projects beyond targeted end date |
+
+**Trend & Distribution Charts:**
+
+- **Budget vs. Actual** — dynamic bar chart showing TOPN(3) AFEs by
+  spend, making the largest projects immediately visible
+- **Segment Distribution** — bar chart breaking the portfolio across
+  Infrastructure, Service, Other, and Rental segments
+
+**5 Collapsible Detail Tables:**
+
+1. **Critical Issues** — projects with overruns, stalled CIP, or
+   past-due status requiring leadership attention
+2. **Active Portfolio** — full project list with status and spend summary
+3. **Financial Summary** — budget, committed, remaining, and variance
+   by project
+4. **Capitalization Status** — CIP balance, capitalized amount, and
+   remaining to capitalize per project
+5. **Projected Spend Forecast** — run-rate projections by project
+
+
+## Design Approach {.project-section-heading}
+
+### DAX-Driven HTML Generation
+
+Rather than static HTML, every element of the dashboard is rendered
+by DAX measures — meaning the visual responds correctly to slicers,
+filters, and cross-filter interactions from other Power BI visuals
+on the same page.
+
+The measure architecture is organized into layers:
+
+```
+Base Measures (aggregations from fact tables)
+    ↓
+Calculated KPIs (variance, utilization, forecast)
+    ↓
+Formatting Measures (conditional color, status flags)
+    ↓
+HTML Rendering Measures (full visual output string)
+```
+
+This layered approach makes the visual maintainable: changing a color
+threshold or adding a new KPI requires updating a single base measure,
+not rewriting HTML strings.
+
+### Conditional Status Coloring
+
+Budget and schedule status uses a three-tier color system:
+
+- **Green** — on track (within budget, on schedule)
+- **Amber** — at risk (approaching threshold)
+- **Red** — action required (over budget, past due, stalled CIP)
+
+Zero-width bar guards prevent display issues when values are zero or
+null — a common source of visual corruption in HTML Content visuals.
+
+### Responsive Layout
+
+The dashboard uses a responsive grid that adjusts based on available
+viewport width:
+
+- **4-column** — full desktop display
+- **2-column** — narrower panel or split-screen view
+- **1-column** — full-screen mobile or presentation mode
+
+### Schedule Slippage Quantification
+
+The dashboard tracks two date fields per project — projected end date
+and targeted end date — and surfaces the delta directly. This makes
+schedule slippage a measurable, visible metric rather than a qualitative
+judgment call.
+
+
+## Visual Walkthrough {.project-section-heading}
+
+::: {.project-visuals}
+
+::: {.screenshot-grid}
+
+::: {.screenshot-item}
+::: {.screenshot-placeholder}
+[📊]{.placeholder-icon}
+[Executive KPI Summary]{.placeholder-title}
+[8 KPI cards: budget, committed, remaining, CIP, projected spend]{.placeholder-text}
+:::
+:::
+
+::: {.screenshot-item}
+::: {.screenshot-placeholder}
+[📈]{.placeholder-icon}
+[Budget vs. Actual Chart]{.placeholder-title}
+[Dynamic TOPN(3) AFEs by spend with segment distribution]{.placeholder-text}
+:::
+:::
+
+::: {.screenshot-item}
+::: {.screenshot-placeholder}
+[📋]{.placeholder-icon}
+[Critical Issues Table]{.placeholder-title}
+[Overruns, stalled CIP, past-due projects flagged for action]{.placeholder-text}
+:::
+:::
+
+::: {.screenshot-item}
+::: {.screenshot-placeholder}
+[💰]{.placeholder-icon}
+[Capitalization Status]{.placeholder-title}
+[CIP balance, capitalized amount, remaining to capitalize]{.placeholder-text}
+:::
+:::
+
+:::
+
+::: {.callout-tip}
+## Screenshots Available
+Anonymized screenshots of the dashboard are available upon request
+during interviews. The visual contains proprietary financial data.
+:::
+
+:::
+
+
+## Results & Impact {.project-section-heading}
+
+::: {.impact-grid}
+
+::: {.impact-card}
+### 8 KPIs {.impact-number}
+Executive metrics in one view
+:::
+
+::: {.impact-card}
+### 5 Tables {.impact-number}
+Drill-down detail layers
+:::
+
+::: {.impact-card}
+### Slicer-Responsive {.impact-number}
+Reacts to BU, Segment, Region filters
+:::
+
+::: {.impact-card}
+### Production {.impact-number}
+Used by executive leadership
+:::
+
+:::
+
+
+## Technical Stack {.project-section-heading}
+
+| Component | Technology | Purpose |
+|:----------|:-----------|:--------|
+| BI Platform | Power BI | Interactive dashboard, slicer integration |
+| Calculations | DAX (3,000+ lines) | All KPIs, conditional formatting, HTML generation |
+| Visual Layer | HTML/CSS/JavaScript | Rendering within Power BI HTML Content visual |
+| Layout | CSS Grid (responsive) | 4-col / 2-col / 1-col breakpoints |
+| Data Source | AFE fact tables | Budget, spend, capitalization, schedule data |
+| Documentation | DAX reference doc | Architecture notes, common issues, extension patterns |
+
+
+## Key Skills Demonstrated {.project-section-heading}
+
+::: {.skills-grid}
+
+::: {.skill-category}
+#### Advanced DAX
+3,000+ lines of layered DAX covering KPI calculation, conditional formatting, and HTML string generation — with a documented reference architecture
+:::
+
+::: {.skill-category}
+#### Power BI HTML Visuals
+Deep expertise in the HTML Content visual — including zero-value guards, slicer responsiveness, and safe cross-filter behavior
+:::
+
+::: {.skill-category}
+#### Executive Dashboard Design
+Portfolio-level views that give leadership exactly what they need to make capital allocation decisions without requiring analyst support
+:::
+
+::: {.skill-category}
+#### Financial Analytics
+Budget vs. actual tracking, CIP management, schedule slippage quantification, and capitalization status across a multi-segment capital portfolio
+:::
+
+:::
+
+
+::: {.project-nav}
+[← Back to All Projects](../projects.qmd){.btn-secondary}
+:::

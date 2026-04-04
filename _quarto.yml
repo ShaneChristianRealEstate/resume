@@ -65,10 +65,25 @@ website:
           - text: "All Projects"
             href: projects.qmd
           - text: "---"
+          - text: "Select Water Services"
           - text: "Enterprise Power BI Migration"
             href: projects/power-bi-migration.qmd
           - text: "Multi-Region Data Reconciliation"
             href: projects/data-reconciliation.qmd
+          - text: "BI Forge — AI Analytics Platform"
+            href: projects/bi-forge.qmd
+          - text: "Streamline — BI Dev Pipeline"
+            href: projects/streamline.qmd
+          - text: "Data Detective — AI Diagnostics"
+            href: projects/data-detective.qmd
+          - text: "AFE Portfolio Dashboard"
+            href: projects/afe-portfolio-dashboard.qmd
+          - text: "SCADA Volumes Dashboard"
+            href: projects/scada-volumes.qmd
+          - text: "TRE Chem Labour & Cost Dashboards"
+            href: projects/tre-chem-cost.qmd
+          - text: "---"
+          - text: "Other Experience"
           - text: "Medicare Fraud Analytics"
             href: projects/medicare-fraud.qmd
     right:

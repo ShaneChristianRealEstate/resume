@@ -22,5 +22,23 @@
   },
   "references.qmd": {
     "references.html": "a4810065"
+  },
+  "projects/afe-portfolio-dashboard.qmd": {
+    "afe-portfolio-dashboard.html": "f05a5b4e"
+  },
+  "projects/bi-forge.qmd": {
+    "bi-forge.html": "cfedeb62"
+  },
+  "projects/data-detective.qmd": {
+    "data-detective.html": "6b6e2067"
+  },
+  "projects/scada-volumes.qmd": {
+    "scada-volumes.html": "e8b4e6a3"
+  },
+  "projects/streamline.qmd": {
+    "streamline.html": "7fe92d23"
+  },
+  "projects/tre-chem-cost.qmd": {
+    "tre-chem-cost.html": "aee55855"
   }
 }

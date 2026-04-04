@@ -1,0 +1,274 @@
+---
+title: "Labour & Chemical Cost Dashboards"
+subtitle: "Two linked Power BI HTML visuals for monitoring labour costs and chemical treatment costs across TRE Chem facilities — with drill-down to employee and site level"
+page-layout: full
+toc: true
+toc-location: left
+toc-title: "Project Details"
+toc-depth: 2
+---
+
+::: {.project-hero}
+::: {.project-hero-content}
+
+# Labour & Chemical Cost Dashboards {.project-hero-title}
+
+**Role:** Lead Developer & Analyst
+· **Organization:** Select Water Services — TRE Chem
+· **Status:** Production
+
+::: {.project-hero-tags}
+`Power BI` `DAX` `HTML/CSS` `JavaScript` `Cost Analytics` `Labour Analytics`
+:::
+
+:::
+:::
+
+
+## The Problem {.project-section-heading}
+
+TRE Chem facilities operate at the intersection of labour-intensive
+site work and high-value chemical treatment processes. Leadership needed
+to track cost performance at a level that existing reporting couldn't
+provide:
+
+- **No cost-per-barrel metric** — knowing total spend without relating
+  it to volume processed made it impossible to assess true efficiency
+- **Labour costs untracked by site** — total headcount and payroll were
+  visible, but cost distribution across specific sites and teams was opaque
+- **Anomalies invisible** — unusual cost spikes or efficiency drops had
+  no automated flagging; issues were found reactively, not proactively
+- **No employee-level drill-down** — managers couldn't see which teams
+  or employees were driving cost variance without manual data extraction
+- **Chemical costs disconnected from labour** — the two biggest cost
+  drivers were tracked separately, making total operational cost analysis
+  difficult
+
+
+## The Solution {.project-section-heading}
+
+I built two linked Power BI HTML Content visuals that give leadership
+a layered view of operational cost — from portfolio-level KPIs down to
+individual site and employee detail.
+
+### Labour Dashboard
+
+The Labour Dashboard is the primary analytical surface, organized in
+three panels:
+
+**Left Panel — Site Selector:**
+A site listing with inline indicators for:
+- Labour spend distribution (relative spend vs. other sites)
+- Monthly spend trend (sparkline-style)
+- Employee headcount
+- Anomaly indicator (amber/red dot for sites with unusual activity)
+
+**Main Panel — KPI Summary:**
+16 KPI cards organized in 4 rows covering:
+
+| Row | Metrics |
+|:----|:--------|
+| Spend | Labor Spend YTD · Monthly Spend · Spend vs. Prior Period · Forecast |
+| Efficiency | Avg Cost/Bbl · Labor Efficiency Index · Cost Variance · Trend Direction |
+| Workforce | Active Employees · Avg Cost/Employee · Headcount Change · Turnover Rate |
+| Performance | Site Performance Score · Ranking vs. Portfolio · Goal Attainment · Alert Count |
+
+**Right Panel — Drill-Down Detail:**
+Selecting a site reveals:
+- Site-specific KPIs with period-over-period comparison
+- Employee detail table (name, role, hours, cost, cost/bbl)
+- Monthly cost breakdown table
+- Cost component breakdown (labour categories)
+
+**Alert System:**
+An automated alert banner at the top of the dashboard surfaces anomalies
+before users have to find them:
+- **Red banner** — high-variance sites requiring immediate attention
+- **Amber banner** — medium-variance sites to monitor
+- Alert dots on site selector for at-a-glance triage
+
+### Chemical Cost Overview Dashboard
+
+The companion overview dashboard focuses on chemical treatment costs
+alongside the labour view:
+
+- Header KPI metrics (total chemical cost, cost per barrel, variance)
+- Monthly trend charts with cost trajectory analysis
+- Site-level cost breakdown tables
+- Cost variance visualization comparing sites and periods
+
+
+## Design System {.project-section-heading}
+
+### Dark Theme
+
+Both dashboards use a consistent dark theme designed for screen display
+in control rooms and field offices:
+
+| Variable | Color | Usage |
+|:---------|:------|:------|
+| `--bg` | `#08101e` | Primary background |
+| `--sf` | `#0d1929` | Surface / card background |
+| `--s2` | `#122035` | Secondary surface |
+| `--tx` | `#e8f0fe` | Primary text |
+| `--bl` | `#4d9fff` | Blue accent / charts |
+| `--cy` | `#00d4ff` | Cyan highlights |
+| `--gn` | `#00e676` | Positive / on-track |
+| `--rd` | `#ff5252` | Negative / alert |
+
+### Theme Toggle
+
+Both dashboards include a light/dark theme toggle — allowing presentation
+in bright meeting rooms (light mode) without a separate report version.
+
+### Responsive Grid
+
+The layout adjusts across viewport sizes:
+- **4-column** — full dashboard on wide displays
+- **2-column** — narrower panels or split screen
+- **1-column** — single-focus or mobile view
+
+### Animation & Interactivity
+
+- Pulsing alert dots on anomaly indicators
+- Hover transitions on site selector and detail cards
+- Scrollable tables for large site lists or employee rosters
+- Tooltip system providing metric context on hover
+
+
+## DAX Architecture {.project-section-heading}
+
+The dashboards are driven by a structured set of DAX measures across
+four measure files:
+
+| File | Purpose |
+|:-----|:--------|
+| `labor_kpis.dax` | YTD spend, efficiency index, performance score, alert logic |
+| `labor_monthdata.dax` | Monthly cost trends, period-over-period calculations |
+| `labor_sitedata.dax` | Site-level aggregations, ranking, goal attainment |
+| `labor_employeedata.dax` | Employee-level cost, hours, cost-per-barrel attribution |
+| `avg_lbr_cost_per_bbl.dax` | The key efficiency metric — labour cost per barrel processed |
+
+The `avg_lbr_cost_per_bbl` measure is the cornerstone metric of the
+dashboard — normalizing raw labour spend against volume to produce a
+true efficiency comparison across sites of different scale.
+
+
+## Visual Walkthrough {.project-section-heading}
+
+::: {.project-visuals}
+
+::: {.screenshot-grid}
+
+::: {.screenshot-item}
+::: {.screenshot-placeholder}
+[👔]{.placeholder-icon}
+[Labour KPI Summary]{.placeholder-title}
+[16 KPI cards across spend, efficiency, workforce, and performance rows]{.placeholder-text}
+:::
+:::
+
+::: {.screenshot-item}
+::: {.screenshot-placeholder}
+[🏭]{.placeholder-icon}
+[Site Selector Panel]{.placeholder-title}
+[Site list with spend distribution, trends, and anomaly indicators]{.placeholder-text}
+:::
+:::
+
+::: {.screenshot-item}
+::: {.screenshot-placeholder}
+[👤]{.placeholder-icon}
+[Employee Drill-Down]{.placeholder-title}
+[Per-employee cost, hours, and cost/bbl for selected site]{.placeholder-text}
+:::
+:::
+
+::: {.screenshot-item}
+::: {.screenshot-placeholder}
+[⚗️]{.placeholder-icon}
+[Chemical Cost Overview]{.placeholder-title}
+[Chemical cost per barrel, monthly trends, site variance]{.placeholder-text}
+:::
+:::
+
+:::
+
+::: {.callout-tip}
+## Screenshots Available
+Anonymized screenshots of both dashboards are available upon request.
+The visuals contain operational cost and headcount data.
+:::
+
+:::
+
+
+## Results & Impact {.project-section-heading}
+
+::: {.impact-grid}
+
+::: {.impact-card}
+### 16 KPIs {.impact-number}
+Labour metrics across 4 dimensions
+:::
+
+::: {.impact-card}
+### Cost/Bbl {.impact-number}
+Key efficiency metric surfaced
+:::
+
+::: {.impact-card}
+### Proactive {.impact-number}
+Automated anomaly alerting
+:::
+
+::: {.impact-card}
+### Employee Level {.impact-number}
+Drill-down to individual contributor
+:::
+
+:::
+
+
+## Technical Stack {.project-section-heading}
+
+| Component | Technology | Purpose |
+|:----------|:-----------|:--------|
+| BI Platform | Power BI | Dashboard embedding, slicer integration |
+| Calculations | DAX (3,000+ lines across 5 files) | All KPI calculations and HTML generation |
+| Visual Layer | HTML/CSS/JavaScript | Rendering within Power BI HTML Content visual |
+| Theme System | CSS variables (12 tokens) | Consistent dark/light theming |
+| Data Sources | dbt load models (5 tables) | Labour, employee, site, and monthly data |
+| Layout | CSS Grid (responsive) | 4-col / 2-col / 1-col breakpoints |
+
+
+## Key Skills Demonstrated {.project-section-heading}
+
+::: {.skills-grid}
+
+::: {.skill-category}
+#### Cost Analytics
+Labour efficiency measurement (cost per barrel), site performance scoring, anomaly detection, and chemical cost tracking in a multi-site operational environment
+:::
+
+::: {.skill-category}
+#### Advanced Power BI
+Multi-dashboard architecture with linked visuals, complex DAX across 5 measure files, and HTML Content visual with full interactivity
+:::
+
+::: {.skill-category}
+#### Executive Design
+Alert-driven layout that surfaces what needs attention first — anomaly banners, color-coded indicators, and a progressive drill-down from portfolio to employee level
+:::
+
+::: {.skill-category}
+#### Operational Domain Knowledge
+Understanding of oilfield service economics — cost-per-barrel as the unit of measure, labour distribution across site types, and chemical treatment cost drivers
+:::
+
+:::
+
+
+::: {.project-nav}
+[← Back to All Projects](../projects.qmd){.btn-secondary}
+:::

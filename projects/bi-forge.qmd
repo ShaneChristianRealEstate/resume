@@ -1,0 +1,194 @@
+---
+title: "BI Forge — Enterprise AI Analytics Platform"
+subtitle: "Designing a company-wide platform that lets any employee access dashboards or ask data questions in plain English"
+page-layout: full
+toc: true
+toc-location: left
+toc-title: "Project Details"
+toc-depth: 2
+---
+
+::: {.project-hero}
+::: {.project-hero-content}
+
+# BI Forge — Enterprise AI Analytics Platform {.project-hero-title}
+
+**Role:** Architect & Lead Developer
+· **Organization:** Select Water Services
+· **Status:** Architecture & Design Phase
+
+::: {.project-hero-tags}
+`React` `FastAPI` `Claude API` `PostgreSQL` `Azure AD` `AWS ECS` `dbt` `Dagster`
+:::
+
+:::
+:::
+
+
+## The Problem {.project-section-heading}
+
+Select Water Services operates across multiple business units, each generating
+data through different systems — Postgres databases, Dataverse, financial
+platforms, SCADA pipelines. The challenge wasn't a lack of data; it was a
+lack of access:
+
+- **Only technical users** could query databases directly. Business users
+  had to submit requests and wait for analyst-generated reports.
+- **No unified dashboard hub** — dashboards for SCADA, Blue Line, OTC,
+  HR, CapEx, and other domains lived in separate places with no single
+  entry point.
+- **Ad-hoc request backlog** — the analytics team spent significant time
+  fielding one-off data questions that users could have answered themselves
+  with the right tooling.
+- **No visibility into pipeline health** — consumers of data had no way
+  to know whether the data they were viewing was fresh or stale.
+
+
+## The Solution {.project-section-heading}
+
+I designed **BI Forge** — an enterprise analytics platform with two core
+pillars: a **role-based Dashboard Hub** that gives every employee access
+to the dashboards relevant to their role, and an **AI Prompt Studio**
+that lets users ask data questions in plain English and receive SQL-backed
+visual answers.
+
+### Architecture
+
+```{mermaid}
+%%| fig-width: 9
+flowchart LR
+    A[Azure AD / Entra ID\nIdentity & RBAC] --> B[React Frontend\nDashboard Hub + AI Studio]
+    B --> C[FastAPI Backend\nQuery Engine + Auth]
+    C --> D[PostgreSQL\nRead-Only Replica]
+    C --> E[Claude API\nSQL Generation]
+    C --> F[Dagster\nPipeline Status]
+    E --> C
+    D --> C
+    F --> C
+    G[dbt schema.yml\nColumn Knowledge Base] --> E
+```
+
+### Dashboard Hub
+
+The hub gives every user a personalized view of dashboards they're authorized
+to see, filtered by Azure AD security group membership:
+
+- **Role-based access** — security group membership in Entra ID determines
+  which dashboards appear for each user
+- **Centralized entry point** — all dashboard domains (SCADA, Blue Line,
+  OTC, HR, CapEx, and more) accessible from a single authenticated interface
+- **Pipeline status panel** — Dagster run health and last-refresh timestamps
+  displayed alongside each dashboard so users know whether data is current
+- **Admin panel** — security group management and dashboard access
+  configuration without requiring IT intervention
+
+### AI Prompt Studio
+
+The Prompt Studio transforms natural language questions into SQL-backed
+visual answers:
+
+1. User types a question in plain English ("What are total billed volumes
+   by region this quarter?")
+2. Claude generates SQL using dbt `schema.yml` files as the knowledge base
+   — understanding column definitions, table relationships, and business logic
+3. A read-only query validation layer checks the generated SQL against
+   schema permissions and enforces SELECT-only access before execution
+4. Results are rendered as an appropriate visualization (chart, table,
+   or summary card) based on the shape of the data
+
+### Security & Governance
+
+Every layer of the platform was designed with enterprise security requirements:
+
+- **Read-only database access** — the query engine can never write to
+  production data, enforced at both the application and database layers
+- **Schema permission checks** — the validation layer confirms users only
+  query tables their role is authorized to access
+- **Azure AD integration** — all authentication flows through Entra ID;
+  no local credential storage
+- **Audit logging** — every AI-generated query is logged with the user,
+  timestamp, and SQL for compliance review
+
+
+## Implementation Approach {.project-section-heading}
+
+### Foundation — Authentication & Dashboard Hub
+
+The first phase established the core platform: Azure AD authentication,
+role-based routing, and the dashboard viewer. This gave immediate value
+by centralizing access to existing dashboards before any AI features
+were introduced.
+
+### Data Knowledge Layer
+
+Before building the AI Prompt Studio, I invested in the knowledge base
+that would power it: dbt `schema.yml` documentation. Column descriptions,
+business definitions, and table relationships in the schema files become
+the context Claude uses to generate accurate SQL. Better documentation
+directly translates to better AI query accuracy — a measurable, manageable
+feedback loop.
+
+### AI Prompt Studio
+
+The studio was built with safety as the primary constraint. Rather than
+allowing unrestricted SQL generation, every query goes through a validation
+pipeline before execution:
+
+- Parse the generated SQL to confirm it is a SELECT statement
+- Verify referenced tables are within the user's permitted schema set
+- Enforce row limits to prevent runaway queries
+- Log the full query for audit purposes before running
+
+### Pipeline Status Integration
+
+Integrating Dagster run status directly into the dashboard hub solved a
+persistent trust problem: users viewing dashboards never knew if they
+were looking at fresh data or a stale snapshot from days ago. The pipeline
+panel makes data currency visible at a glance.
+
+
+## Technical Stack {.project-section-heading}
+
+| Component | Technology | Purpose |
+|:----------|:-----------|:--------|
+| Frontend | React + TypeScript | Dashboard hub, AI Prompt Studio UI |
+| Backend | FastAPI (Python) | Query engine, auth middleware, API layer |
+| AI Engine | Claude API (Anthropic) | Natural language → SQL generation |
+| Database | PostgreSQL (read-only replica) | Live data access for queries |
+| Identity | Azure AD / Entra ID | Authentication, RBAC, security group filtering |
+| Orchestration | Dagster | Pipeline health and refresh status |
+| Data Layer | dbt schema.yml | Column knowledge base for AI context |
+| Infrastructure | AWS ECS + ALB | Container hosting, load balancing |
+| IaC | AWS CloudFormation | Infrastructure as code, reproducible deploys |
+
+
+## Key Skills Demonstrated {.project-section-heading}
+
+::: {.skills-grid}
+
+::: {.skill-category}
+#### Enterprise Architecture
+Full-stack platform design from identity layer through AI query engine — built to enterprise security and governance standards
+:::
+
+::: {.skill-category}
+#### AI Integration
+Claude API integration with schema-aware context, SQL validation layer, and read-only enforcement for safe production use
+:::
+
+::: {.skill-category}
+#### Data Governance
+Role-based access control, schema permission checks, audit logging, and read-only enforcement across every query path
+:::
+
+::: {.skill-category}
+#### Full-Stack Development
+React frontend, FastAPI backend, PostgreSQL, Azure AD integration, and AWS infrastructure — end to end
+:::
+
+:::
+
+
+::: {.project-nav}
+[← Back to All Projects](../projects.qmd){.btn-secondary}
+:::

@@ -1,0 +1,199 @@
+---
+title: "Data Detective — AI Data Quality Diagnostic Tool"
+subtitle: "A chat-based application that traces dbt lineage, runs live SQL, and identifies the root cause and fix owner for any data quality issue"
+page-layout: full
+toc: true
+toc-location: left
+toc-title: "Project Details"
+toc-depth: 2
+---
+
+::: {.project-hero}
+::: {.project-hero-content}
+
+# Data Detective — AI Data Quality Diagnostic Tool {.project-hero-title}
+
+**Role:** Developer & Analyst
+· **Organization:** Select Water Services
+· **Status:** Working — Ready for Team Deployment
+
+::: {.project-hero-tags}
+`React` `Express.js` `Claude API` `PostgreSQL` `dbt` `SSE Streaming` `Docker`
+:::
+
+:::
+:::
+
+
+## The Problem {.project-section-heading}
+
+Data quality issues in a modern analytics stack are hard to diagnose.
+When a number looks wrong in a dashboard, the investigation typically
+requires an analyst to:
+
+1. Understand the dbt DAG — which models feed which, and where the issue
+   might originate
+2. Read multiple SQL files to trace how the value was calculated
+3. Run diagnostic queries against live data to confirm the root cause
+4. Determine which layer owns the fix — dbt transformation, source system,
+   ETL, or data entry
+
+At Select Water, this process routinely took hours — and required deep
+familiarity with the dbt project structure, the Postgres schema, and the
+underlying source systems. Analysts who were newer to the stack were
+especially dependent on senior teammates for diagnosis.
+
+
+## The Solution {.project-section-heading}
+
+**Data Detective** replaces the manual investigation process with a
+conversational interface. An analyst describes the issue in plain English
+— "the billed volume for Permian last month looks too low" — and the tool
+autonomously traces dbt lineage, runs SQL queries, and returns a root
+cause analysis with a recommended fix owner.
+
+### How It Works
+
+The core of Data Detective is a Claude-powered tool-use loop with three
+specialized tools:
+
+```{mermaid}
+%%| fig-width: 9
+flowchart TD
+    A[Analyst describes issue\nin plain English] --> B[Claude reasons about\nwhere to investigate]
+    B --> C{Which tool\nis needed?}
+    C -->|Trace the DAG| D[get_model_lineage\nWalks dbt SQL files,\nbuilds upstream tree]
+    C -->|Read SQL logic| E[get_model_sql\nReads specific model\ntransformation logic]
+    C -->|Check live data| F[run_sql\nExecutes SELECT query\nagainst PostgreSQL]
+    D --> B
+    E --> B
+    F --> B
+    B --> G[Root cause identified\nFix owner named]
+```
+
+**`get_model_lineage`** — Traverses the dbt project's SQL files to build
+an upstream lineage tree for any model. This shows Claude exactly which
+source tables and intermediate transformations contribute to the value
+being investigated.
+
+**`get_model_sql`** — Reads the full SQL for a specific dbt model, allowing
+Claude to examine transformation logic, filter conditions, join strategies,
+and aggregation patterns for signs of the issue.
+
+**`run_sql`** — Executes SELECT-only queries against the live PostgreSQL
+read-only replica, returning actual data at any point in the lineage to
+confirm where values diverge from expectations.
+
+### Lineage Coverage
+
+Data Detective traverses both active dbt repositories:
+
+- `sws_bi_projects` — all 8 BI project domains
+- `dbtproject-trino` — the Trino-backed data warehouse models
+
+This gives Claude a complete picture of the lineage stack, regardless
+of which repo a model lives in.
+
+### Real-Time Streaming
+
+The investigation runs as a real-time stream — analysts watch Claude
+reason through the problem, call tools, and refine its hypothesis as
+results come back. This transparency builds confidence in the diagnosis
+and helps analysts learn the lineage structure as they watch it unfold.
+
+### Session Export
+
+Every investigation session can be exported as a structured Markdown
+document:
+
+- **Lineage trees** rendered as indented hierarchy
+- **SQL results** formatted as Markdown tables
+- **Model SQL** captured as fenced code blocks
+- **Root cause summary** and fix owner recommendation
+
+Exports are named `data-detective-YYYY-MM-DD.md` for easy reference
+and filing.
+
+
+## Results & Impact {.project-section-heading}
+
+::: {.impact-grid}
+
+::: {.impact-card}
+### Hours → Minutes {.impact-number}
+Data issue diagnosis time
+:::
+
+::: {.impact-card}
+### 2 Repos {.impact-number}
+Full lineage coverage across all dbt projects
+:::
+
+::: {.impact-card}
+### Fix Owner {.impact-number}
+Always identifies who resolves the issue
+:::
+
+::: {.impact-card}
+### Team-Ready {.impact-number}
+Docker deployment for full team rollout
+:::
+
+:::
+
+### What Changed
+
+- **Junior analysts can self-serve** — the tool provides the dbt
+  context expertise that previously required a senior analyst to diagnose
+- **Faster resolution** — root cause in minutes rather than hours means
+  data quality fixes reach production sooner
+- **Learning tool** — watching Claude trace lineage in real time teaches
+  analysts the DAG structure as they use it
+- **Consistent documentation** — every investigation produces an exportable
+  record of what was found and why
+
+
+## Technical Stack {.project-section-heading}
+
+| Component | Technology | Purpose |
+|:----------|:-----------|:--------|
+| Frontend | React + Vite | Chat interface, SSE stream rendering, export |
+| Backend | Express.js (Node) | Session store, tool execution, SSE endpoint |
+| AI Engine | Claude API (claude-sonnet-4-6) | Tool-use loop, reasoning, root cause synthesis |
+| Tool: Lineage | dbt SQL file traversal | DAG mapping, upstream model discovery |
+| Tool: SQL Reader | File system (dbt repos) | Model SQL inspection |
+| Tool: Query Runner | PostgreSQL (pg driver, read-only) | Live data validation |
+| Deployment | Docker + batch file | Team distribution without infrastructure overhead |
+| Export | Markdown (.md) | Structured session documentation |
+
+
+## Key Skills Demonstrated {.project-section-heading}
+
+::: {.skills-grid}
+
+::: {.skill-category}
+#### AI Tool Use Architecture
+Multi-tool Claude agent designed for autonomous investigation — with lineage traversal, SQL reading, and live query execution as discrete, composable tools
+:::
+
+::: {.skill-category}
+#### dbt Expertise
+Deep understanding of dbt project structure, DAG traversal, and schema.yml documentation — enabling accurate lineage mapping across two active repos
+:::
+
+::: {.skill-category}
+#### Data Quality Engineering
+Systematic root cause analysis methodology: trace the lineage, read the logic, validate with live data, identify the fix owner
+:::
+
+::: {.skill-category}
+#### Developer Tooling
+Built a tool for analysts by an analyst — prioritizing transparency (streaming), learnability (lineage visualization), and reusability (session export)
+:::
+
+:::
+
+
+::: {.project-nav}
+[← Back to All Projects](../projects.qmd){.btn-secondary}
+:::

@@ -90,7 +90,145 @@ to Power BI — cutting case preparation from 3 weeks to 2–3 days.
 :::
 
 
-<!-- ===== PROJECT 4: HP DASHBOARDS ===== -->
+<!-- ===== PROJECT 4: BI FORGE ===== -->
+::: {.project-card}
+
+### BI Forge — Enterprise AI Analytics Platform {.project-name}
+
+::: {.project-tags}
+`React` `FastAPI` `Claude API` `PostgreSQL` `Azure AD` `AWS`
+:::
+
+Designed and built an enterprise-wide BI platform giving every employee
+access to role-filtered dashboards or plain-English data queries backed
+by live SQL. Role-based access via Azure AD, an AI Prompt Studio for
+natural language → SQL → visual, and a pipeline health panel powered by Dagster.
+
+::: {.project-impact}
+**Impact:** Democratized data access across 8 dashboard domains · Eliminated ad-hoc request backlog
+:::
+
+[View Details →](projects/bi-forge.qmd){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 5: STREAMLINE ===== -->
+::: {.project-card}
+
+### Streamline — BI Visual Development Pipeline {.project-name}
+
+::: {.project-tags}
+`React` `Express.js` `Claude API` `PostgreSQL` `dbt` `Docker` `Power BI`
+:::
+
+Built a 7-stage AI-assisted pipeline that takes a dashboard visual from
+stakeholder requirements to a production Power BI artifact — with live
+data validation, automated quality checks, and a formal sign-off gate
+built into every stage.
+
+::: {.project-impact}
+**Impact:** Eliminated ad-hoc visual dev · Structured sign-off gate · Auto-generates DAX + TOM scripts
+:::
+
+[View Details →](projects/streamline.qmd){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 6: DATA DETECTIVE ===== -->
+::: {.project-card}
+
+### Data Detective — AI Data Quality Diagnostic Tool {.project-name}
+
+::: {.project-tags}
+`React` `Claude API` `PostgreSQL` `dbt` `SSE Streaming` `Docker`
+:::
+
+Built a chat interface that autonomously traces dbt lineage, runs live
+SQL, and diagnoses data quality issues in minutes — naming the root cause
+and fix owner so analysts don't have to manually navigate the DAG. Covers
+both active dbt repositories.
+
+::: {.project-impact}
+**Impact:** Hours → minutes diagnosis · Self-serve for junior analysts · Full team deployment ready
+:::
+
+[View Details →](projects/data-detective.qmd){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 7: AFE PORTFOLIO DASHBOARD ===== -->
+::: {.project-card}
+
+### AFE Portfolio Executive Dashboard {.project-name}
+
+::: {.project-tags}
+`Power BI` `DAX` `HTML/CSS` `JavaScript` `Capital Project Analytics`
+:::
+
+Built a fully self-contained Power BI HTML Content visual giving executive
+leadership real-time visibility into AFE capital project budgets, committed
+spend, CIP balances, and schedule slippage — with 8 KPI cards, 5 collapsible
+detail tables, and responsive layouts across all viewport sizes.
+
+::: {.project-impact}
+**Impact:** Executive portfolio visibility · Schedule slippage quantified · 3,000+ lines of DAX
+:::
+
+[View Details →](projects/afe-portfolio-dashboard.qmd){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 8: SCADA VOLUMES ===== -->
+::: {.project-card}
+
+### SCADA Disposal Facility Volumes Dashboard {.project-name}
+
+::: {.project-tags}
+`HTML/CSS` `Chart.js` `Python` `dbt` `PostgreSQL` `SCADA`
+:::
+
+Designed and built a self-contained HTML dashboard for monitoring disposal
+facility volumes, utilization, and skim oil recovery across all regions.
+Includes reactive filters, color-coded utilization thresholds, and a
+6-month forward forecast — refreshed daily via a Python script.
+
+::: {.project-impact}
+**Impact:** Real-time facility visibility · 6-month forecast · 18-column dbt model documented
+:::
+
+[View Details →](projects/scada-volumes.qmd){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 9: TRE CHEM COST ===== -->
+::: {.project-card}
+
+### Labour & Chemical Cost Dashboards — TRE Chem {.project-name}
+
+::: {.project-tags}
+`Power BI` `DAX` `HTML/CSS` `JavaScript` `Cost Analytics`
+:::
+
+Built two linked Power BI HTML visuals for monitoring labour and chemical
+treatment costs at TRE Chem facilities. Features 16 KPI cards, automated
+anomaly alerting, employee-level drill-down, cost-per-barrel efficiency
+tracking, and a light/dark theme toggle.
+
+::: {.project-impact}
+**Impact:** Cost/bbl surfaced · Proactive anomaly alerts · Employee-level visibility
+:::
+
+[View Details →](projects/tre-chem-cost.qmd){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 10: HP DASHBOARDS ===== -->
 ::: {.project-card}
 
 ### Global Dashboard Initiative — HP Inc {.project-name}
@@ -113,7 +251,7 @@ engineering to deploy new pipelines.
 :::
 
 
-<!-- ===== PROJECT 5: COVENANT HEALTH ===== -->
+<!-- ===== PROJECT 11: COVENANT HEALTH ===== -->
 ::: {.project-card}
 
 ### Opioid Audit & Revenue Recovery — Covenant Health {.project-name}
@@ -136,7 +274,7 @@ efficiency across clinical departments.
 :::
 
 
-<!-- ===== PROJECT 6: KNIGHT TRANSPORTATION ===== -->
+<!-- ===== PROJECT 12: KNIGHT TRANSPORTATION ===== -->
 ::: {.project-card}
 
 ### Fleet Optimization — Knight Transportation {.project-name}
@@ -166,16 +304,18 @@ This operational foundation informs every analytical decision I make today.
 
 ## Skills Demonstrated Across Projects {.section-heading}
 
-| Skill Area | Infra Dashboard | Data Recon | Fraud Analytics | HP Dashboards | Covenant | Knight |
-|:-----------|:---:|:---:|:---:|:---:|:---:|:---:|
-| SQL & Query Development | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ |
-| Power BI & Dashboard Design | ✅ | ✅ | ✅ | ✅ | ◻️ | ◻️ |
-| Data Modeling & DAX | ✅ | ◻️ | ◻️ | ✅ | ◻️ | ◻️ |
-| Data Governance & Quality | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ |
-| Stakeholder Communication | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Process Optimization | ✅ | ✅ | ✅ | ◻️ | ✅ | ✅ |
-| Healthcare / EHR Systems | ◻️ | ◻️ | ✅ | ◻️ | ✅ | ◻️ |
-| Operations & Logistics | ✅ | ✅ | ◻️ | ◻️ | ◻️ | ✅ |
+| Skill Area | Infra Dashboard | Data Recon | Fraud Analytics | BI Forge | Streamline | Data Detective | AFE Dashboard | SCADA | TRE Chem |
+|:-----------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| SQL & Query Development | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ |
+| Power BI & Dashboard Design | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ | ✅ | ◻️ | ✅ |
+| Data Modeling & DAX | ✅ | ◻️ | ◻️ | ◻️ | ◻️ | ◻️ | ✅ | ◻️ | ✅ |
+| AI / Claude API Integration | ◻️ | ◻️ | ◻️ | ✅ | ✅ | ✅ | ◻️ | ◻️ | ◻️ |
+| Full-Stack Development | ◻️ | ◻️ | ◻️ | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ |
+| Data Governance & Quality | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ |
+| dbt & Pipeline Engineering | ◻️ | ◻️ | ◻️ | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ |
+| Stakeholder Communication | ✅ | ✅ | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ | ✅ |
+| Process Optimization | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ◻️ | ✅ | ✅ |
+| Operations & Logistics | ✅ | ✅ | ◻️ | ◻️ | ◻️ | ◻️ | ✅ | ✅ | ✅ |
 
 :::
 

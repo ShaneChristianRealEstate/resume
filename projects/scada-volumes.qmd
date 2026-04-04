@@ -1,0 +1,292 @@
+---
+title: "SCADA Disposal Facility Volumes Dashboard"
+subtitle: "A self-contained HTML dashboard providing real-time visibility into disposal facility volumes, utilization, and a 6-month forward forecast"
+page-layout: full
+toc: true
+toc-location: left
+toc-title: "Project Details"
+toc-depth: 2
+---
+
+::: {.project-hero}
+::: {.project-hero-content}
+
+# SCADA Disposal Facility Volumes Dashboard {.project-hero-title}
+
+**Role:** Data Analyst & Developer
+· **Organization:** Select Water Services
+· **Scope:** All Disposal Facility Regions
+
+::: {.project-hero-tags}
+`HTML/CSS` `Chart.js` `Python` `dbt` `PostgreSQL` `Dagster` `SCADA`
+:::
+
+:::
+:::
+
+
+## The Problem {.project-section-heading}
+
+Select Water Services operates disposal facilities across multiple
+regions, each processing produced water volumes from oilfield operations.
+Facility managers and regional leadership needed answers to questions
+they couldn't easily get from existing reporting:
+
+- **Utilization by facility** — which sites are operating near capacity,
+  and which are underutilized relative to their contract type?
+- **Volume trends** — how are billed and recycled volumes trending
+  month over month across the portfolio?
+- **Skim oil recovery** — how much skim oil is being recovered, and
+  how does that trend over time?
+- **Forward visibility** — what does the next six months look like
+  based on current trajectory?
+
+The SCADA data pipeline already captured this information — the gap
+was a visualization layer that made it accessible to operational
+decision-makers without requiring ad-hoc SQL queries.
+
+
+## The Solution {.project-section-heading}
+
+I built a **self-contained HTML dashboard** that reads from the
+`tfm_scada_volumes` dbt model and presents the full picture of
+disposal facility performance — reactive to filters, visually clear
+about utilization thresholds, and forward-looking with a 6-month
+forecast built in.
+
+The dashboard refreshes via a Python script (`refresh_dashboard.py`)
+that queries PostgreSQL directly, transforms the results, and injects
+them into the HTML template — keeping the output self-contained and
+portable for distribution.
+
+### Dashboard Architecture
+
+```{mermaid}
+%%| fig-width: 9
+flowchart LR
+    A[SCADA Source Systems] --> B[dbt Pipeline\ntfm_scada_volumes]
+    B --> C[PostgreSQL\nData Warehouse]
+    C --> D[Python Refresh Script\nrefresh_dashboard.py]
+    D --> E[Self-Contained HTML\nDashboard Output]
+    F[Dagster Orchestration] --> B
+```
+
+### Interactive Filters
+
+The dashboard provides four reactive filter controls that narrow
+all charts and tables simultaneously:
+
+- **Region** — filter to a specific operational region
+- **Site** — drill to individual facility
+- **Contract type** — Modular vs. Fixed capacity contracts
+- **Utilization flag** — isolate over-utilized (≥85%) or under-utilized
+  (\<65%) sites for focused operational review
+
+
+## Dashboard Content {.project-section-heading}
+
+### 5 Executive KPI Cards
+
+| Metric | What It Shows |
+|:-------|:-------------|
+| Total Billed Volume | Aggregate billed volumes across selected sites/regions |
+| Total Recycled Volume | Recycled water volumes — a key sustainability metric |
+| Avg Utilization % | Capacity utilization across the filtered site set |
+| Skim Oil Recovered | Total skim oil recovery (barrels) |
+| Active Sites | Count of sites with recorded activity in the period |
+
+### 4 Operational Charts
+
+**Monthly Volumes** — stacked/grouped view of billed, recycled, and
+facility-out volumes by month. Shows the volume mix and how it shifts
+over time.
+
+**Utilization % by Site** — horizontal bar chart with three-tier
+color coding:
+- **Green** (≥65%) — operating at or above efficient utilization
+- **Amber** (\<65%) — underutilized, potential capacity opportunity
+- **Red** (≥85%) — over-utilized, risk of capacity constraints
+
+**Billed Volume by Region** — YTD cumulative volume comparison across
+regions, enabling leadership to see relative scale and growth rate.
+
+**Skim Oil Recovered by Month** — monthly skim recovery trend with
+volume annotations, supporting operational and environmental reporting.
+
+### Site Detail Table
+
+A sortable site-level table showing:
+Billed volume · Treated volume · Skim recovered · Daily capacity ·
+Utilization % with an inline utilization bar for visual comparison.
+
+### 6-Month Forward Forecast
+
+The dashboard includes a linear-trend forecast for April through
+September — projecting billed volumes, recycled volumes, and utilization
+for each site. Four dynamic insight cards summarize key forecast signals:
+
+- Sites trending toward capacity constraints
+- Regions with strongest volume growth
+- Skim recovery trajectory
+- Aggregate utilization forecast vs. current
+
+
+## Technical Implementation {.project-section-heading}
+
+### dbt Model Documentation
+
+I wrote complete `schema.yml` documentation for the `tfm_scada_volumes`
+model — all 18 columns with descriptions, data types, and business
+definitions. This documentation serves both the dashboard (as query
+context) and the broader team (as the canonical reference for what each
+column means).
+
+### Python Refresh Script
+
+`refresh_dashboard.py` handles the connection between the data warehouse
+and the dashboard output:
+
+- Reads dbt profiles (`~/.dbt/profiles.yml`) to connect to the correct
+  PostgreSQL environment
+- Supports `--profile dev/prod` flag for environment switching
+- Supports `--months N` flag to control the historical lookback window
+- Queries the `tfm_scada_volumes` model and transforms results into the
+  dashboard's expected data shape
+- Injects the JSON payload into the HTML template and writes the output file
+
+This design keeps the dashboard fully self-contained — no server required,
+no live database connection in the browser. The HTML file can be emailed,
+shared via Teams, or hosted as a static artifact.
+
+### Query Performance
+
+In building the underlying queries, I identified and documented seven
+performance optimizations in the dbt model:
+
+- Pushing the `year_month >= '2024-01'` filter earlier in the CTE chain
+  to reduce downstream data volume
+- Replacing two correlated NOT EXISTS subqueries with LEFT JOIN anti-joins
+- Collapsing four aggregation passes into two
+- Removing unused CTEs (`final_2`, `oft_volume`) that added overhead
+  without contributing to output
+- Addressing case normalization in joins that prevented index utilization
+
+
+## Visual Walkthrough {.project-section-heading}
+
+::: {.project-visuals}
+
+::: {.screenshot-grid}
+
+::: {.screenshot-item}
+::: {.screenshot-placeholder}
+[📊]{.placeholder-icon}
+[KPI Summary + Filters]{.placeholder-title}
+[5 KPI cards with Region, Site, Contract, and Utilization filters]{.placeholder-text}
+:::
+:::
+
+::: {.screenshot-item}
+::: {.screenshot-placeholder}
+[📈]{.placeholder-icon}
+[Monthly Volume Trends]{.placeholder-title}
+[Billed, recycled, and facility-out volumes by month]{.placeholder-text}
+:::
+:::
+
+::: {.screenshot-item}
+::: {.screenshot-placeholder}
+[🏭]{.placeholder-icon}
+[Utilization % by Site]{.placeholder-title}
+[Color-coded bars: green ≥65%, amber <65%, red ≥85%]{.placeholder-text}
+:::
+:::
+
+::: {.screenshot-item}
+::: {.screenshot-placeholder}
+[🔮]{.placeholder-icon}
+[6-Month Forecast]{.placeholder-title}
+[Linear trend projections with 4 insight summary cards]{.placeholder-text}
+:::
+:::
+
+:::
+
+::: {.callout-tip}
+## Screenshots Available
+Anonymized screenshots of the dashboard are available upon request.
+The dashboard contains operational volume data from production facilities.
+:::
+
+:::
+
+
+## Results & Impact {.project-section-heading}
+
+::: {.impact-grid}
+
+::: {.impact-card}
+### Real-Time {.impact-number}
+Operational visibility via daily refresh
+:::
+
+::: {.impact-card}
+### 6-Month {.impact-number}
+Forward forecast built in
+:::
+
+::: {.impact-card}
+### Self-Contained {.impact-number}
+Portable HTML — no server required
+:::
+
+::: {.impact-card}
+### 18 Columns {.impact-number}
+Full dbt model documentation written
+:::
+
+:::
+
+
+## Technical Stack {.project-section-heading}
+
+| Component | Technology | Purpose |
+|:----------|:-----------|:--------|
+| Dashboard | HTML5 + Chart.js | Interactive visuals, filters, forecast |
+| Refresh Engine | Python (psycopg2, PyYAML) | Data extraction and HTML injection |
+| Data Model | dbt (tfm_scada_volumes) | Transformation and business logic layer |
+| Database | PostgreSQL | Data warehouse query target |
+| Orchestration | Dagster | Pipeline scheduling and health monitoring |
+| Documentation | dbt schema.yml | 18-column model documentation |
+
+
+## Key Skills Demonstrated {.project-section-heading}
+
+::: {.skills-grid}
+
+::: {.skill-category}
+#### Operational Analytics
+Utilization tracking, volume trending, and forward forecasting for a multi-site, multi-region disposal facility network
+:::
+
+::: {.skill-category}
+#### End-to-End Delivery
+Built the full stack — dbt documentation, Python refresh script, and HTML dashboard — as a portable, self-contained artifact
+:::
+
+::: {.skill-category}
+#### dbt Expertise
+Complete schema.yml documentation for the model and seven query performance optimizations identified and documented
+:::
+
+::: {.skill-category}
+#### Data Visualization
+Chart.js implementation with three-tier color coding, reactive filters, and 6-month linear trend forecasting
+:::
+
+:::
+
+
+::: {.project-nav}
+[← Back to All Projects](../projects.qmd){.btn-secondary}
+:::
