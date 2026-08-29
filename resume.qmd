@@ -11,7 +11,7 @@ toc-depth: 2
 
 # Edward Shane Christian {.resume-name}
 
-[Senior Data Analyst]{.resume-tagline}
+[Principal Data Engineering & Analytics Analyst]{.resume-tagline}
 
 ::: {.resume-contact}
 📍 Tennessee Ridge, TN · 📧 [schristian625@aol.com](mailto:schristian625@aol.com) · 📱 615-852-0233 · 🔗 [LinkedIn](https://www.linkedin.com/in/shane-christian-data/)
@@ -28,14 +28,23 @@ toc-depth: 2
 
 ## Professional Summary
 
-Accomplished Senior Data Analyst with a unique dual background in transportation
-operations and complex data architecture. Proven track record of evaluating
-transportation systems to identify inefficiencies, having previously managed a
-fleet of 60+ drivers and optimized fuel/speed compliance to boost revenue by
-12%. Expert in SQL, Power BI, and Dataverse, with a demonstrated ability to
-translate complicated analytics into actionable insights for non-technical
-stakeholders. Dedicated to maintaining high data integrity and security through
-robust governance frameworks and automated reconciliation.
+Principal Data Engineering & Analytics Analyst promoted from Senior Data
+Analyst for consistently operating a level above the role — architecting and
+owning production data platforms, not just building dashboards on top of
+them. Built and maintain 8+ FastAPI analytics applications on a shared
+company platform, backed by governed dbt data models rather than
+application-layer logic. Authored the platform's row-level-security access
+pattern (now the reference implementation across every dashboard) and led
+a test-coverage initiative that put a CI gate in front of every merge. Known
+for root-causing data-integrity failures at their source — from a join
+fan-out that had silently inflated a live cost KPI by 500x, to a
+pipeline-orchestration gap that froze a production dashboard for days — and
+fixing them rather than patching the symptom. Brings a unique dual
+background in transportation operations and complex data architecture,
+having previously managed a fleet of 60+ drivers and optimized fuel/speed
+compliance to boost revenue by 12%. Expert in SQL, Python, dbt, Power BI,
+and Dataverse, with a demonstrated ability to translate complex technical
+tradeoffs into actionable insights for non-technical stakeholders.
 
 :::
 
@@ -84,7 +93,45 @@ Customer satisfaction rating at MEDHOST — first-ever promotion to Focus Manage
 
 ## Professional Experience
 
-<!-- ===== SELECT WATER ===== -->
+<!-- ===== SELECT WATER - PRINCIPAL ===== -->
+::: {.experience-item}
+
+### Principal Data Engineering & Analytics Analyst {.job-title}
+
+::: {.company}
+**Select Water Solutions**
+:::
+
+::: {.dates}
+January 2026 – Present
+:::
+
+::: {.job-details}
+
+- **Analytics Platform Engineering:** Built and own 5 additional production
+  FastAPI dashboard apps on the company's shared analytics platform — chemical
+  logistics operations, EHS compliance, workforce turnover, disposal-facility
+  volumes, and the company's primary financial/volumes reporting app (also the
+  shared landing page for the full platform)
+- **Data Integrity & Incident Response:** Root-caused and fixed a join fan-out
+  bug that had inflated a live cost KPI to $17.3B (corrected to ~$29M), and
+  diagnosed a silent multi-day data freeze traced to an upstream pipeline
+  model archived by another engineer — restored with zero downstream impact
+- **Platform Security & Test Coverage:** Authored the platform's first
+  row-level-security admin pattern (scoped viewer access by business unit,
+  region, and site), now the reference implementation being ported to every
+  dashboard, and led a test-coverage initiative that put a CI gate in front
+  of every merge across multiple apps
+- **Data Governance at Scale:** Led a **139-item audit** moving business logic
+  out of application code and into governed dbt SQL models across the entire
+  analytics platform — scoping, sequencing, and prioritizing the migration
+  by risk and value across 7+ production apps
+
+:::
+:::
+
+
+<!-- ===== SELECT WATER - SENIOR ===== -->
 ::: {.experience-item}
 
 ### Senior Data Analyst {.job-title}
@@ -94,7 +141,7 @@ Customer satisfaction rating at MEDHOST — first-ever promotion to Focus Manage
 :::
 
 ::: {.dates}
-July 2024 – Present (CTR via Insight Global: May–July 2024)
+July 2024 – January 2026 (CTR via Insight Global: May–July 2024)
 :::
 
 ::: {.job-details}
@@ -123,25 +170,10 @@ July 2024 – Present (CTR via Insight Global: May–July 2024)
   **SCADA Volumes Dashboard** (disposal facility utilization with 6-month forecast),
   and **Labour & Chemical Cost Dashboards** (cost-per-barrel efficiency with
   employee-level drill-down) across TRE Chem facilities
-- **Analytics Platform Engineering:** Built and own 5 additional production
-  FastAPI dashboard apps on the company's shared analytics platform — chemical
-  logistics operations, EHS compliance, workforce turnover, disposal-facility
-  volumes, and the company's primary financial/volumes reporting app (also the
-  shared landing page for the full platform)
-- **Data Integrity & Incident Response:** Root-caused and fixed a join fan-out
-  bug that had inflated a live cost KPI to $17.3B (corrected to ~$29M), and
-  diagnosed a silent multi-day data freeze traced to an upstream pipeline
-  model archived by another engineer — restored with zero downstream impact
-- **Platform Security & Test Coverage:** Authored the platform's first
-  row-level-security admin pattern (scoped viewer access by business unit,
-  region, and site), now the reference implementation being ported to every
-  dashboard, and led a test-coverage initiative that put a CI gate in front
-  of every merge across multiple apps
 - **Process Improvement & Data Governance:** Designed a multi-region **data
   reconciliation framework** across NE, Rockies, Permian, and MidCon; enforced
   data quality in **Dataverse**; documented dbt schema for 18+ models to power
-  AI query accuracy; scoped a 139-item audit moving business logic out of
-  application code and into governed dbt SQL models across the platform
+  AI query accuracy
 
 :::
 :::

@@ -33,21 +33,21 @@ project:
     - "projects/*.qmd"
 
 website:
-  title: "Shane Christian | Senior Data Analyst"
-  description: "Senior Data Analyst portfolio — SQL, Power BI, and operational analytics"
+  title: "Shane Christian | Principal Data Engineering & Analytics Analyst"
+  description: "Principal Data Engineering & Analytics Analyst portfolio — SQL, Python, dbt, Power BI, and platform engineering"
   favicon: favicon.png
   site-url: https://resume.shanechristian.me
   # google-analytics: "G-XXXXXXXXXX"  # Uncomment and add your ID after setup
 
   open-graph:
     locale: en_US
-    site-name: "Shane Christian | Senior Data Analyst"
-    description: "Senior Data Analyst with 10+ years spanning operations and data architecture. Expert in SQL, Power BI, and Dataverse. Explore my resume, projects, and references."
+    site-name: "Shane Christian | Principal Data Engineering & Analytics Analyst"
+    description: "Principal Data Engineering & Analytics Analyst with 10+ years spanning operations and data architecture. Expert in SQL, Python, dbt, Power BI, and Dataverse. Explore my resume, projects, and references."
     image: images/headshot.jpg
   twitter-card:
     card-style: summary
-    title: "Shane Christian | Senior Data Analyst"
-    description: "Operations-to-analytics career. SQL, Power BI, data governance. $1.2M saved. 3-week processes turned into 2-day turnarounds."
+    title: "Shane Christian | Principal Data Engineering & Analytics Analyst"
+    description: "Operations-to-analytics career. SQL, dbt, Power BI, platform engineering. $1.2M saved. 3-week processes turned into 2-day turnarounds."
     image: images/headshot.jpg
 
   navbar:

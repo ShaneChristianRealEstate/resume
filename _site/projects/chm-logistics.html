@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Chemical Logistics Operations Dashboard – Shane Christian | Principal Data Engineering &amp; Analytics Analyst</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-fb46fea0e180750e14b1cf259be6ac1f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+
+<meta property="og:title" content="Chemical Logistics Operations Dashboard – Shane Christian | Principal Data Engineering &amp; Analytics Analyst">
+<meta property="og:description" content="Principal Data Engineering &amp; Analytics Analyst with 10+ years spanning operations and data architecture. Expert in SQL, Python, dbt, Power BI, and Dataverse. Explore my resume, projects, and references.">
+<meta property="og:image" content="https://resume.shanechristian.me/projects/images/headshot.jpg">
+<meta property="og:site_name" content="Shane Christian | Principal Data Engineering &amp; Analytics Analyst">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="Shane Christian | Principal Data Engineering &amp; Analytics Analyst">
+<meta name="twitter:description" content="Operations-to-analytics career. SQL, dbt, Power BI, platform engineering. $1.2M saved. 3-week processes turned into 2-day turnarounds.">
+<meta name="twitter:image" content="https://resume.shanechristian.me/projects/images/headshot.jpg">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Shane Christian</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resume.html"> 
+<span class="menu-text">Resume</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/shane-christian-data/" target="_blank"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:schristian625@aol.com"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Project Details</h2>
+   
+  <ul class="collapse">
+  <li><a href="#chemical-logistics-operations-dashboard" id="toc-chemical-logistics-operations-dashboard" class="nav-link active" data-scroll-target="#chemical-logistics-operations-dashboard">Chemical Logistics Operations Dashboard</a></li>
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem">The Problem</a></li>
+  <li><a href="#the-solution" id="toc-the-solution" class="nav-link" data-scroll-target="#the-solution">The Solution</a></li>
+  <li><a href="#results-impact" id="toc-results-impact" class="nav-link" data-scroll-target="#results-impact">Results &amp; Impact</a></li>
+  <li><a href="#technical-stack" id="toc-technical-stack" class="nav-link" data-scroll-target="#technical-stack">Technical Stack</a></li>
+  <li><a href="#key-skills-demonstrated" id="toc-key-skills-demonstrated" class="nav-link" data-scroll-target="#key-skills-demonstrated">Key Skills Demonstrated</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Chemical Logistics Operations Dashboard</h1>
+<p class="subtitle lead">A live FastAPI operations dashboard for dispatch, drivers, and executive views — and the data-integrity fixes that made its numbers trustworthy</p>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-right">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="project-hero">
+<section id="chemical-logistics-operations-dashboard" class="level1 project-hero-title project-hero-content">
+<h1 class="project-hero-title">Chemical Logistics Operations Dashboard</h1>
+<p><strong>Role:</strong> Lead Developer &amp; Analyst · <strong>Organization:</strong> Select Water Solutions · <strong>Status:</strong> Production</p>
+<div class="project-hero-tags">
+<p><code>FastAPI</code> <code>PostgreSQL</code> <code>Power BI</code> <code>Python</code> <code>Chart.js</code> <code>Data Integrity</code></p>
+</div>
+</section>
+</div>
+<section id="the-problem" class="level2 project-section-heading">
+<h2 class="project-section-heading anchored" data-anchor-id="the-problem">The Problem</h2>
+<p>The chemical logistics business (dispatch, drivers, and freight carriers) had no live operational view. Managers were working from static exports and manual spreadsheets to answer basic questions — which carriers were active this month, how drivers were performing against safety and fuel metrics, and whether shipments were moving on time.</p>
+</section>
+<section id="the-solution" class="level2 project-section-heading">
+<h2 class="project-section-heading anchored" data-anchor-id="the-solution">The Solution</h2>
+<p>I built a FastAPI dashboard with three views — Dispatch, Drivers, and Executive — reading live from the operational data warehouse, alongside a parallel Power BI DAX rebuild of the same two core pages for teams that needed the dashboard embedded directly in Power BI.</p>
+<section id="architecture" class="level3">
+<h3 class="anchored" data-anchor-id="architecture">Architecture</h3>
+<div class="cell" data-fig-width="8" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A[Postgres&lt;br&gt;Shipment &amp; Driver Data] --&gt; B[FastAPI Queries&lt;br&gt;Parameterized SQL]
+    B --&gt; C[Dispatch View]
+    B --&gt; D[Drivers View]
+    B --&gt; E[Executive View]
+    C --&gt; F[Click-Through&lt;br&gt;Drill-Down]
+    D --&gt; F
+    E --&gt; F
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="finding-and-fixing-a-data-integrity-bug-that-mattered" class="level3">
+<h3 class="anchored" data-anchor-id="finding-and-fixing-a-data-integrity-bug-that-mattered">Finding and fixing a data-integrity bug that mattered</h3>
+<p>Early in the build, freight-cost figures on the dashboard looked absurd — one chart’s axis read in the tens of billions of dollars. I traced it to a join fan-out: a shipment-level table was actually stored one row per stop, so a shipment with several stops had its cost figure duplicated and summed that many times over. A naive <code>SUM()</code> was returning <strong>~$17.3B</strong> against a correct value of <strong>~$29M</strong>. I fixed it by deduplicating to one row per shipment before any aggregation — a pattern I then applied everywhere that table fed a KPI or chart.</p>
+</section>
+<section id="filter-audit" class="level3">
+<h3 class="anchored" data-anchor-id="filter-audit">Filter audit</h3>
+<p>When a stakeholder reported that a specific region/role combination on the Drivers page “looked wrong,” I didn’t just patch the one complaint — I audited every filter across all three tabs against live data. That surfaced several real, previously-invisible bugs: filters that silently zeroed out results for entire regions due to mismatched value formats between data sources, charts that ignored the active time period entirely, and dead filter controls left over from removed features. All were fixed and verified the same day.</p>
+</section>
+<section id="external-fuel-spend-map" class="level3">
+<h3 class="anchored" data-anchor-id="external-fuel-spend-map">External fuel spend map</h3>
+<p>A stakeholder wanted to see where offsite fuel spend was actually happening. The raw transaction data only carried abbreviated pump-receipt addresses, no coordinates. I geocoded roughly 1,600 distinct addresses using the free U.S. Census Bureau batch geocoder, falling back to ZIP-code population centroids for addresses too messy to match exactly — reaching 99.7% coverage — and built a live map showing exact vs.&nbsp;approximate matches distinctly.</p>
+</section>
+</section>
+<section id="results-impact" class="level2 project-section-heading">
+<h2 class="project-section-heading anchored" data-anchor-id="results-impact">Results &amp; Impact</h2>
+<div class="impact-grid">
+<section id="b-29m" class="level3 impact-number impact-card">
+<h3 class="impact-number anchored" data-anchor-id="b-29m">$17.3B → $29M</h3>
+<p>Cost-KPI data-integrity fix</p>
+</section>
+<section id="same-day" class="level3 impact-number impact-card">
+<h3 class="impact-number anchored" data-anchor-id="same-day">Same-Day</h3>
+<p>Full 3-tab filter audit, fix, and verification</p>
+</section>
+<section id="section" class="level3 impact-number impact-card">
+<h3 class="impact-number anchored" data-anchor-id="section">99.7%</h3>
+<p>Geocode coverage for the fuel-spend map</p>
+</section>
+<section id="live" class="level3 impact-number impact-card">
+<h3 class="impact-number anchored" data-anchor-id="live">Live</h3>
+<p>Click-through drill-down on every chart</p>
+</section>
+</div>
+<section id="what-changed-for-the-business" class="level3">
+<h3 class="anchored" data-anchor-id="what-changed-for-the-business">What Changed for the Business</h3>
+<ul>
+<li><strong>Trustworthy numbers</strong> — the dashboard’s KPIs now match what a direct database query returns, not an inflated join artifact</li>
+<li><strong>Confidence in filters</strong> — every filter on every tab is verified against live data, not assumed correct because it renders without error</li>
+<li><strong>Operational visibility</strong> — dispatchers and managers get a live view of carriers, shipments, and driver performance instead of static exports</li>
+</ul>
+</section>
+</section>
+<section id="technical-stack" class="level2 project-section-heading">
+<h2 class="project-section-heading anchored" data-anchor-id="technical-stack">Technical Stack</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 37%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Component</th>
+<th style="text-align: left;">Technology</th>
+<th style="text-align: left;">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Backend</td>
+<td style="text-align: left;">FastAPI (Python)</td>
+<td style="text-align: left;">Dispatch/Drivers/Executive routes, parameterized queries</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Data Source</td>
+<td style="text-align: left;">PostgreSQL</td>
+<td style="text-align: left;">Live operational warehouse, dbt-modeled</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Visualization</td>
+<td style="text-align: left;">Chart.js, Leaflet</td>
+<td style="text-align: left;">Charts and the offsite fuel-spend map</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Parallel Track</td>
+<td style="text-align: left;">Power BI (DAX)</td>
+<td style="text-align: left;">Same two core pages, native PBI embed</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Geocoding</td>
+<td style="text-align: left;">US Census Batch Geocoder</td>
+<td style="text-align: left;">Free, no-API-key address-to-coordinate matching</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Testing</td>
+<td style="text-align: left;">pytest</td>
+<td style="text-align: left;">Regression coverage for filter and aggregation logic</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="key-skills-demonstrated" class="level2 project-section-heading">
+<h2 class="project-section-heading anchored" data-anchor-id="key-skills-demonstrated">Key Skills Demonstrated</h2>
+<div class="skills-grid">
+<section id="data-integrity-debugging" class="level4 skill-category">
+<h4 class="anchored" data-anchor-id="data-integrity-debugging">Data Integrity Debugging</h4>
+<p>Traced a 500x cost-KPI inflation to its root cause (join fan-out) and fixed it at the source</p>
+</section>
+<section id="full-stack-dashboard-development" class="level4 skill-category">
+<h4 class="anchored" data-anchor-id="full-stack-dashboard-development">Full-Stack Dashboard Development</h4>
+<p>FastAPI + Chart.js + Leaflet, end-to-end from query to interactive chart</p>
+</section>
+<section id="systematic-qa" class="level4 skill-category">
+<h4 class="anchored" data-anchor-id="systematic-qa">Systematic QA</h4>
+<p>Audited every filter on every page against live data instead of patching one complaint at a time</p>
+</section>
+<section id="practical-data-engineering" class="level4 skill-category">
+<h4 class="anchored" data-anchor-id="practical-data-engineering">Practical Data Engineering</h4>
+<p>Free-tier geocoding pipeline reaching 99.7% coverage with no paid API</p>
+</section>
+</div>
+<div class="project-nav">
+<p><a href="../projects.html" class="btn-secondary">← Back to All Projects</a> <a href="../projects/ehs-report.html" class="btn-primary">Next: EHS Compliance Dashboard →</a></p>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/resume\.shanechristian\.me");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Edward Shane Christian</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with Quarto</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

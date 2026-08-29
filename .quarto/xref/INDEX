@@ -40,5 +40,23 @@
   },
   "projects/tre-chem-cost.qmd": {
     "tre-chem-cost.html": "aee55855"
+  },
+  "projects/chm-logistics.qmd": {
+    "chm-logistics.html": "6cf73cc0"
+  },
+  "projects/ehs-report.qmd": {
+    "ehs-report.html": "07de86b7"
+  },
+  "projects/hr-report.qmd": {
+    "hr-report.html": "ae85a227"
+  },
+  "projects/ne-disposal-daily.qmd": {
+    "ne-disposal-daily.html": "c053316c"
+  },
+  "projects/platform-reliability.qmd": {
+    "platform-reliability.html": "a6d2292a"
+  },
+  "projects/tre-reports.qmd": {
+    "tre-reports.html": "ed4c554f"
   }
 }
