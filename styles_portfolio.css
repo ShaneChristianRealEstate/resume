@@ -337,9 +337,10 @@ a:hover { color: var(--brand-accent-dark); text-decoration: underline; }
 
 /* Skills Matrix Table */
 .skills-matrix-section { max-width: 1100px; margin: 2rem auto 3rem auto; padding: 0 20px; }
+.skills-matrix-section .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .skills-matrix-section table { width: 100%; border-collapse: collapse; }
-.skills-matrix-section th { background: var(--brand-primary); color: white; padding: 12px 16px; font-size: 0.85rem; }
-.skills-matrix-section td { padding: 10px 16px; text-align: center; border-bottom: 1px solid var(--border-light); }
+.skills-matrix-section th { background: var(--brand-primary); color: white; padding: 12px 16px; font-size: 0.85rem; white-space: nowrap; }
+.skills-matrix-section td { padding: 10px 16px; text-align: center; border-bottom: 1px solid var(--border-light); white-space: nowrap; }
 .skills-matrix-section td:first-child { text-align: left; font-weight: 600; }
 .skills-matrix-section tr:hover { background: var(--bg-subtle); }
 
@@ -592,6 +593,30 @@ p code, li code {
 @media (max-width: 768px) {
   .testimonials-grid { grid-template-columns: 1fr; }
   .reference-types-grid { grid-template-columns: 1fr; }
+}
+
+/* =============================================================================
+   PROJECT SECTION LABELS
+   ============================================================================= */
+.projects-section-label {
+  max-width: 1100px;
+  margin: 2.5rem auto 0 auto;
+  padding: 0 20px;
+}
+
+.projects-section-label h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-secondary);
+  border-bottom: 2px solid var(--border-light);
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.projects-section-label:first-of-type {
+  margin-top: 0;
 }
 
 /* =============================================================================

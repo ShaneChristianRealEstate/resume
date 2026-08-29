@@ -14,7 +14,7 @@ toc-depth: 2
 # Labour & Chemical Cost Dashboards {.project-hero-title}
 
 **Role:** Lead Developer & Analyst
-· **Organization:** Select Water Services — TRE Chem
+· **Organization:** Select Water Solutions — TRE Chem
 · **Status:** Production
 
 ::: {.project-hero-tags}

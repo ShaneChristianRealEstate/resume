@@ -90,7 +90,7 @@ Customer satisfaction rating at MEDHOST — first-ever promotion to Focus Manage
 ### Senior Data Analyst {.job-title}
 
 ::: {.company}
-**Select Water Services**
+**Select Water Solutions**
 :::
 
 ::: {.dates}
@@ -99,24 +99,49 @@ July 2024 – Present (CTR via Insight Global: May–July 2024)
 
 ::: {.job-details}
 
+- **Enterprise AI Analytics Platform (BI Forge):** Architected and built a
+  company-wide BI platform combining a role-based dashboard hub (Azure AD/Entra ID)
+  with an **AI Prompt Studio** that translates plain-English questions into
+  SQL-backed visuals — serving **8 dashboard domains** and eliminating the
+  ad-hoc analyst request backlog
+- **AI-Powered BI Pipeline (Streamline):** Built a **7-stage AI-assisted pipeline**
+  taking dashboard visuals from stakeholder requirements to production Power BI
+  artifacts — with live data validation, automated quality checks, DAX generation,
+  and a formal sign-off gate
+- **Data Quality Diagnostic Tool (Data Detective):** Developed a chat-based AI
+  tool that autonomously traces **dbt lineage**, runs live SQL, and diagnoses
+  data quality issues in minutes — identifying root cause and fix owner across
+  both active dbt repositories, reducing diagnosis time from hours to minutes
 - **Advanced SQL & Query Optimization:** Write and maintain complex SQL queries
   across **40+ Postgres site inventory tables** to retrieve, analyze, and
   validate high-volume operational data with 100% accuracy
 - **Enterprise BI Migration:** Spearheaded the migration from Domo to Power BI,
   eliminating **$1.2M in external consulting fees** through internal resource
   optimization and technical leadership
-- **Process Improvement:** Evaluated regional operational workflows and
-  developed a **troubleshooting framework** that streamlined data
-  reconciliation across NE, Rockies, Permian, and MidCon regions
-- **Data Governance & Quality:** Enforced data quality frameworks by correcting
-  misclassified site data within **Dataverse**, ensuring asset visibility and
-  compliance with organizational governance policies
-- **Actionable Business Insights:** Translated complex multi-system datasets
-  into **Power BI dashboards**, converting technical KPI metrics into clear
-  insights for non-technical stakeholders
-- **System Integration:** Analyzed data flows between Postgres databases and
-  reporting layers to ensure seamless data movement, including **TMS/WMS**
-  data structures
+- **Executive Dashboards:** Delivered multiple production dashboards including an
+  **AFE Portfolio Dashboard** (capital project budget/spend/CIP tracking),
+  **SCADA Volumes Dashboard** (disposal facility utilization with 6-month forecast),
+  and **Labour & Chemical Cost Dashboards** (cost-per-barrel efficiency with
+  employee-level drill-down) across TRE Chem facilities
+- **Analytics Platform Engineering:** Built and own 5 additional production
+  FastAPI dashboard apps on the company's shared analytics platform — chemical
+  logistics operations, EHS compliance, workforce turnover, disposal-facility
+  volumes, and the company's primary financial/volumes reporting app (also the
+  shared landing page for the full platform)
+- **Data Integrity & Incident Response:** Root-caused and fixed a join fan-out
+  bug that had inflated a live cost KPI to $17.3B (corrected to ~$29M), and
+  diagnosed a silent multi-day data freeze traced to an upstream pipeline
+  model archived by another engineer — restored with zero downstream impact
+- **Platform Security & Test Coverage:** Authored the platform's first
+  row-level-security admin pattern (scoped viewer access by business unit,
+  region, and site), now the reference implementation being ported to every
+  dashboard, and led a test-coverage initiative that put a CI gate in front
+  of every merge across multiple apps
+- **Process Improvement & Data Governance:** Designed a multi-region **data
+  reconciliation framework** across NE, Rockies, Permian, and MidCon; enforced
+  data quality in **Dataverse**; documented dbt schema for 18+ models to power
+  AI query accuracy; scoped a 139-item audit moving business logic out of
+  application code and into governed dbt SQL models across the platform
 
 :::
 :::

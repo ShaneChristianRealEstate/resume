@@ -65,7 +65,7 @@ website:
           - text: "All Projects"
             href: projects.qmd
           - text: "---"
-          - text: "Select Water Services"
+          - text: "Select Water Solutions"
           - text: "Enterprise Power BI Migration"
             href: projects/power-bi-migration.qmd
           - text: "Multi-Region Data Reconciliation"
@@ -82,6 +82,18 @@ website:
             href: projects/scada-volumes.qmd
           - text: "TRE Chem Labour & Cost Dashboards"
             href: projects/tre-chem-cost.qmd
+          - text: "Chemical Logistics Operations Dashboard"
+            href: projects/chm-logistics.qmd
+          - text: "EHS Compliance Dashboard & RLS Pattern"
+            href: projects/ehs-report.qmd
+          - text: "Workforce Turnover Analytics"
+            href: projects/hr-report.qmd
+          - text: "Disposal Facility Volumes — Incident Response"
+            href: projects/ne-disposal-daily.qmd
+          - text: "Financial & Volumes Reporting Platform"
+            href: projects/tre-reports.qmd
+          - text: "Platform Reliability & Data Governance"
+            href: projects/platform-reliability.qmd
           - text: "---"
           - text: "Other Experience"
           - text: "Medicare Fraud Analytics"

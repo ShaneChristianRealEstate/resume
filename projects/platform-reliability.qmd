@@ -1,0 +1,154 @@
+---
+title: "Platform Reliability & Data Governance Initiative"
+subtitle: "Leading a company-wide effort to make the analytics platform demonstrably solid — test coverage, a CI gate, a reusable security pattern, and a data-logic migration plan"
+page-layout: full
+toc: true
+toc-location: left
+toc-title: "Project Details"
+toc-depth: 2
+---
+
+::: {.project-hero}
+::: {.project-hero-content}
+
+# Platform Reliability & Data Governance Initiative {.project-hero-title}
+
+**Role:** Technical Lead
+· **Organization:** Select Water Solutions
+· **Status:** In Progress — Ongoing
+
+::: {.project-hero-tags}
+`CI/CD` `pytest` `Row-Level Security` `dbt` `GitLab CI`
+:::
+
+:::
+:::
+
+
+## The Problem {.project-section-heading}
+
+As the analytics platform grew to a family of production dashboard apps,
+three structural risks grew with it: no automated gate stopped an
+untested regression from merging, no consistent pattern existed for
+scoping who can see what data, and a meaningful amount of business logic
+lived scattered across application code instead of governed, testable
+data models.
+
+
+## The Approach {.project-section-heading}
+
+### Test coverage, then a real CI gate
+
+Rather than jump straight to a code-review process, I audited test
+coverage app-by-app first — the reasoning being that reviewing code
+nothing ever tests is "checking on sand." That survey found real gaps:
+one app's security-admin pattern had zero access-control tests at all;
+several others had only smoke-test-level coverage. I closed the highest-risk
+gaps first, then stood up a pytest job in the CI pipeline so a merge with
+failing tests is now visibly blocked rather than silently shipping.
+
+```{mermaid}
+%%| fig-width: 8
+flowchart LR
+    A[Audit Test Coverage<br>Per App] --> B[Close Highest-Risk<br>Gaps First]
+    B --> C[CI Runs pytest<br>on Every Merge]
+    C --> D[Regression Caught<br>Before It Ships]
+```
+
+### A reusable security pattern
+
+Rather than let each dashboard invent its own row-level-security
+implementation, I authored a portable pattern — piloted first in one app
+— covering the admin UI, the scope-enforcement logic, and a documented
+list of real bugs already hit during the pilot, so a future port
+inherits the fixes instead of repeating the mistakes.
+
+### A data-logic migration plan
+
+I led an audit of business logic living in application code (joins,
+aggregations, recoding) that belonged in governed dbt SQL models instead
+— cataloging roughly 139 candidate items across every app on the
+platform, then prioritizing and sequencing them so the highest-value,
+lowest-risk items move first. Several of the highest-priority items have
+already shipped, each verified against live production data before
+cutover, not just tested in isolation.
+
+
+## Results & Impact {.project-section-heading}
+
+::: {.impact-grid}
+
+::: {.impact-card}
+### CI Gate {.impact-number}
+pytest now blocks untested merges on multiple apps
+:::
+
+::: {.impact-card}
+### 1 → Many {.impact-number}
+Security pattern piloted once, rolling out platform-wide
+:::
+
+::: {.impact-card}
+### 139 Items {.impact-number}
+Data-logic migration plan scoped and prioritized
+:::
+
+::: {.impact-card}
+### Verified {.impact-number}
+Every shipped change checked against live production data
+:::
+
+:::
+
+### What Changed for the Business
+
+- **Regressions get caught before they ship** — a merge with a failing
+  test is now a visible, blocking signal instead of a silent risk
+- **Security stops being reinvented per app** — one documented, tested
+  pattern instead of five different ad-hoc implementations
+- **A clear roadmap for data governance** — instead of "someday we should
+  clean this up," a prioritized, sequenced plan the team can actually
+  execute against
+
+
+## Technical Stack {.project-section-heading}
+
+| Component | Technology | Purpose |
+|:----------|:-----------|:--------|
+| Testing | pytest | Per-app regression and access-control test suites |
+| CI/CD | GitLab CI | Merge-blocking test gate across multiple apps |
+| Security | Row-level security admin pattern | Reusable scoped-access implementation |
+| Data Governance | dbt, PostgreSQL | Migration target for application-layer business logic |
+
+
+## Key Skills Demonstrated {.project-section-heading}
+
+::: {.skills-grid}
+
+::: {.skill-category}
+#### Engineering Leadership
+Set platform-wide priorities (test coverage first, then review) instead of jumping to the flashiest fix
+:::
+
+::: {.skill-category}
+#### CI/CD & Quality Gates
+Turned a testing gap into an enforced, automated merge gate
+:::
+
+::: {.skill-category}
+#### Security Pattern Design
+Built once, documented for reuse, with known bugs disclosed up front
+:::
+
+::: {.skill-category}
+#### Cross-App Data Governance
+Audited and sequenced a 139-item plan spanning every app on the platform
+:::
+
+:::
+
+
+::: {.project-nav}
+[← Back to All Projects](../projects.qmd){.btn-secondary}
+[← Prev: Financial & Volumes Reporting](tre-reports.qmd){.btn-secondary}
+:::

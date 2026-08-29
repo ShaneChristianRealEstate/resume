@@ -14,7 +14,7 @@ toc-depth: 2
 # SCADA Disposal Facility Volumes Dashboard {.project-hero-title}
 
 **Role:** Data Analyst & Developer
-· **Organization:** Select Water Services
+· **Organization:** Select Water Solutions
 · **Scope:** All Disposal Facility Regions
 
 ::: {.project-hero-tags}
@@ -27,7 +27,7 @@ toc-depth: 2
 
 ## The Problem {.project-section-heading}
 
-Select Water Services operates disposal facilities across multiple
+Select Water Solutions operates disposal facilities across multiple
 regions, each processing produced water volumes from oilfield operations.
 Facility managers and regional leadership needed answers to questions
 they couldn't easily get from existing reporting:

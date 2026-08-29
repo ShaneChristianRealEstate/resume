@@ -1,0 +1,157 @@
+---
+title: "Disposal Facility Volumes — Incident Response"
+subtitle: "Tracing a silent, multi-day dashboard outage three layers deep into a shared data pipeline — and fixing it with zero impact to anyone else"
+page-layout: full
+toc: true
+toc-location: left
+toc-title: "Project Details"
+toc-depth: 2
+---
+
+::: {.project-hero}
+::: {.project-hero-content}
+
+# Disposal Facility Volumes — Incident Response {.project-hero-title}
+
+**Role:** Lead Developer & Analyst
+· **Organization:** Select Water Solutions
+· **Status:** Production — Incident Resolved
+
+::: {.project-hero-tags}
+`FastAPI` `dbt` `PostgreSQL` `Root-Cause Analysis`
+:::
+
+:::
+:::
+
+
+## The Problem {.project-section-heading}
+
+A live disposal-facility volumes dashboard silently stopped showing new
+data. It didn't error, didn't 500 — it just froze, showing whatever it
+had as of a few days prior with no visible sign anything was wrong. A
+stakeholder eventually noticed the numbers hadn't moved and flagged it.
+
+
+## The Investigation {.project-section-heading}
+
+The dashboard itself does no data processing of its own — it reads a
+single pre-built table live from the warehouse. So the first question was
+whether the app was broken or the data feeding it was. Direct comparison
+confirmed the app was working correctly; the table itself had simply
+stopped updating.
+
+Tracing further upstream, into the dbt project that builds that table, I
+found the actual root cause: another engineer had recently done a cleanup
+pass, moving what looked like unused data models into an "archive" folder
+to tidy up the project. This specific model had no other model referencing
+it *within* dbt — its only consumer was this dashboard, reading it
+directly from the warehouse outside of dbt's own dependency graph. From
+inside dbt's world, it looked orphaned. In reality, it was silently load
+bearing, and moving it out of the active model path meant the scheduled
+rebuild simply stopped running it — no error, no alert, just a table that
+quietly stopped getting fresh data.
+
+```{mermaid}
+%%| fig-width: 8
+flowchart LR
+    A[Raw Ticket Data<br>Fully Current] --> B[dbt Model<br>Archived by Mistake]
+    B -.->|No longer scheduled| C[(Warehouse Table<br>Frozen)]
+    C --> D[Dashboard<br>Reads Live]
+    D --> E["Looks broken —<br>actually starved"]
+```
+
+I confirmed the upstream raw data feeding that model was fully current the
+entire time — this wasn't a broader outage, just one specific,
+non-obvious dependency that fell outside the tooling's own visibility.
+
+
+## The Fix {.project-section-heading}
+
+Restored the model to its correct location in the active model path,
+verified its two upstream dependencies were untouched by the broader
+cleanup, and confirmed the fix didn't disturb anything else the cleanup
+had legitimately archived. Documented the failure mode for the rest of the
+platform: any dbt model that only has an external, non-`dbt`-tracked
+consumer is invisible to a "looks unused" cleanup pass, and is worth
+checking first on any future "this dashboard just stopped updating"
+report.
+
+
+## Results & Impact {.project-section-heading}
+
+::: {.impact-grid}
+
+::: {.impact-card}
+### 3 Layers Deep {.impact-number}
+Root cause traced past the app, into the pipeline
+:::
+
+::: {.impact-card}
+### Zero Impact {.impact-number}
+Fix touched only the one affected model
+:::
+
+::: {.impact-card}
+### Multi-Day {.impact-number}
+Silent outage window closed
+:::
+
+::: {.impact-card}
+### Documented {.impact-number}
+Failure mode flagged platform-wide for reuse
+:::
+
+:::
+
+### What Changed for the Business
+
+- **Restored trust** — the dashboard reflects current data again, with
+  the actual root cause understood, not just papered over
+- **A named failure mode** — "archived but still externally load-bearing"
+  is now a known pattern to check first on similar reports
+- **No collateral damage** — the fix was scoped precisely enough to leave
+  every other change in the same cleanup pass intact
+
+
+## Technical Stack {.project-section-heading}
+
+| Component | Technology | Purpose |
+|:----------|:-----------|:--------|
+| Backend | FastAPI (Python) | Live dashboard, no in-app ETL |
+| Data Pipeline | dbt, PostgreSQL | Shared warehouse model, scheduled rebuild |
+| Diagnosis | Direct SQL, git history | Traced the model's move and its scheduling impact |
+
+
+## Key Skills Demonstrated {.project-section-heading}
+
+::: {.skills-grid}
+
+::: {.skill-category}
+#### Root-Cause Discipline
+Didn't stop at "the app looks fine" — traced the failure to its actual source
+:::
+
+::: {.skill-category}
+#### Shared-Pipeline Awareness
+Understood how one team's cleanup can silently break another team's dependency
+:::
+
+::: {.skill-category}
+#### Minimal-Blast-Radius Fixes
+Restored exactly what broke without disturbing the rest of the cleanup
+:::
+
+::: {.skill-category}
+#### Knowledge Sharing
+Documented the failure mode so the next occurrence is diagnosed in minutes, not days
+:::
+
+:::
+
+
+::: {.project-nav}
+[← Back to All Projects](../projects.qmd){.btn-secondary}
+[← Prev: Workforce Turnover Analytics](hr-report.qmd){.btn-secondary}
+[Next: Financial & Volumes Reporting →](tre-reports.qmd){.btn-primary}
+:::

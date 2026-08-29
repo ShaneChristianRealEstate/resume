@@ -1,0 +1,146 @@
+---
+title: "Financial & Volumes Reporting Platform"
+subtitle: "Owning the company's primary P&L and Volumes reporting app — and the shared landing page every analytics tool is discovered through"
+page-layout: full
+toc: true
+toc-location: left
+toc-title: "Project Details"
+toc-depth: 2
+---
+
+::: {.project-hero}
+::: {.project-hero-content}
+
+# Financial & Volumes Reporting Platform {.project-hero-title}
+
+**Role:** Lead Developer & Analyst
+· **Organization:** Select Water Solutions
+· **Status:** Production
+
+::: {.project-hero-tags}
+`FastAPI` `PostgreSQL` `Jinja2` `Power BI`
+:::
+
+:::
+:::
+
+
+## The Problem {.project-section-heading}
+
+This app serves the company's primary P&L and Volumes reports — the
+tables leadership uses to track revenue, cost of sales, and volume
+performance by region and site — plus several related financial reports.
+It's also the shared landing page for every other analytics app on the
+platform, so reliability here has outsized visibility: a broken filter or
+a wrong total is the first thing anyone sees.
+
+
+## The Solution {.project-section-heading}
+
+### Filter-and-export audit
+
+Rather than fix issues one complaint at a time, I audited every filter and
+export path across all six report pages against real data. That surfaced
+and fixed a set of genuine bugs: sub-total rows that didn't respect an
+active site filter, collapsed detail rows that were silently excluded
+from filter matching, and section totals that showed the full
+company-wide total regardless of which region or site was actually
+selected — instead of the filtered total a user would reasonably expect
+to see.
+
+### Rendering fixes
+
+Frozen ("sticky") columns are supposed to stay pinned while a wide table
+scrolls horizontally — a base style rule elsewhere in the app was quietly
+overriding their background and stacking order, letting scrolling content
+show through. Traced the CSS specificity conflict and fixed the rendering
+across every affected report.
+
+### Capping a real data anomaly
+
+A gross-margin percentage figure occasionally rendered as an absurd
+number — figures in the billions of a percent — whenever a data anomaly
+produced revenue just above zero paired with an unusually large gross
+profit figure. Rather than let a nonsensical percentage reach a viewer, I
+added an output cap that displays the figure as unavailable once it
+crosses a threshold no real margin would ever legitimately reach.
+
+
+## Results & Impact {.project-section-heading}
+
+::: {.impact-grid}
+
+::: {.impact-card}
+### 6 Pages {.impact-number}
+Full filter-and-export audit, shipped
+:::
+
+::: {.impact-card}
+### 8+ Apps {.impact-number}
+Served from this app's shared landing page
+:::
+
+::: {.impact-card}
+### Fixed {.impact-number}
+Section totals now respect active filters
+:::
+
+::: {.impact-card}
+### Capped {.impact-number}
+Astronomical GM% anomaly can no longer render
+:::
+
+:::
+
+### What Changed for the Business
+
+- **Numbers you can trust when you filter** — totals now reflect what's
+  actually selected, not a silent fallback to the company-wide figure
+- **A reliable front door** — as the platform's shared landing page, its
+  stability is the first impression of every other dashboard
+- **No more nonsensical figures** — a data anomaly can no longer produce
+  a percentage that undermines confidence in the whole report
+
+
+## Technical Stack {.project-section-heading}
+
+| Component | Technology | Purpose |
+|:----------|:-----------|:--------|
+| Backend | FastAPI (Python), Jinja2 | P&L, Volumes, and related financial report routes |
+| Data Source | PostgreSQL | Financial and operational reporting warehouse |
+| Frontend | Custom JS filtering | Client-side filter/collapse/export logic across 6 pages |
+| Platform Role | Shared landing page | Discovery hub for every dashboard on the platform |
+
+
+## Key Skills Demonstrated {.project-section-heading}
+
+::: {.skills-grid}
+
+::: {.skill-category}
+#### Systematic Auditing
+Reviewed every filter/export path proactively instead of reacting one bug at a time
+:::
+
+::: {.skill-category}
+#### CSS/Rendering Debugging
+Traced a specificity conflict silently overriding sticky-column rendering
+:::
+
+::: {.skill-category}
+#### Financial Reporting Accuracy
+Ensured section-level totals reflect exactly what a filter selects
+:::
+
+::: {.skill-category}
+#### Platform Stewardship
+Maintained the shared front door every other analytics app depends on
+:::
+
+:::
+
+
+::: {.project-nav}
+[← Back to All Projects](../projects.qmd){.btn-secondary}
+[← Prev: Disposal Facility Volumes](ne-disposal-daily.qmd){.btn-secondary}
+[Next: Platform Reliability Initiative →](platform-reliability.qmd){.btn-primary}
+:::

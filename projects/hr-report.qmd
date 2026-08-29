@@ -1,0 +1,157 @@
+---
+title: "Workforce Turnover Analytics"
+subtitle: "Rebuilding a broken turnover report into a production tool — and catching a statistical artifact before it misled a real staffing decision"
+page-layout: full
+toc: true
+toc-location: left
+toc-title: "Project Details"
+toc-depth: 2
+---
+
+::: {.project-hero}
+::: {.project-hero-content}
+
+# Workforce Turnover Analytics {.project-hero-title}
+
+**Role:** Lead Developer & Analyst
+· **Organization:** Select Water Solutions
+· **Status:** Production
+
+::: {.project-hero-tags}
+`FastAPI` `Pandas` `PostgreSQL` `Power BI`
+:::
+
+:::
+:::
+
+
+## The Problem {.project-section-heading}
+
+The company's turnover-analytics report — tracking voluntary and
+involuntary attrition by tenure band — was failing outright on every
+request when I picked it up. Underneath that, the report's logic had
+several deeper correctness bugs: totals that didn't reconcile with their
+own breakdown rows, a termination category that was silently excluded
+from the dashboard's filter options despite real data existing for it,
+and a formula that could mathematically explode toward infinite turnover
+rates for any business unit being wound down.
+
+
+## The Solution {.project-section-heading}
+
+### Stabilized and rebuilt
+
+Fixed the underlying errors causing the page to fail, then rebuilt the
+tenure-bucket calculations directly against the report's real per-row
+data rather than a reconstruction that would have double-counted
+employees across months — verified by cross-checking computed totals
+against the raw source data before shipping.
+
+### Expanded to the real classification set
+
+The report's Term Type filter only exposed two categories
+(Voluntary/Involuntary) when the underlying data actually carried seven,
+including RIF, Divestiture, Reorganization, and No-Show categories that
+had been silently miscounted or hidden. Rebuilt the classification logic
+to expose and correctly total all seven.
+
+### Catching a statistical artifact before it misled anyone
+
+While validating results for a business unit that was being wound down, I
+noticed its turnover rate climbing toward 900%+ — an obviously wrong
+number for a shrinking, not accelerating, organization. I traced it to a
+mathematical artifact: a shrinking headcount denominator combined with a
+fixed trickle of leftover terminations mathematically explodes the rate
+formula as the denominator approaches zero, even with no real change in
+attrition behavior. Rather than let a misleading number reach leadership,
+I added a minimum-roster floor that suppresses the rate calculation
+(displaying "—" instead of a false figure) whenever a business unit's
+headcount drops below a meaningful threshold.
+
+```{mermaid}
+%%| fig-width: 7
+flowchart LR
+    A[Shrinking Roster] --> B{Roster < Floor?}
+    B -->|Yes| C["Suppress Rate — Show '–'"]
+    B -->|No| D[Compute Real Rate]
+```
+
+
+## Results & Impact {.project-section-heading}
+
+::: {.impact-grid}
+
+::: {.impact-card}
+### Production {.impact-number}
+Promoted from broken page to live tool
+:::
+
+::: {.impact-card}
+### 7 {.impact-number}
+Termination categories correctly tracked
+:::
+
+::: {.impact-card}
+### 900%+ {.impact-number}
+False rate-spike caught before reaching leadership
+:::
+
+::: {.impact-card}
+### Reconciled {.impact-number}
+Grand totals now match their own breakdown rows
+:::
+
+:::
+
+### What Changed for the Business
+
+- **A working tool** — from a page that 500'd on every request to a
+  production dashboard leadership relies on
+- **Correct classification** — every real termination category is now
+  visible and counted, not silently folded into the wrong bucket
+- **Trustworthy rates** — a rate that would have mathematically lied
+  about a dissolving org's attrition is suppressed instead of shipped
+
+
+## Technical Stack {.project-section-heading}
+
+| Component | Technology | Purpose |
+|:----------|:-----------|:--------|
+| Backend | FastAPI (Python), Pandas | Tenure-bucket aggregation, rate calculations |
+| Data Source | PostgreSQL, dbt | Turnover/headcount warehouse model |
+| Visualization | Custom JS charts | Year-of-Service / Days-of-Service breakdowns |
+| Testing | pytest | Aggregation-parity and rate-suppression regression tests |
+
+
+## Key Skills Demonstrated {.project-section-heading}
+
+::: {.skills-grid}
+
+::: {.skill-category}
+#### Statistical Judgment
+Recognized a mathematically-explosive rate formula as an artifact, not real signal
+:::
+
+::: {.skill-category}
+#### Data Reconciliation
+Rebuilt totals to match their own breakdown rows, verified against raw source data
+:::
+
+::: {.skill-category}
+#### Production Debugging
+Diagnosed and fixed a completely broken page down to its root cause
+:::
+
+::: {.skill-category}
+#### HR/People Analytics
+Correctly classified and tracked all real termination categories, not just the obvious ones
+:::
+
+:::
+
+
+::: {.project-nav}
+[← Back to All Projects](../projects.qmd){.btn-secondary}
+[← Prev: EHS Compliance Dashboard](ehs-report.qmd){.btn-secondary}
+[Next: Disposal Facility Volumes →](ne-disposal-daily.qmd){.btn-primary}
+:::

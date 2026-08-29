@@ -14,7 +14,7 @@ toc-depth: 2
 # Multi-Region Data Reconciliation {.project-hero-title}
 
 **Role:** Senior Data Analyst
-· **Organization:** Select Water Services
+· **Organization:** Select Water Solutions
 · **Scope:** NE, Rockies, Permian, MidCon Regions
 
 ::: {.project-hero-tags}
@@ -27,7 +27,7 @@ toc-depth: 2
 
 ## The Problem {.project-section-heading}
 
-Select Water Services operates across four major regions — **Northeast,
+Select Water Solutions operates across four major regions — **Northeast,
 Rockies, Permian, and MidCon** — each with its own operational cadence and
 data entry patterns. Site inventory data lived across **40+ Postgres tables**,
 and discrepancies between the database layer and the Dataverse reporting layer

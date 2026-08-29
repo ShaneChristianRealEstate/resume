@@ -1,0 +1,169 @@
+---
+title: "Chemical Logistics Operations Dashboard"
+subtitle: "A live FastAPI operations dashboard for dispatch, drivers, and executive views — and the data-integrity fixes that made its numbers trustworthy"
+page-layout: full
+toc: true
+toc-location: left
+toc-title: "Project Details"
+toc-depth: 2
+---
+
+::: {.project-hero}
+::: {.project-hero-content}
+
+# Chemical Logistics Operations Dashboard {.project-hero-title}
+
+**Role:** Lead Developer & Analyst
+· **Organization:** Select Water Solutions
+· **Status:** Production
+
+::: {.project-hero-tags}
+`FastAPI` `PostgreSQL` `Power BI` `Python` `Chart.js` `Data Integrity`
+:::
+
+:::
+:::
+
+
+## The Problem {.project-section-heading}
+
+The chemical logistics business (dispatch, drivers, and freight carriers)
+had no live operational view. Managers were working from static exports and
+manual spreadsheets to answer basic questions — which carriers were active
+this month, how drivers were performing against safety and fuel metrics,
+and whether shipments were moving on time.
+
+
+## The Solution {.project-section-heading}
+
+I built a FastAPI dashboard with three views — Dispatch, Drivers, and
+Executive — reading live from the operational data warehouse, alongside a
+parallel Power BI DAX rebuild of the same two core pages for teams that
+needed the dashboard embedded directly in Power BI.
+
+### Architecture
+
+```{mermaid}
+%%| fig-width: 8
+flowchart LR
+    A[Postgres<br>Shipment & Driver Data] --> B[FastAPI Queries<br>Parameterized SQL]
+    B --> C[Dispatch View]
+    B --> D[Drivers View]
+    B --> E[Executive View]
+    C --> F[Click-Through<br>Drill-Down]
+    D --> F
+    E --> F
+```
+
+### Finding and fixing a data-integrity bug that mattered
+
+Early in the build, freight-cost figures on the dashboard looked absurd —
+one chart's axis read in the tens of billions of dollars. I traced it to a
+join fan-out: a shipment-level table was actually stored one row per stop,
+so a shipment with several stops had its cost figure duplicated and summed
+that many times over. A naive `SUM()` was returning **~$17.3B** against a
+correct value of **~$29M**. I fixed it by deduplicating to one row per
+shipment before any aggregation — a pattern I then applied everywhere that
+table fed a KPI or chart.
+
+### Filter audit
+
+When a stakeholder reported that a specific region/role combination on the
+Drivers page "looked wrong," I didn't just patch the one complaint — I
+audited every filter across all three tabs against live data. That
+surfaced several real, previously-invisible bugs: filters that silently
+zeroed out results for entire regions due to mismatched value formats
+between data sources, charts that ignored the active time period
+entirely, and dead filter controls left over from removed features. All
+were fixed and verified the same day.
+
+### External fuel spend map
+
+A stakeholder wanted to see where offsite fuel spend was actually
+happening. The raw transaction data only carried abbreviated pump-receipt
+addresses, no coordinates. I geocoded roughly 1,600 distinct addresses
+using the free U.S. Census Bureau batch geocoder, falling back to ZIP-code
+population centroids for addresses too messy to match exactly — reaching
+99.7% coverage — and built a live map showing exact vs. approximate
+matches distinctly.
+
+
+## Results & Impact {.project-section-heading}
+
+::: {.impact-grid}
+
+::: {.impact-card}
+### $17.3B → $29M {.impact-number}
+Cost-KPI data-integrity fix
+:::
+
+::: {.impact-card}
+### Same-Day {.impact-number}
+Full 3-tab filter audit, fix, and verification
+:::
+
+::: {.impact-card}
+### 99.7% {.impact-number}
+Geocode coverage for the fuel-spend map
+:::
+
+::: {.impact-card}
+### Live {.impact-number}
+Click-through drill-down on every chart
+:::
+
+:::
+
+### What Changed for the Business
+
+- **Trustworthy numbers** — the dashboard's KPIs now match what a direct
+  database query returns, not an inflated join artifact
+- **Confidence in filters** — every filter on every tab is verified against
+  live data, not assumed correct because it renders without error
+- **Operational visibility** — dispatchers and managers get a live view of
+  carriers, shipments, and driver performance instead of static exports
+
+
+## Technical Stack {.project-section-heading}
+
+| Component | Technology | Purpose |
+|:----------|:-----------|:--------|
+| Backend | FastAPI (Python) | Dispatch/Drivers/Executive routes, parameterized queries |
+| Data Source | PostgreSQL | Live operational warehouse, dbt-modeled |
+| Visualization | Chart.js, Leaflet | Charts and the offsite fuel-spend map |
+| Parallel Track | Power BI (DAX) | Same two core pages, native PBI embed |
+| Geocoding | US Census Batch Geocoder | Free, no-API-key address-to-coordinate matching |
+| Testing | pytest | Regression coverage for filter and aggregation logic |
+
+
+## Key Skills Demonstrated {.project-section-heading}
+
+::: {.skills-grid}
+
+::: {.skill-category}
+#### Data Integrity Debugging
+Traced a 500x cost-KPI inflation to its root cause (join fan-out) and fixed it at the source
+:::
+
+::: {.skill-category}
+#### Full-Stack Dashboard Development
+FastAPI + Chart.js + Leaflet, end-to-end from query to interactive chart
+:::
+
+::: {.skill-category}
+#### Systematic QA
+Audited every filter on every page against live data instead of patching one complaint at a time
+:::
+
+::: {.skill-category}
+#### Practical Data Engineering
+Free-tier geocoding pipeline reaching 99.7% coverage with no paid API
+:::
+
+:::
+
+
+::: {.project-nav}
+[← Back to All Projects](../projects.qmd){.btn-secondary}
+[Next: EHS Compliance Dashboard →](ehs-report.qmd){.btn-primary}
+:::

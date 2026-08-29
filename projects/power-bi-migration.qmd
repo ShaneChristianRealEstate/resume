@@ -14,7 +14,7 @@ toc-depth: 2
 # Executive Infrastructure Dashboard {.project-hero-title}
 
 **Role:** Lead Developer & Analyst
-· **Organization:** Select Water Services
+· **Organization:** Select Water Solutions
 · **Status:** Production — Used by Executive Leadership
 
 ::: {.project-hero-tags}
@@ -27,7 +27,7 @@ toc-depth: 2
 
 ## The Problem {.project-section-heading}
 
-Select Water Services operates across multiple business units and facilities,
+Select Water Solutions operates across multiple business units and facilities,
 each generating its own stream of financial and operational data. The executive
 team needed a unified view to make informed, timely decisions — but what they
 had was fragmented:

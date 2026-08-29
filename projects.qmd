@@ -14,6 +14,11 @@ measurable business outcomes — from enterprise BI migrations to fraud analytic
 :::
 
 
+<!-- ===== SELECT WATER SERVICES ===== -->
+::: {.projects-section-label}
+## Select Water Solutions
+:::
+
 ::: {.projects-grid}
 
 <!-- ===== PROJECT 1: INFRASTRUCTURE DASHBOARD ===== -->
@@ -63,29 +68,6 @@ identifies and resolves data discrepancies.
 :::
 
 [View Details →](projects/data-reconciliation.qmd){.project-link}
-
-:::
-
-
-<!-- ===== PROJECT 3: MEDICARE FRAUD ===== -->
-::: {.project-card}
-
-### Medicare Fraud Case Analytics {.project-name}
-
-::: {.project-tags}
-`SQL` `Power BI` `TennCare` `Healthcare Data` `Legal Analytics`
-:::
-
-Built analytical datasets supporting Medicare Fraud prosecution at the
-Tennessee Attorney General's Office. Gained direct TennCare database
-access, redesigned data workflows, and transitioned the team from Excel
-to Power BI — cutting case preparation from 3 weeks to 2–3 days.
-
-::: {.project-impact}
-**Impact:** 3 weeks → 2 days turnaround · Directly supported prosecutions
-:::
-
-[View Details →](projects/medicare-fraud.qmd){.project-link}
 
 :::
 
@@ -228,6 +210,162 @@ tracking, and a light/dark theme toggle.
 :::
 
 
+<!-- ===== PROJECT 10: CHM LOGISTICS ===== -->
+::: {.project-card}
+
+### Chemical Logistics Operations Dashboard {.project-name}
+
+::: {.project-tags}
+`FastAPI` `PostgreSQL` `Power BI` `Python` `Data Integrity`
+:::
+
+Built a live FastAPI operations dashboard covering dispatch, drivers, and
+executive views for the chemical logistics business, alongside a parallel
+Power BI DAX rebuild. Root-caused a join fan-out bug that had inflated a
+cost KPI to $17.3B and led a full three-tab filter audit that corrected
+mismatched region and employee scoping across every chart.
+
+::: {.project-impact}
+**Impact:** $17.3B → $29M cost-KPI fix · 3-tab filter audit shipped same-day · 1,600+ fuel transactions geocoded for a live map
+:::
+
+[View Details →](projects/chm-logistics.qmd){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 11: EHS REPORT ===== -->
+::: {.project-card}
+
+### EHS Compliance Dashboard & RLS Security Pattern {.project-name}
+
+::: {.project-tags}
+`FastAPI` `PostgreSQL` `dbt` `Row-Level Security` `Jira API`
+:::
+
+Replaced a static, offline safety-compliance report with a live dbt-backed
+dashboard, then piloted the platform's first row-level-security admin
+pattern — scoping what each viewer can see by business unit, region, or
+site. Now the reference implementation being ported to every other
+dashboard, alongside a shared request-access/feedback pipeline used
+company-wide.
+
+::: {.project-impact}
+**Impact:** Promoted to production · First RLS admin pattern on the platform · Shared access-request/feedback pages adopted org-wide
+:::
+
+[View Details →](projects/ehs-report.qmd){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 12: HR REPORT ===== -->
+::: {.project-card}
+
+### Workforce Turnover Analytics {.project-name}
+
+::: {.project-tags}
+`FastAPI` `Pandas` `PostgreSQL` `Power BI`
+:::
+
+Rebuilt a turnover-analytics report that had been failing on every request
+into a production tool tracking voluntary and involuntary attrition across
+seven termination categories. Root-caused and corrected a statistical
+artifact that was inflating attrition rates toward 900%+ for a business
+unit that was being wound down.
+
+::: {.project-impact}
+**Impact:** Promoted to production · 7 termination categories tracked · Root-caused a rate-explosion artifact for restructuring orgs
+:::
+
+[View Details →](projects/hr-report.qmd){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 13: NE DISPOSAL DAILY ===== -->
+::: {.project-card}
+
+### Disposal Facility Volumes — Incident Response {.project-name}
+
+::: {.project-tags}
+`FastAPI` `dbt` `PostgreSQL` `Root-Cause Analysis`
+:::
+
+When a live disposal-volumes dashboard silently stopped updating, traced
+the failure three layers deep to an upstream dbt model that had been
+archived by another engineer unaware this app still depended on it
+directly — and restored the pipeline with zero downstream impact to any
+other report.
+
+::: {.project-impact}
+**Impact:** Diagnosed a silent multi-day data freeze · Zero-impact fix to a shared pipeline · Failure mode documented platform-wide
+:::
+
+[View Details →](projects/ne-disposal-daily.qmd){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 14: TRE REPORTS ===== -->
+::: {.project-card}
+
+### Financial & Volumes Reporting Platform {.project-name}
+
+::: {.project-tags}
+`FastAPI` `PostgreSQL` `Jinja2` `Power BI`
+:::
+
+Own and maintain the company's primary P&L and Volumes reporting
+platform — also the shared landing page for every internal analytics app.
+Delivered a filter-and-export audit across six report pages, fixed frozen
+column rendering and section-total logic, and capped a data anomaly that
+was displaying gross-margin percentages in the billions of percent.
+
+::: {.project-impact}
+**Impact:** Shared landing page for 8+ analytics apps · 6-page filter audit shipped · Astronomical GM% bug capped
+:::
+
+[View Details →](projects/tre-reports.qmd){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 15: PLATFORM RELIABILITY ===== -->
+::: {.project-card}
+
+### Platform Reliability & Data Governance Initiative {.project-name}
+
+::: {.project-tags}
+`CI/CD` `pytest` `Row-Level Security` `dbt` `GitLab CI`
+:::
+
+Led a company-wide "rock solid" initiative across the analytics platform's
+apps: audited test coverage app-by-app, stood up a pytest gate in CI so
+merges can no longer ship untested regressions, and authored a portable
+row-level-security admin pattern now rolling out platform-wide. In
+parallel, scoped and prioritized a 139-item audit moving business logic
+out of application code and into governed dbt SQL models.
+
+::: {.project-impact}
+**Impact:** CI test gate live across multiple apps · Reusable RLS pattern documented for platform-wide reuse · 139-item data-logic migration plan scoped
+:::
+
+[View Details →](projects/platform-reliability.qmd){.project-link}
+
+:::
+
+
+:::
+
+
+<!-- ===== PREVIOUS EXPERIENCE ===== -->
+::: {.projects-section-label}
+## Previous Experience
+:::
+
+::: {.projects-grid}
+
 <!-- ===== PROJECT 10: HP DASHBOARDS ===== -->
 ::: {.project-card}
 
@@ -247,6 +385,29 @@ engineering to deploy new pipelines.
 :::
 
 [View Details →](#){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT: MEDICARE FRAUD ===== -->
+::: {.project-card}
+
+### Medicare Fraud Case Analytics {.project-name}
+
+::: {.project-tags}
+`SQL` `Power BI` `TennCare` `Healthcare Data` `Legal Analytics`
+:::
+
+Built analytical datasets supporting Medicare Fraud prosecution at the
+Tennessee Attorney General's Office. Gained direct TennCare database
+access, redesigned data workflows, and transitioned the team from Excel
+to Power BI — cutting case preparation from 3 weeks to 2–3 days.
+
+::: {.project-impact}
+**Impact:** 3 weeks → 2 days turnaround · Directly supported prosecutions
+:::
+
+[View Details →](projects/medicare-fraud.qmd){.project-link}
 
 :::
 
@@ -304,18 +465,23 @@ This operational foundation informs every analytical decision I make today.
 
 ## Skills Demonstrated Across Projects {.section-heading}
 
-| Skill Area | Infra Dashboard | Data Recon | Fraud Analytics | BI Forge | Streamline | Data Detective | AFE Dashboard | SCADA | TRE Chem |
-|:-----------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| SQL & Query Development | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ |
-| Power BI & Dashboard Design | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ | ✅ | ◻️ | ✅ |
-| Data Modeling & DAX | ✅ | ◻️ | ◻️ | ◻️ | ◻️ | ◻️ | ✅ | ◻️ | ✅ |
-| AI / Claude API Integration | ◻️ | ◻️ | ◻️ | ✅ | ✅ | ✅ | ◻️ | ◻️ | ◻️ |
-| Full-Stack Development | ◻️ | ◻️ | ◻️ | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ |
-| Data Governance & Quality | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ |
-| dbt & Pipeline Engineering | ◻️ | ◻️ | ◻️ | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ |
-| Stakeholder Communication | ✅ | ✅ | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ | ✅ |
-| Process Optimization | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ◻️ | ✅ | ✅ |
-| Operations & Logistics | ✅ | ✅ | ◻️ | ◻️ | ◻️ | ◻️ | ✅ | ✅ | ✅ |
+::: {.table-scroll}
+
+| Skill Area | Infra Dashboard | Data Recon | BI Forge | Streamline | Data Detective | AFE Dashboard | SCADA | TRE Chem | CHM Logistics | EHS Report | HR Report | NE Disposal | TRE Reports | Platform Reliability |
+|:-----------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| SQL & Query Development | ✅ | ✅ | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ | ✅ | ✅ | ✅ | ✅ | ✅ | ◻️ |
+| Power BI & Dashboard Design | ✅ | ✅ | ◻️ | ✅ | ◻️ | ✅ | ◻️ | ✅ | ✅ | ◻️ | ✅ | ◻️ | ✅ | ◻️ |
+| Data Modeling & DAX | ✅ | ◻️ | ◻️ | ◻️ | ◻️ | ✅ | ◻️ | ✅ | ✅ | ◻️ | ◻️ | ◻️ | ◻️ | ◻️ |
+| AI / Claude API Integration | ◻️ | ◻️ | ✅ | ✅ | ✅ | ◻️ | ◻️ | ◻️ | ◻️ | ◻️ | ◻️ | ◻️ | ◻️ | ◻️ |
+| Full-Stack Development | ◻️ | ◻️ | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ | ✅ | ✅ | ✅ | ✅ | ✅ | ◻️ |
+| Data Governance & Quality | ✅ | ✅ | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| dbt & Pipeline Engineering | ◻️ | ◻️ | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ | ✅ | ✅ | ◻️ | ✅ | ◻️ | ✅ |
+| Stakeholder Communication | ✅ | ✅ | ✅ | ✅ | ◻️ | ✅ | ◻️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Process Optimization | ✅ | ✅ | ✅ | ✅ | ✅ | ◻️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Operations & Logistics | ✅ | ✅ | ◻️ | ◻️ | ◻️ | ✅ | ✅ | ✅ | ✅ | ◻️ | ◻️ | ✅ | ✅ | ◻️ |
+| Security & Access Control | ◻️ | ◻️ | ✅ | ◻️ | ◻️ | ◻️ | ◻️ | ◻️ | ◻️ | ✅ | ◻️ | ◻️ | ◻️ | ✅ |
+
+:::
 
 :::
 
@@ -331,12 +497,12 @@ Every role in my career shares a common thread: **finding what's broken
 and making it work better.** At Knight Transportation, that meant cutting
 idle time and boosting revenue. At the Attorney General's Office, it meant
 turning a 3-week legal data process into a 2-day turnaround. At Select
-Water, it means reconciling millions of records across regions so
-leadership can trust the numbers.
+Water, it means building the platforms, pipelines, and AI tools that give
+everyone in the organization — not just analysts — access to trusted data.
 
 I'm not a data analyst who learned operations — I'm an operations
-professional who mastered data. That distinction matters when the
-dashboard needs to reflect what's actually happening on the ground.
+professional who mastered data, then built the tools to scale that
+mastery across an entire organization.
 
 :::
 :::

@@ -14,7 +14,7 @@ toc-depth: 2
 # BI Forge — Enterprise AI Analytics Platform {.project-hero-title}
 
 **Role:** Architect & Lead Developer
-· **Organization:** Select Water Services
+· **Organization:** Select Water Solutions
 · **Status:** Architecture & Design Phase
 
 ::: {.project-hero-tags}
@@ -27,7 +27,7 @@ toc-depth: 2
 
 ## The Problem {.project-section-heading}
 
-Select Water Services operates across multiple business units, each generating
+Select Water Solutions operates across multiple business units, each generating
 data through different systems — Postgres databases, Dataverse, financial
 platforms, SCADA pipelines. The challenge wasn't a lack of data; it was a
 lack of access:

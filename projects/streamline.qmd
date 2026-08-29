@@ -14,7 +14,7 @@ toc-depth: 2
 # Streamline — BI Visual Development Pipeline {.project-hero-title}
 
 **Role:** Architect & Lead Developer
-· **Organization:** Select Water Services — BI Team
+· **Organization:** Select Water Solutions — BI Team
 · **Status:** Active Build Target
 
 ::: {.project-hero-tags}

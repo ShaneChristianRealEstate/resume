@@ -1,0 +1,159 @@
+---
+title: "EHS Compliance Dashboard & RLS Security Pattern"
+subtitle: "Replacing a static offline safety report with a live dashboard, then building the platform's first row-level-security admin pattern"
+page-layout: full
+toc: true
+toc-location: left
+toc-title: "Project Details"
+toc-depth: 2
+---
+
+::: {.project-hero}
+::: {.project-hero-content}
+
+# EHS Compliance Dashboard & RLS Security Pattern {.project-hero-title}
+
+**Role:** Lead Developer & Analyst
+· **Organization:** Select Water Solutions
+· **Status:** Production
+
+::: {.project-hero-tags}
+`FastAPI` `PostgreSQL` `dbt` `Row-Level Security` `Jira API`
+:::
+
+:::
+:::
+
+
+## The Problem {.project-section-heading}
+
+The EHS (Environmental, Health & Safety) compliance report was a static
+document, re-rendered offline and manually redeployed whenever its
+underlying data changed — no live query, no interactivity beyond what was
+baked in at render time. Separately, every dashboard on the platform had
+an all-or-nothing access model: a viewer either saw everything or was
+denied entirely, with no way to scope what a specific business unit or
+region's staff could see.
+
+
+## The Solution {.project-section-heading}
+
+### Live data layer
+
+I replaced the static report with a FastAPI app that queries the safety
+data warehouse live on every request — incident records, OSHA metrics,
+training completion, safety observations, and regulatory status — with
+click-through drill-down from every chart into its underlying records.
+
+### Row-level security, built as a reusable pattern
+
+Rather than building a one-off access rule for this app, I designed an RLS
+(row-level security) admin pattern from the start: an admin page where
+someone can grant a specific viewer access scoped to a business unit,
+region, or site, enforced both in the rows returned and in the filter
+dropdowns a scoped viewer sees (so a restricted viewer never even sees
+options for data they can't access). I documented the pattern as a
+portable guide — including several real bugs found and fixed during the
+build — so it can be dropped into any other dashboard on the platform
+without repeating the same mistakes.
+
+```{mermaid}
+%%| fig-width: 8
+flowchart LR
+    A[Admin grants access<br>by BU / Region / Site] --> B[(RLS Assignment Table)]
+    B --> C[Viewer requests report]
+    C --> D[Scope resolved<br>from assignment]
+    D --> E[Rows filtered<br>server-side]
+    D --> F[Filter dropdowns<br>scoped too]
+```
+
+### Shared access-request and feedback pages
+
+Every dashboard on the platform used to show a bare, confusing error page
+when a user lacked access. I built a real "Request Access" page and a
+"Submit Feedback" page — both filing tickets automatically — and
+architected them to be shared across every app on the platform rather
+than duplicated app-by-app, so adding a new dashboard means one
+registration entry, not a new set of pages and credentials.
+
+
+## Results & Impact {.project-section-heading}
+
+::: {.impact-grid}
+
+::: {.impact-card}
+### Production {.impact-number}
+Promoted from static report to live dashboard
+:::
+
+::: {.impact-card}
+### First {.impact-number}
+RLS admin pattern on the platform
+:::
+
+::: {.impact-card}
+### Org-Wide {.impact-number}
+Shared access-request/feedback pages adopted across every app
+:::
+
+::: {.impact-card}
+### Scoped {.impact-number}
+Access enforced by business unit, region, and site
+:::
+
+:::
+
+### What Changed for the Business
+
+- **Live compliance data** — no more manually re-rendering and
+  redeploying a static report when the underlying numbers change
+- **Real access control** — viewers can be scoped to exactly the data
+  their role needs instead of an all-or-nothing gate
+- **A reusable pattern** — every future dashboard needing scoped access
+  starts from a documented, battle-tested implementation instead of
+  reinventing it
+
+
+## Technical Stack {.project-section-heading}
+
+| Component | Technology | Purpose |
+|:----------|:-----------|:--------|
+| Backend | FastAPI (Python) | Live report rendering, admin CRUD, drill-down |
+| Data Source | PostgreSQL, dbt | Safety/compliance warehouse, governed transforms |
+| Access Control | Custom RLS admin pattern | Business-unit/region/site-scoped viewer access |
+| Ticketing | Jira REST API | Automated Request Access / Feedback ticket filing |
+| Testing | pytest | Access-control and drill-down enforcement tests |
+
+
+## Key Skills Demonstrated {.project-section-heading}
+
+::: {.skills-grid}
+
+::: {.skill-category}
+#### Security Architecture
+Designed a row-level-security model enforced in both data and UI, not just data
+:::
+
+::: {.skill-category}
+#### Reusable Pattern Design
+Built for one app, documented so five more could reuse it correctly
+:::
+
+::: {.skill-category}
+#### Platform Thinking
+Shared infrastructure (access-request/feedback) instead of app-by-app duplication
+:::
+
+::: {.skill-category}
+#### Live Data Architecture
+Replaced a static, manually-refreshed report with a real-time data layer
+:::
+
+:::
+
+
+::: {.project-nav}
+[← Back to All Projects](../projects.qmd){.btn-secondary}
+[← Prev: CHM Logistics](chm-logistics.qmd){.btn-secondary}
+[Next: Workforce Turnover Analytics →](hr-report.qmd){.btn-primary}
+:::
