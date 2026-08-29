@@ -25,7 +25,7 @@
     "href": "resume.html#professional-experience",
     "title": "Edward Shane Christian",
     "section": "Professional Experience",
-    "text": "Professional Experience\n\n\nSenior Data Analyst\n\nSelect Water Services\n\n\nJuly 2024 – Present (CTR via Insight Global: May–July 2024)\n\n\n\nAdvanced SQL & Query Optimization: Write and maintain complex SQL queries across 40+ Postgres site inventory tables to retrieve, analyze, and validate high-volume operational data with 100% accuracy\nEnterprise BI Migration: Spearheaded the migration from Domo to Power BI, eliminating $1.2M in external consulting fees through internal resource optimization and technical leadership\nProcess Improvement: Evaluated regional operational workflows and developed a troubleshooting framework that streamlined data reconciliation across NE, Rockies, Permian, and MidCon regions\nData Governance & Quality: Enforced data quality frameworks by correcting misclassified site data within Dataverse, ensuring asset visibility and compliance with organizational governance policies\nActionable Business Insights: Translated complex multi-system datasets into Power BI dashboards, converting technical KPI metrics into clear insights for non-technical stakeholders\nSystem Integration: Analyzed data flows between Postgres databases and reporting layers to ensure seamless data movement, including TMS/WMS data structures\n\n\n\n\n\nBusiness Data Analyst\n\nHP Inc (via Insight Global)\n\n\nApril 2023 – April 2024\n\n\n\nDeveloped high-level dashboards with drill-through capabilities for global teams across multiple business units\nActed as liaison between business requirements and dashboard development, translating stakeholder needs into technical specifications\nCollaborated with data engineering teams to implement corrections and deploy new data pipelines\nPromoted to lead senior management’s highest-priority dashboard initiative based on performance\n\n\n\n\n\nLead Healthcare Data Analyst\n\nTennessee Attorney General’s Office\n\n\nFebruary 2021 – April 2023\n\n\n\nProduced analytical datasets supporting Medicare Fraud legal cases, directly contributing to prosecution outcomes\nDesigned new data organization processes to standardize attorney-facing reports for courtroom presentation\nGained direct TennCare database access, reducing dataset turnaround from 3 weeks to 2–3 days\nTransitioned team presentations from Excel to Power BI for improved clarity and compliance documentation\n\n\n\n\n\nSenior Application Analyst\n\nCovenant Health, Knoxville\n\n\nOctober 2018 – February 2021\n\n\n\nManaged EHR systems and departmental workflows to strengthen operational efficiency across clinical departments\nPerformed server maintenance, daily backups, and custom reporting using SQL tools\nIdentified $4K/month in uncharged medication revenue via government-required opioid audit\nImplemented new radiology procedures and automated backend nursing documentation forms\n\n\n\n\n\nFocus Manager\n\nMEDHOST Incorporated\n\n\nApril 2018 – October 2018\n\n\n\nIncreased customer satisfaction by 15% within three months through process improvements and communication channel redesign\nProvided executive visibility into hospital performance and future regulatory needs\nPromoted from Clinical Support Analyst — first such promotion in company history\n\n\n\n\nClinical Support Analyst Tier 1\n\nMEDHOST Incorporated\n\n\nJanuary 2016 – April 2018\n\n\n\nTroubleshot clinical software and HL7 interface issues with high accuracy across multiple hospital clients\nAchieved 99% customer satisfaction by resolving technical and operational issues\nRedesigned knowledge system that significantly improved first-call resolution rates\n\n\n\n\n\nDriver Development & Safety Division Manager\n\nKnight Transportation\n\n\nSeptember 2012 – August 2015\n\n\n\nLed and supervised 60+ drivers, overseeing contracts, scheduling, and operational compliance\nAccelerated gross revenue by 12% through fuel and speed management optimization\nReduced fleet idle time from 55% to 20% and significantly improved fuel component compliance\nReceived ‘Best Dispatcher’ award from drivers for leadership and operational excellence"
+    "text": "Professional Experience\n\n\nSenior Data Analyst\n\nSelect Water Solutions\n\n\nJuly 2024 – Present (CTR via Insight Global: May–July 2024)\n\n\n\nEnterprise AI Analytics Platform (BI Forge): Architected and built a company-wide BI platform combining a role-based dashboard hub (Azure AD/Entra ID) with an AI Prompt Studio that translates plain-English questions into SQL-backed visuals — serving 8 dashboard domains and eliminating the ad-hoc analyst request backlog\nAI-Powered BI Pipeline (Streamline): Built a 7-stage AI-assisted pipeline taking dashboard visuals from stakeholder requirements to production Power BI artifacts — with live data validation, automated quality checks, DAX generation, and a formal sign-off gate\nData Quality Diagnostic Tool (Data Detective): Developed a chat-based AI tool that autonomously traces dbt lineage, runs live SQL, and diagnoses data quality issues in minutes — identifying root cause and fix owner across both active dbt repositories, reducing diagnosis time from hours to minutes\nAdvanced SQL & Query Optimization: Write and maintain complex SQL queries across 40+ Postgres site inventory tables to retrieve, analyze, and validate high-volume operational data with 100% accuracy\nEnterprise BI Migration: Spearheaded the migration from Domo to Power BI, eliminating $1.2M in external consulting fees through internal resource optimization and technical leadership\nExecutive Dashboards: Delivered multiple production dashboards including an AFE Portfolio Dashboard (capital project budget/spend/CIP tracking), SCADA Volumes Dashboard (disposal facility utilization with 6-month forecast), and Labour & Chemical Cost Dashboards (cost-per-barrel efficiency with employee-level drill-down) across TRE Chem facilities\nAnalytics Platform Engineering: Built and own 5 additional production FastAPI dashboard apps on the company’s shared analytics platform — chemical logistics operations, EHS compliance, workforce turnover, disposal-facility volumes, and the company’s primary financial/volumes reporting app (also the shared landing page for the full platform)\nData Integrity & Incident Response: Root-caused and fixed a join fan-out bug that had inflated a live cost KPI to $17.3B (corrected to ~$29M), and diagnosed a silent multi-day data freeze traced to an upstream pipeline model archived by another engineer — restored with zero downstream impact\nPlatform Security & Test Coverage: Authored the platform’s first row-level-security admin pattern (scoped viewer access by business unit, region, and site), now the reference implementation being ported to every dashboard, and led a test-coverage initiative that put a CI gate in front of every merge across multiple apps\nProcess Improvement & Data Governance: Designed a multi-region data reconciliation framework across NE, Rockies, Permian, and MidCon; enforced data quality in Dataverse; documented dbt schema for 18+ models to power AI query accuracy; scoped a 139-item audit moving business logic out of application code and into governed dbt SQL models across the platform\n\n\n\n\n\nBusiness Data Analyst\n\nHP Inc (via Insight Global)\n\n\nApril 2023 – April 2024\n\n\n\nDeveloped high-level dashboards with drill-through capabilities for global teams across multiple business units\nActed as liaison between business requirements and dashboard development, translating stakeholder needs into technical specifications\nCollaborated with data engineering teams to implement corrections and deploy new data pipelines\nPromoted to lead senior management’s highest-priority dashboard initiative based on performance\n\n\n\n\n\nLead Healthcare Data Analyst\n\nTennessee Attorney General’s Office\n\n\nFebruary 2021 – April 2023\n\n\n\nProduced analytical datasets supporting Medicare Fraud legal cases, directly contributing to prosecution outcomes\nDesigned new data organization processes to standardize attorney-facing reports for courtroom presentation\nGained direct TennCare database access, reducing dataset turnaround from 3 weeks to 2–3 days\nTransitioned team presentations from Excel to Power BI for improved clarity and compliance documentation\n\n\n\n\n\nSenior Application Analyst\n\nCovenant Health, Knoxville\n\n\nOctober 2018 – February 2021\n\n\n\nManaged EHR systems and departmental workflows to strengthen operational efficiency across clinical departments\nPerformed server maintenance, daily backups, and custom reporting using SQL tools\nIdentified $4K/month in uncharged medication revenue via government-required opioid audit\nImplemented new radiology procedures and automated backend nursing documentation forms\n\n\n\n\n\nFocus Manager\n\nMEDHOST Incorporated\n\n\nApril 2018 – October 2018\n\n\n\nIncreased customer satisfaction by 15% within three months through process improvements and communication channel redesign\nProvided executive visibility into hospital performance and future regulatory needs\nPromoted from Clinical Support Analyst — first such promotion in company history\n\n\n\n\nClinical Support Analyst Tier 1\n\nMEDHOST Incorporated\n\n\nJanuary 2016 – April 2018\n\n\n\nTroubleshot clinical software and HL7 interface issues with high accuracy across multiple hospital clients\nAchieved 99% customer satisfaction by resolving technical and operational issues\nRedesigned knowledge system that significantly improved first-call resolution rates\n\n\n\n\n\nDriver Development & Safety Division Manager\n\nKnight Transportation\n\n\nSeptember 2012 – August 2015\n\n\n\nLed and supervised 60+ drivers, overseeing contracts, scheduling, and operational compliance\nAccelerated gross revenue by 12% through fuel and speed management optimization\nReduced fleet idle time from 55% to 20% and significantly improved fuel component compliance\nReceived ‘Best Dispatcher’ award from drivers for leadership and operational excellence"
   },
   {
     "objectID": "resume.html#technical-skills",
@@ -42,228 +42,340 @@
     "text": "Education\n\nLebanon High School\n\nLebanon, TN"
   },
   {
-    "objectID": "projects/tre-chem-cost.html",
-    "href": "projects/tre-chem-cost.html",
-    "title": "Labour & Chemical Cost Dashboards",
+    "objectID": "projects/tre-reports.html",
+    "href": "projects/tre-reports.html",
+    "title": "Financial & Volumes Reporting Platform",
     "section": "",
-    "text": "Role: Lead Developer & Analyst · Organization: Select Water Services — TRE Chem · Status: Production\n\nPower BI DAX HTML/CSS JavaScript Cost Analytics Labour Analytics"
+    "text": "Role: Lead Developer & Analyst · Organization: Select Water Solutions · Status: Production\n\nFastAPI PostgreSQL Jinja2 Power BI"
   },
   {
-    "objectID": "projects/tre-chem-cost.html#the-problem",
-    "href": "projects/tre-chem-cost.html#the-problem",
-    "title": "Labour & Chemical Cost Dashboards",
+    "objectID": "projects/tre-reports.html#the-problem",
+    "href": "projects/tre-reports.html#the-problem",
+    "title": "Financial & Volumes Reporting Platform",
     "section": "The Problem",
-    "text": "The Problem\nTRE Chem facilities operate at the intersection of labour-intensive site work and high-value chemical treatment processes. Leadership needed to track cost performance at a level that existing reporting couldn’t provide:\n\nNo cost-per-barrel metric — knowing total spend without relating it to volume processed made it impossible to assess true efficiency\nLabour costs untracked by site — total headcount and payroll were visible, but cost distribution across specific sites and teams was opaque\nAnomalies invisible — unusual cost spikes or efficiency drops had no automated flagging; issues were found reactively, not proactively\nNo employee-level drill-down — managers couldn’t see which teams or employees were driving cost variance without manual data extraction\nChemical costs disconnected from labour — the two biggest cost drivers were tracked separately, making total operational cost analysis difficult"
+    "text": "The Problem\nThis app serves the company’s primary P&L and Volumes reports — the tables leadership uses to track revenue, cost of sales, and volume performance by region and site — plus several related financial reports. It’s also the shared landing page for every other analytics app on the platform, so reliability here has outsized visibility: a broken filter or a wrong total is the first thing anyone sees."
   },
   {
-    "objectID": "projects/tre-chem-cost.html#the-solution",
-    "href": "projects/tre-chem-cost.html#the-solution",
-    "title": "Labour & Chemical Cost Dashboards",
+    "objectID": "projects/tre-reports.html#the-solution",
+    "href": "projects/tre-reports.html#the-solution",
+    "title": "Financial & Volumes Reporting Platform",
     "section": "The Solution",
-    "text": "The Solution\nI built two linked Power BI HTML Content visuals that give leadership a layered view of operational cost — from portfolio-level KPIs down to individual site and employee detail.\n\nLabour Dashboard\nThe Labour Dashboard is the primary analytical surface, organized in three panels:\nLeft Panel — Site Selector: A site listing with inline indicators for: - Labour spend distribution (relative spend vs. other sites) - Monthly spend trend (sparkline-style) - Employee headcount - Anomaly indicator (amber/red dot for sites with unusual activity)\nMain Panel — KPI Summary: 16 KPI cards organized in 4 rows covering:\n\n\n\n\n\n\n\nRow\nMetrics\n\n\n\n\nSpend\nLabor Spend YTD · Monthly Spend · Spend vs. Prior Period · Forecast\n\n\nEfficiency\nAvg Cost/Bbl · Labor Efficiency Index · Cost Variance · Trend Direction\n\n\nWorkforce\nActive Employees · Avg Cost/Employee · Headcount Change · Turnover Rate\n\n\nPerformance\nSite Performance Score · Ranking vs. Portfolio · Goal Attainment · Alert Count\n\n\n\nRight Panel — Drill-Down Detail: Selecting a site reveals: - Site-specific KPIs with period-over-period comparison - Employee detail table (name, role, hours, cost, cost/bbl) - Monthly cost breakdown table - Cost component breakdown (labour categories)\nAlert System: An automated alert banner at the top of the dashboard surfaces anomalies before users have to find them: - Red banner — high-variance sites requiring immediate attention - Amber banner — medium-variance sites to monitor - Alert dots on site selector for at-a-glance triage\n\n\nChemical Cost Overview Dashboard\nThe companion overview dashboard focuses on chemical treatment costs alongside the labour view:\n\nHeader KPI metrics (total chemical cost, cost per barrel, variance)\nMonthly trend charts with cost trajectory analysis\nSite-level cost breakdown tables\nCost variance visualization comparing sites and periods"
+    "text": "The Solution\n\nFilter-and-export audit\nRather than fix issues one complaint at a time, I audited every filter and export path across all six report pages against real data. That surfaced and fixed a set of genuine bugs: sub-total rows that didn’t respect an active site filter, collapsed detail rows that were silently excluded from filter matching, and section totals that showed the full company-wide total regardless of which region or site was actually selected — instead of the filtered total a user would reasonably expect to see.\n\n\nRendering fixes\nFrozen (“sticky”) columns are supposed to stay pinned while a wide table scrolls horizontally — a base style rule elsewhere in the app was quietly overriding their background and stacking order, letting scrolling content show through. Traced the CSS specificity conflict and fixed the rendering across every affected report.\n\n\nCapping a real data anomaly\nA gross-margin percentage figure occasionally rendered as an absurd number — figures in the billions of a percent — whenever a data anomaly produced revenue just above zero paired with an unusually large gross profit figure. Rather than let a nonsensical percentage reach a viewer, I added an output cap that displays the figure as unavailable once it crosses a threshold no real margin would ever legitimately reach."
   },
   {
-    "objectID": "projects/tre-chem-cost.html#design-system",
-    "href": "projects/tre-chem-cost.html#design-system",
-    "title": "Labour & Chemical Cost Dashboards",
-    "section": "Design System",
-    "text": "Design System\n\nDark Theme\nBoth dashboards use a consistent dark theme designed for screen display in control rooms and field offices:\n\n\n\nVariable\nColor\nUsage\n\n\n\n\n--bg\n#08101e\nPrimary background\n\n\n--sf\n#0d1929\nSurface / card background\n\n\n--s2\n#122035\nSecondary surface\n\n\n--tx\n#e8f0fe\nPrimary text\n\n\n--bl\n#4d9fff\nBlue accent / charts\n\n\n--cy\n#00d4ff\nCyan highlights\n\n\n--gn\n#00e676\nPositive / on-track\n\n\n--rd\n#ff5252\nNegative / alert\n\n\n\n\n\nTheme Toggle\nBoth dashboards include a light/dark theme toggle — allowing presentation in bright meeting rooms (light mode) without a separate report version.\n\n\nResponsive Grid\nThe layout adjusts across viewport sizes: - 4-column — full dashboard on wide displays - 2-column — narrower panels or split screen - 1-column — single-focus or mobile view\n\n\nAnimation & Interactivity\n\nPulsing alert dots on anomaly indicators\nHover transitions on site selector and detail cards\nScrollable tables for large site lists or employee rosters\nTooltip system providing metric context on hover"
-  },
-  {
-    "objectID": "projects/tre-chem-cost.html#dax-architecture",
-    "href": "projects/tre-chem-cost.html#dax-architecture",
-    "title": "Labour & Chemical Cost Dashboards",
-    "section": "DAX Architecture",
-    "text": "DAX Architecture\nThe dashboards are driven by a structured set of DAX measures across four measure files:\n\n\n\n\n\n\n\nFile\nPurpose\n\n\n\n\nlabor_kpis.dax\nYTD spend, efficiency index, performance score, alert logic\n\n\nlabor_monthdata.dax\nMonthly cost trends, period-over-period calculations\n\n\nlabor_sitedata.dax\nSite-level aggregations, ranking, goal attainment\n\n\nlabor_employeedata.dax\nEmployee-level cost, hours, cost-per-barrel attribution\n\n\navg_lbr_cost_per_bbl.dax\nThe key efficiency metric — labour cost per barrel processed\n\n\n\nThe avg_lbr_cost_per_bbl measure is the cornerstone metric of the dashboard — normalizing raw labour spend against volume to produce a true efficiency comparison across sites of different scale."
-  },
-  {
-    "objectID": "projects/tre-chem-cost.html#visual-walkthrough",
-    "href": "projects/tre-chem-cost.html#visual-walkthrough",
-    "title": "Labour & Chemical Cost Dashboards",
-    "section": "Visual Walkthrough",
-    "text": "Visual Walkthrough\n\n\n\n\n👔 Labour KPI Summary 16 KPI cards across spend, efficiency, workforce, and performance rows\n\n\n\n\n🏭 Site Selector Panel Site list with spend distribution, trends, and anomaly indicators\n\n\n\n\n👤 Employee Drill-Down Per-employee cost, hours, and cost/bbl for selected site\n\n\n\n\n⚗️ Chemical Cost Overview Chemical cost per barrel, monthly trends, site variance\n\n\n\n\n\n\n\n\n\nTipScreenshots Available\n\n\n\nAnonymized screenshots of both dashboards are available upon request. The visuals contain operational cost and headcount data."
-  },
-  {
-    "objectID": "projects/tre-chem-cost.html#results-impact",
-    "href": "projects/tre-chem-cost.html#results-impact",
-    "title": "Labour & Chemical Cost Dashboards",
+    "objectID": "projects/tre-reports.html#results-impact",
+    "href": "projects/tre-reports.html#results-impact",
+    "title": "Financial & Volumes Reporting Platform",
     "section": "Results & Impact",
-    "text": "Results & Impact\n\n\n16 KPIs\nLabour metrics across 4 dimensions\n\n\nCost/Bbl\nKey efficiency metric surfaced\n\n\nProactive\nAutomated anomaly alerting\n\n\nEmployee Level\nDrill-down to individual contributor"
+    "text": "Results & Impact\n\n\n6 Pages\nFull filter-and-export audit, shipped\n\n\n8+ Apps\nServed from this app’s shared landing page\n\n\nFixed\nSection totals now respect active filters\n\n\nCapped\nAstronomical GM% anomaly can no longer render\n\n\n\nWhat Changed for the Business\n\nNumbers you can trust when you filter — totals now reflect what’s actually selected, not a silent fallback to the company-wide figure\nA reliable front door — as the platform’s shared landing page, its stability is the first impression of every other dashboard\nNo more nonsensical figures — a data anomaly can no longer produce a percentage that undermines confidence in the whole report"
   },
   {
-    "objectID": "projects/tre-chem-cost.html#technical-stack",
-    "href": "projects/tre-chem-cost.html#technical-stack",
-    "title": "Labour & Chemical Cost Dashboards",
+    "objectID": "projects/tre-reports.html#technical-stack",
+    "href": "projects/tre-reports.html#technical-stack",
+    "title": "Financial & Volumes Reporting Platform",
     "section": "Technical Stack",
-    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nBI Platform\nPower BI\nDashboard embedding, slicer integration\n\n\nCalculations\nDAX (3,000+ lines across 5 files)\nAll KPI calculations and HTML generation\n\n\nVisual Layer\nHTML/CSS/JavaScript\nRendering within Power BI HTML Content visual\n\n\nTheme System\nCSS variables (12 tokens)\nConsistent dark/light theming\n\n\nData Sources\ndbt load models (5 tables)\nLabour, employee, site, and monthly data\n\n\nLayout\nCSS Grid (responsive)\n4-col / 2-col / 1-col breakpoints"
+    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nBackend\nFastAPI (Python), Jinja2\nP&L, Volumes, and related financial report routes\n\n\nData Source\nPostgreSQL\nFinancial and operational reporting warehouse\n\n\nFrontend\nCustom JS filtering\nClient-side filter/collapse/export logic across 6 pages\n\n\nPlatform Role\nShared landing page\nDiscovery hub for every dashboard on the platform"
   },
   {
-    "objectID": "projects/tre-chem-cost.html#key-skills-demonstrated",
-    "href": "projects/tre-chem-cost.html#key-skills-demonstrated",
-    "title": "Labour & Chemical Cost Dashboards",
+    "objectID": "projects/tre-reports.html#key-skills-demonstrated",
+    "href": "projects/tre-reports.html#key-skills-demonstrated",
+    "title": "Financial & Volumes Reporting Platform",
     "section": "Key Skills Demonstrated",
-    "text": "Key Skills Demonstrated\n\n\nCost Analytics\nLabour efficiency measurement (cost per barrel), site performance scoring, anomaly detection, and chemical cost tracking in a multi-site operational environment\n\n\nAdvanced Power BI\nMulti-dashboard architecture with linked visuals, complex DAX across 5 measure files, and HTML Content visual with full interactivity\n\n\nExecutive Design\nAlert-driven layout that surfaces what needs attention first — anomaly banners, color-coded indicators, and a progressive drill-down from portfolio to employee level\n\n\nOperational Domain Knowledge\nUnderstanding of oilfield service economics — cost-per-barrel as the unit of measure, labour distribution across site types, and chemical treatment cost drivers\n\n\n\n← Back to All Projects"
+    "text": "Key Skills Demonstrated\n\n\nSystematic Auditing\nReviewed every filter/export path proactively instead of reacting one bug at a time\n\n\nCSS/Rendering Debugging\nTraced a specificity conflict silently overriding sticky-column rendering\n\n\nFinancial Reporting Accuracy\nEnsured section-level totals reflect exactly what a filter selects\n\n\nPlatform Stewardship\nMaintained the shared front door every other analytics app depends on\n\n\n\n← Back to All Projects ← Prev: Disposal Facility Volumes Next: Platform Reliability Initiative →"
   },
   {
-    "objectID": "projects/scada-volumes.html",
-    "href": "projects/scada-volumes.html",
-    "title": "SCADA Disposal Facility Volumes Dashboard",
+    "objectID": "projects/streamline.html",
+    "href": "projects/streamline.html",
+    "title": "Streamline — BI Visual Development Pipeline",
     "section": "",
-    "text": "Role: Data Analyst & Developer · Organization: Select Water Services · Scope: All Disposal Facility Regions\n\nHTML/CSS Chart.js Python dbt PostgreSQL Dagster SCADA"
+    "text": "Role: Architect & Lead Developer · Organization: Select Water Solutions — BI Team · Status: Active Build Target\n\nReact Express.js Claude API PostgreSQL dbt Docker Power BI"
   },
   {
-    "objectID": "projects/scada-volumes.html#the-problem",
-    "href": "projects/scada-volumes.html#the-problem",
-    "title": "SCADA Disposal Facility Volumes Dashboard",
+    "objectID": "projects/streamline.html#the-problem",
+    "href": "projects/streamline.html#the-problem",
+    "title": "Streamline — BI Visual Development Pipeline",
     "section": "The Problem",
-    "text": "The Problem\nSelect Water Services operates disposal facilities across multiple regions, each processing produced water volumes from oilfield operations. Facility managers and regional leadership needed answers to questions they couldn’t easily get from existing reporting:\n\nUtilization by facility — which sites are operating near capacity, and which are underutilized relative to their contract type?\nVolume trends — how are billed and recycled volumes trending month over month across the portfolio?\nSkim oil recovery — how much skim oil is being recovered, and how does that trend over time?\nForward visibility — what does the next six months look like based on current trajectory?\n\nThe SCADA data pipeline already captured this information — the gap was a visualization layer that made it accessible to operational decision-makers without requiring ad-hoc SQL queries."
+    "text": "The Problem\nThe BI team at Select Water builds dashboard visuals constantly — for executives, operations, field teams, and finance. But the path from “stakeholder wants a visual” to “visual is live in Power BI” was inconsistent, slow, and dependent on individual effort:\n\nNo standardized workflow — each analyst took a different path from requirements to delivery, with no consistent quality checkpoints\nDisconnected from live data — visuals were built against assumptions about the data, not validated against actual Postgres results during development\nManual Power BI conversion — getting a visual from development into Power BI required manual steps that varied by analyst and often introduced errors\nNo formal sign-off gate — visuals moved from dev to production without a structured review and approval process\nContext switching overhead — analysts had to jump between dbt schema docs, database clients, and BI tools to piece together what they needed"
   },
   {
-    "objectID": "projects/scada-volumes.html#the-solution",
-    "href": "projects/scada-volumes.html#the-solution",
-    "title": "SCADA Disposal Facility Volumes Dashboard",
+    "objectID": "projects/streamline.html#the-solution",
+    "href": "projects/streamline.html#the-solution",
+    "title": "Streamline — BI Visual Development Pipeline",
     "section": "The Solution",
-    "text": "The Solution\nI built a self-contained HTML dashboard that reads from the tfm_scada_volumes dbt model and presents the full picture of disposal facility performance — reactive to filters, visually clear about utilization thresholds, and forward-looking with a 6-month forecast built in.\nThe dashboard refreshes via a Python script (refresh_dashboard.py) that queries PostgreSQL directly, transforms the results, and injects them into the HTML template — keeping the output self-contained and portable for distribution.\n\nDashboard Architecture\n\n\n\n\n\nflowchart LR\n    A[SCADA Source Systems] --&gt; B[dbt Pipeline\\ntfm_scada_volumes]\n    B --&gt; C[PostgreSQL\\nData Warehouse]\n    C --&gt; D[Python Refresh Script\\nrefresh_dashboard.py]\n    D --&gt; E[Self-Contained HTML\\nDashboard Output]\n    F[Dagster Orchestration] --&gt; B\n\n\n\n\n\n\n\n\nInteractive Filters\nThe dashboard provides four reactive filter controls that narrow all charts and tables simultaneously:\n\nRegion — filter to a specific operational region\nSite — drill to individual facility\nContract type — Modular vs. Fixed capacity contracts\nUtilization flag — isolate over-utilized (≥85%) or under-utilized (&lt;65%) sites for focused operational review"
+    "text": "The Solution\nStreamline is a 7-stage pipeline that takes a dashboard visual from initial requirements all the way to a production-ready Power BI artifact — with AI assistance, live data validation, and a formal sign-off gate built in at every stage.\n\nThe 7-Stage Pipeline\n\n\n\n\n\nflowchart LR\n    A[1\\nRequirements\\nCapture] --&gt; B[2\\nSchema\\nExploration]\n    B --&gt; C[3\\nData\\nPreview]\n    C --&gt; D[4\\nAI Visual\\nBuilder]\n    D --&gt; E[5\\nValidation\\nChecks]\n    E --&gt; F[6\\nSign-Off\\nGate]\n    F --&gt; G[7\\nPower BI\\nConversion]\n\n    style D fill:#3B82F6,color:#fff\n    style F fill:#10B981,color:#fff\n    style G fill:#F59E0B,color:#fff\n\n\n\n\n\n\n\n\nStage 1 — Requirements Capture\nStakeholder requirements are entered in a structured form: visual type, KPIs to display, data source, filters, audience, and acceptance criteria. This becomes the brief that guides every subsequent stage.\n\n\nStage 2 — Schema Exploration\nStreamline auto-loads dbt schema.yml files from all 8 sws_bi_projects repositories on startup. Analysts can browse column definitions, table relationships, and documented business logic without leaving the tool — eliminating the context-switching overhead of digging through dbt docs separately.\n\n\nStage 3 — Live Data Preview\nBefore building anything, analysts can run parameterized queries against the PostgreSQL read-only replica to see actual data shapes, value distributions, and record counts. This catches data mismatches before they become design problems.\n\n\nStage 4 — AI Visual Builder\nClaude generates HTML/CSS/JavaScript visuals (Chart.js-based) from the requirements brief and schema context. Analysts can iterate with plain English feedback — “make the bars grouped by region,” “add a trend line” — and the AI updates the visual in real time.\n\n\nStage 5 — Automated Validation\nEvery generated visual passes through automated checks before it can move to sign-off:\n\nColumn alignment — referenced columns exist in the dbt schema\nDesign token compliance — colors, fonts, and spacing match the Select Water design system\nStructure validation — visual renders correctly across standard viewport sizes\nData binding verification — DAX measure references resolve against the target data model\n\n\n\nStage 6 — Formal Sign-Off Gate\nAnalysts submit the visual for review. Reviewers (lead analysts or BI manager) can approve, request changes, or reject with written feedback. Nothing moves to production without an explicit approval — creating a clear audit trail for every visual.\n\n\nStage 7 — Power BI Conversion\nApproved visuals are automatically converted to Power BI-safe format:\n\nHTML output optimized for the Power BI HTML Content visual\nCompanion DAX measures generated for all calculated fields\nTOM (Tabular Object Model) deployment scripts for model modifications\nDocumented handoff package for the Power BI developer"
   },
   {
-    "objectID": "projects/scada-volumes.html#dashboard-content",
-    "href": "projects/scada-volumes.html#dashboard-content",
-    "title": "SCADA Disposal Facility Volumes Dashboard",
-    "section": "Dashboard Content",
-    "text": "Dashboard Content\n\n5 Executive KPI Cards\n\n\n\n\n\n\n\nMetric\nWhat It Shows\n\n\n\n\nTotal Billed Volume\nAggregate billed volumes across selected sites/regions\n\n\nTotal Recycled Volume\nRecycled water volumes — a key sustainability metric\n\n\nAvg Utilization %\nCapacity utilization across the filtered site set\n\n\nSkim Oil Recovered\nTotal skim oil recovery (barrels)\n\n\nActive Sites\nCount of sites with recorded activity in the period\n\n\n\n\n\n4 Operational Charts\nMonthly Volumes — stacked/grouped view of billed, recycled, and facility-out volumes by month. Shows the volume mix and how it shifts over time.\nUtilization % by Site — horizontal bar chart with three-tier color coding: - Green (≥65%) — operating at or above efficient utilization - Amber (&lt;65%) — underutilized, potential capacity opportunity - Red (≥85%) — over-utilized, risk of capacity constraints\nBilled Volume by Region — YTD cumulative volume comparison across regions, enabling leadership to see relative scale and growth rate.\nSkim Oil Recovered by Month — monthly skim recovery trend with volume annotations, supporting operational and environmental reporting.\n\n\nSite Detail Table\nA sortable site-level table showing: Billed volume · Treated volume · Skim recovered · Daily capacity · Utilization % with an inline utilization bar for visual comparison.\n\n\n6-Month Forward Forecast\nThe dashboard includes a linear-trend forecast for April through September — projecting billed volumes, recycled volumes, and utilization for each site. Four dynamic insight cards summarize key forecast signals:\n\nSites trending toward capacity constraints\nRegions with strongest volume growth\nSkim recovery trajectory\nAggregate utilization forecast vs. current"
-  },
-  {
-    "objectID": "projects/scada-volumes.html#technical-implementation",
-    "href": "projects/scada-volumes.html#technical-implementation",
-    "title": "SCADA Disposal Facility Volumes Dashboard",
-    "section": "Technical Implementation",
-    "text": "Technical Implementation\n\ndbt Model Documentation\nI wrote complete schema.yml documentation for the tfm_scada_volumes model — all 18 columns with descriptions, data types, and business definitions. This documentation serves both the dashboard (as query context) and the broader team (as the canonical reference for what each column means).\n\n\nPython Refresh Script\nrefresh_dashboard.py handles the connection between the data warehouse and the dashboard output:\n\nReads dbt profiles (~/.dbt/profiles.yml) to connect to the correct PostgreSQL environment\nSupports --profile dev/prod flag for environment switching\nSupports --months N flag to control the historical lookback window\nQueries the tfm_scada_volumes model and transforms results into the dashboard’s expected data shape\nInjects the JSON payload into the HTML template and writes the output file\n\nThis design keeps the dashboard fully self-contained — no server required, no live database connection in the browser. The HTML file can be emailed, shared via Teams, or hosted as a static artifact.\n\n\nQuery Performance\nIn building the underlying queries, I identified and documented seven performance optimizations in the dbt model:\n\nPushing the year_month &gt;= '2024-01' filter earlier in the CTE chain to reduce downstream data volume\nReplacing two correlated NOT EXISTS subqueries with LEFT JOIN anti-joins\nCollapsing four aggregation passes into two\nRemoving unused CTEs (final_2, oft_volume) that added overhead without contributing to output\nAddressing case normalization in joins that prevented index utilization"
-  },
-  {
-    "objectID": "projects/scada-volumes.html#visual-walkthrough",
-    "href": "projects/scada-volumes.html#visual-walkthrough",
-    "title": "SCADA Disposal Facility Volumes Dashboard",
-    "section": "Visual Walkthrough",
-    "text": "Visual Walkthrough\n\n\n\n\n📊 KPI Summary + Filters 5 KPI cards with Region, Site, Contract, and Utilization filters\n\n\n\n\n📈 Monthly Volume Trends Billed, recycled, and facility-out volumes by month\n\n\n\n\n🏭 Utilization % by Site Color-coded bars: green ≥65%, amber &lt;65%, red ≥85%\n\n\n\n\n🔮 6-Month Forecast Linear trend projections with 4 insight summary cards\n\n\n\n\n\n\n\n\n\nTipScreenshots Available\n\n\n\nAnonymized screenshots of the dashboard are available upon request. The dashboard contains operational volume data from production facilities."
-  },
-  {
-    "objectID": "projects/scada-volumes.html#results-impact",
-    "href": "projects/scada-volumes.html#results-impact",
-    "title": "SCADA Disposal Facility Volumes Dashboard",
-    "section": "Results & Impact",
-    "text": "Results & Impact\n\n\nReal-Time\nOperational visibility via daily refresh\n\n\n6-Month\nForward forecast built in\n\n\nSelf-Contained\nPortable HTML — no server required\n\n\n18 Columns\nFull dbt model documentation written"
-  },
-  {
-    "objectID": "projects/scada-volumes.html#technical-stack",
-    "href": "projects/scada-volumes.html#technical-stack",
-    "title": "SCADA Disposal Facility Volumes Dashboard",
+    "objectID": "projects/streamline.html#technical-stack",
+    "href": "projects/streamline.html#technical-stack",
+    "title": "Streamline — BI Visual Development Pipeline",
     "section": "Technical Stack",
-    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nDashboard\nHTML5 + Chart.js\nInteractive visuals, filters, forecast\n\n\nRefresh Engine\nPython (psycopg2, PyYAML)\nData extraction and HTML injection\n\n\nData Model\ndbt (tfm_scada_volumes)\nTransformation and business logic layer\n\n\nDatabase\nPostgreSQL\nData warehouse query target\n\n\nOrchestration\nDagster\nPipeline scheduling and health monitoring\n\n\nDocumentation\ndbt schema.yml\n18-column model documentation"
+    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nFrontend\nReact + Vite\nPipeline UI, visual builder, dashboard hub\n\n\nBackend\nExpress.js (Node)\nAPI layer, session management, file handling\n\n\nAI Engine\nClaude API (claude-sonnet-4-6)\nVisual generation, iteration, schema interpretation\n\n\nDatabase\nPostgreSQL (read-only)\nLive data preview and validation queries\n\n\nSchema Context\ndbt schema.yml (8 repos)\nColumn definitions loaded on startup\n\n\nOrchestration\nDagster\nPipeline status visibility\n\n\nDeployment\nDocker Compose\nContainerized local/team deployment\n\n\nOutput\nPower BI HTML Content visual\nProduction deployment target"
   },
   {
-    "objectID": "projects/scada-volumes.html#key-skills-demonstrated",
-    "href": "projects/scada-volumes.html#key-skills-demonstrated",
-    "title": "SCADA Disposal Facility Volumes Dashboard",
+    "objectID": "projects/streamline.html#key-skills-demonstrated",
+    "href": "projects/streamline.html#key-skills-demonstrated",
+    "title": "Streamline — BI Visual Development Pipeline",
     "section": "Key Skills Demonstrated",
-    "text": "Key Skills Demonstrated\n\n\nOperational Analytics\nUtilization tracking, volume trending, and forward forecasting for a multi-site, multi-region disposal facility network\n\n\nEnd-to-End Delivery\nBuilt the full stack — dbt documentation, Python refresh script, and HTML dashboard — as a portable, self-contained artifact\n\n\ndbt Expertise\nComplete schema.yml documentation for the model and seven query performance optimizations identified and documented\n\n\nData Visualization\nChart.js implementation with three-tier color coding, reactive filters, and 6-month linear trend forecasting\n\n\n\n← Back to All Projects"
+    "text": "Key Skills Demonstrated\n\n\nWorkflow Design\nEnd-to-end pipeline design with structured stages, automated validation, and a formal sign-off gate — turning ad-hoc development into a repeatable process\n\n\nAI-Assisted Development\nClaude API integration for visual generation and iteration — with schema context injection and live data grounding to produce accurate, not just plausible, results\n\n\nPower BI Architecture\nDeep understanding of the Power BI HTML Content visual, DAX measure generation, and TOM deployment — enabling full-stack BI delivery\n\n\nFull-Stack Engineering\nReact + Express + Docker stack built for team deployment, with dbt schema auto-loading and PostgreSQL integration across all 8 BI project repos\n\n\n\n← Back to All Projects"
   },
   {
-    "objectID": "projects/medicare-fraud.html",
-    "href": "projects/medicare-fraud.html",
-    "title": "Medicare Fraud Case Analytics",
+    "objectID": "projects/power-bi-migration.html",
+    "href": "projects/power-bi-migration.html",
+    "title": "Executive Infrastructure Dashboard",
     "section": "",
-    "text": "Role: Lead Healthcare Data Analyst · Organization: Tennessee Attorney General’s Office · Timeline: February 2021 – April 2023\n\nSQL Power BI TennCare Healthcare Data Legal Analytics Data Standardization"
+    "text": "Role: Lead Developer & Analyst · Organization: Select Water Solutions · Status: Production — Used by Executive Leadership\n\nPower BI SQL Postgres Dataverse DAX Data Modeling KPI Design"
   },
   {
-    "objectID": "projects/medicare-fraud.html#the-problem",
-    "href": "projects/medicare-fraud.html#the-problem",
-    "title": "Medicare Fraud Case Analytics",
+    "objectID": "projects/power-bi-migration.html#the-problem",
+    "href": "projects/power-bi-migration.html#the-problem",
+    "title": "Executive Infrastructure Dashboard",
     "section": "The Problem",
-    "text": "The Problem\nThe Tennessee Attorney General’s Office prosecutes Medicare fraud cases that involve large, complex healthcare datasets. When I joined the team, the analytical workflow had several critical bottlenecks:\n\n3-week turnaround for dataset requests — analysts had to submit requests through intermediaries to access TennCare (Tennessee’s Medicaid program) data, with no direct query capability\nExcel-based reporting for attorney-facing deliverables, which limited the depth of analysis and made it difficult to explore data interactively during case preparation\nNo standardized data organization — each analyst structured their outputs differently, creating inconsistencies across cases and making it difficult for attorneys to compare analyses\nTime pressure — fraud cases have legal deadlines, and a 3-week data turnaround meant analysts were often working with stale information or rushing to compensate for delays"
+    "text": "The Problem\nSelect Water Solutions operates across multiple business units and facilities, each generating its own stream of financial and operational data. The executive team needed a unified view to make informed, timely decisions — but what they had was fragmented:\n\nScattered reporting — financial performance, operational metrics, and capacity data lived in separate systems and separate reports, requiring manual consolidation to get a full picture\nLagging visibility — by the time data was compiled and formatted for leadership, it was often days or weeks old, limiting its usefulness for real-time decision-making\nNo drill-through capability — high-level summaries existed, but executives couldn’t easily drill from a portfolio-level view down to individual business units or facilities without requesting ad-hoc reports\nDisconnected financial and operational data — revenue and margin figures were tracked separately from utilization rates, capacity, and throughput, making it difficult to see the operational drivers behind financial outcomes"
   },
   {
-    "objectID": "projects/medicare-fraud.html#the-approach",
-    "href": "projects/medicare-fraud.html#the-approach",
-    "title": "Medicare Fraud Case Analytics",
+    "objectID": "projects/power-bi-migration.html#the-solution",
+    "href": "projects/power-bi-migration.html#the-solution",
+    "title": "Executive Infrastructure Dashboard",
+    "section": "The Solution",
+    "text": "The Solution\nI designed and built a comprehensive, real-time executive dashboard in Power BI that consolidated financial and operational performance into a single, interactive platform.\n\nDesign Philosophy\nThe guiding principle was: every screen answers a decision. Rather than building a data dump with every available metric, I worked with executive stakeholders to identify the specific decisions they make weekly and monthly, then designed each dashboard view to directly support those decisions.\n\n\nArchitecture\n\n\n\n\n\nflowchart LR\n    A[Postgres&lt;br&gt;Operational Data] --&gt; D[Data Model&lt;br&gt;Star Schema]\n    B[Dataverse&lt;br&gt;Asset & Site Data] --&gt; D\n    C[Financial Systems&lt;br&gt;Revenue & Cost] --&gt; D\n    D --&gt; E[DAX Measures&lt;br&gt;KPIs & Calculations]\n    E --&gt; F[Power BI Dashboard&lt;br&gt;Executive Views]\n    F --&gt; G[Business Unit&lt;br&gt;Drill-Through]\n    F --&gt; H[Facility-Level&lt;br&gt;Detail]\n    F --&gt; I[Trend & Variance&lt;br&gt;Analysis]\n\n\n\n\n\n\n\n\nWhat the Dashboard Delivers\nFinancial Performance Layer:\n\nRevenue by business unit and facility — with actuals vs. forecast comparison and variance highlighting so executives immediately see where results are tracking ahead or behind plan\nGross profit and margin percentages — broken down by segment to assess the profitability mix across the portfolio and identify which units are driving margin expansion or compression\nPeriod-over-period trending — monthly and quarterly views that surface trajectory, not just snapshots, enabling executives to distinguish between one-time blips and emerging trends\n\nOperational Performance Layer:\n\nUtilization rates — how effectively assets are being deployed across facilities, surfacing underutilized capacity that represents revenue opportunity or overutilized assets that signal risk\nCapacity and throughput metrics — real-time visibility into operational bottlenecks, enabling proactive resource allocation before constraints impact financial performance\nOperational volume tracking — activity-level metrics that provide context for the financial numbers, connecting revenue outcomes to the operational work that produces them\n\nExecutive Decision Support:\n\nDrill-through from portfolio to facility — executives start with a high-level view of all business units, then click through to individual facilities for granular detail without switching reports\nVariance analysis — automated flagging of actuals-to-forecast variances beyond threshold, so leadership focuses attention on the exceptions rather than reviewing every line item\nStrategic alignment views — progress tracking against strategic objectives, connecting daily operational metrics to quarterly and annual goals"
+  },
+  {
+    "objectID": "projects/power-bi-migration.html#implementation-approach",
+    "href": "projects/power-bi-migration.html#implementation-approach",
+    "title": "Executive Infrastructure Dashboard",
+    "section": "Implementation Approach",
+    "text": "Implementation Approach\n\nPhase 1 — Stakeholder Discovery\nBefore touching a data model, I spent time with the executive team to understand their decision-making cadence:\n\nWhat decisions do you make weekly? Monthly? Quarterly?\nWhat data do you wish you had when making those decisions?\nWhere do you currently go to find answers, and what’s frustrating about that process?\nWhat does “good” look like for each business unit?\n\nThis discovery shaped every subsequent design decision and ensured the dashboard solved real problems rather than displaying data for its own sake.\n\n\nPhase 2 — Data Modeling\nBuilt a star schema data model that unified financial and operational data into a single queryable structure:\n\nDesigned fact tables for financial transactions, operational volumes, and capacity metrics\nCreated dimension tables for business units, facilities, time periods, and asset categories\nDeveloped DAX measures for calculated KPIs — margin percentages, utilization rates, variance calculations, and period-over-period comparisons\n\n\n\nPhase 3 — Dashboard Development\nBuilt the dashboard in iterative cycles, validating each view with stakeholders before moving to the next:\n\nExecutive Summary — portfolio-level KPIs with traffic-light status indicators\nBusiness Unit Views — detailed performance by segment with drill-through to facilities\nOperational Detail — utilization, capacity, and throughput metrics with trend context\nVariance & Forecasting — actuals vs. forecast with automated exception flagging\n\n\n\nPhase 4 — Deployment & Adoption\n\nConfigured automated data refreshes to ensure the dashboard reflected current operational reality\nTrained executive users on navigation, drill-through, and filtering\nEstablished a feedback loop for iterating on views based on how leadership actually used the tool in practice"
+  },
+  {
+    "objectID": "projects/power-bi-migration.html#visual-walkthrough",
+    "href": "projects/power-bi-migration.html#visual-walkthrough",
+    "title": "Executive Infrastructure Dashboard",
+    "section": "Visual Walkthrough",
+    "text": "Visual Walkthrough\n\n\n\n\n📊 Executive Summary View Portfolio KPIs — revenue, gross profit, margin, utilization\n\n\n\n\n🏢 Business Unit Drill-Through Segment performance with actuals vs. forecast\n\n\n\n\n⚙️ Operational Metrics View Utilization rates, capacity, throughput by facility\n\n\n\n\n📈 Trend & Variance Analysis Period-over-period trends with variance flagging\n\n\n\n\n\n\n\n\n\nTipScreenshots Available\n\n\n\nAnonymized screenshots or a live walkthrough of the dashboard are available upon request during interviews. The dashboard contains proprietary financial and operational data."
+  },
+  {
+    "objectID": "projects/power-bi-migration.html#results-impact",
+    "href": "projects/power-bi-migration.html#results-impact",
+    "title": "Executive Infrastructure Dashboard",
+    "section": "Results & Impact",
+    "text": "Results & Impact\n\n\nReal-Time\nExecutive visibility into all business units\n\n\nUnified\nFinancial + operational data in one platform\n\n\nSelf-Service\nDrill-through eliminates ad-hoc requests\n\n\nAdopted\nUsed by executive team for weekly decisions\n\n\n\nWhat Changed for Leadership\n\nFaster decisions — executives no longer wait for compiled reports; they open the dashboard and have current data with drill-through capability at any time\nBetter decisions — connecting financial outcomes to operational drivers in a single view means leadership sees why numbers are moving, not just that they’re moving\nProactive management — variance flagging and trend views surface problems early, enabling intervention before small issues compound\nAligned organization — a shared dashboard creates a shared understanding of performance, reducing the “my spreadsheet says something different” problem in leadership meetings\nReduced ad-hoc burden — the analytics team saw a significant reduction in one-off data requests because leadership could self-serve through drill-through navigation"
+  },
+  {
+    "objectID": "projects/power-bi-migration.html#why-this-project-matters",
+    "href": "projects/power-bi-migration.html#why-this-project-matters",
+    "title": "Executive Infrastructure Dashboard",
+    "section": "Why This Project Matters",
+    "text": "Why This Project Matters\nThis wasn’t a reporting project — it was a decision-support platform. The difference matters. Reporting asks: “What happened?” Decision support asks: “What should we do about it?”\nBy combining financial KPIs with operational drivers, the dashboard gives executives the full picture: not just that revenue is up or down, but what’s driving it — utilization, capacity, throughput, mix. That operational context is what turns a number on a screen into an actionable insight.\nThe design approach — starting with stakeholder decisions, not available data — is something I bring to every project. The best dashboards aren’t the ones with the most data; they’re the ones that answer the right questions."
+  },
+  {
+    "objectID": "projects/power-bi-migration.html#technical-stack",
+    "href": "projects/power-bi-migration.html#technical-stack",
+    "title": "Executive Infrastructure Dashboard",
+    "section": "Technical Stack",
+    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nBI Platform\nPower BI\nInteractive dashboards, drill-through, scheduled refresh\n\n\nData Sources\nPostgres, Dataverse, Financial Systems\nOperational, asset, and financial data\n\n\nData Modeling\nStar schema (DAX)\nUnified fact/dimension model, calculated measures\n\n\nKPI Engine\nDAX measures\nMargin %, utilization rates, variance calculations\n\n\nQuery Layer\nSQL (Postgres)\nData extraction, validation, transformation\n\n\nGovernance\nDataverse\nAsset classification, data quality enforcement\n\n\nRefresh\nAutomated schedule\nNear-real-time data currency"
+  },
+  {
+    "objectID": "projects/power-bi-migration.html#key-skills-demonstrated",
+    "href": "projects/power-bi-migration.html#key-skills-demonstrated",
+    "title": "Executive Infrastructure Dashboard",
+    "section": "Key Skills Demonstrated",
+    "text": "Key Skills Demonstrated\n\n\nDashboard Architecture\nEnd-to-end design from data model through interactive executive views with drill-through navigation\n\n\nStakeholder Discovery\nInterview-driven design that starts with decisions, not data — ensuring every view has a purpose\n\n\nData Modeling\nStar schema design unifying financial and operational data into a single queryable model\n\n\nDAX & Calculated Measures\nComplex KPI calculations including margin percentages, utilization rates, and variance analysis\n\n\n\n← Back to All Projects Next: Data Reconciliation →"
+  },
+  {
+    "objectID": "projects/ne-disposal-daily.html",
+    "href": "projects/ne-disposal-daily.html",
+    "title": "Disposal Facility Volumes — Incident Response",
+    "section": "",
+    "text": "Role: Lead Developer & Analyst · Organization: Select Water Solutions · Status: Production — Incident Resolved\n\nFastAPI dbt PostgreSQL Root-Cause Analysis"
+  },
+  {
+    "objectID": "projects/ne-disposal-daily.html#the-problem",
+    "href": "projects/ne-disposal-daily.html#the-problem",
+    "title": "Disposal Facility Volumes — Incident Response",
+    "section": "The Problem",
+    "text": "The Problem\nA live disposal-facility volumes dashboard silently stopped showing new data. It didn’t error, didn’t 500 — it just froze, showing whatever it had as of a few days prior with no visible sign anything was wrong. A stakeholder eventually noticed the numbers hadn’t moved and flagged it."
+  },
+  {
+    "objectID": "projects/ne-disposal-daily.html#the-investigation",
+    "href": "projects/ne-disposal-daily.html#the-investigation",
+    "title": "Disposal Facility Volumes — Incident Response",
+    "section": "The Investigation",
+    "text": "The Investigation\nThe dashboard itself does no data processing of its own — it reads a single pre-built table live from the warehouse. So the first question was whether the app was broken or the data feeding it was. Direct comparison confirmed the app was working correctly; the table itself had simply stopped updating.\nTracing further upstream, into the dbt project that builds that table, I found the actual root cause: another engineer had recently done a cleanup pass, moving what looked like unused data models into an “archive” folder to tidy up the project. This specific model had no other model referencing it within dbt — its only consumer was this dashboard, reading it directly from the warehouse outside of dbt’s own dependency graph. From inside dbt’s world, it looked orphaned. In reality, it was silently load bearing, and moving it out of the active model path meant the scheduled rebuild simply stopped running it — no error, no alert, just a table that quietly stopped getting fresh data.\n\n\n\n\n\nflowchart LR\n    A[Raw Ticket Data&lt;br&gt;Fully Current] --&gt; B[dbt Model&lt;br&gt;Archived by Mistake]\n    B -.-&gt;|No longer scheduled| C[(Warehouse Table&lt;br&gt;Frozen)]\n    C --&gt; D[Dashboard&lt;br&gt;Reads Live]\n    D --&gt; E[\"Looks broken —&lt;br&gt;actually starved\"]\n\n\n\n\n\n\nI confirmed the upstream raw data feeding that model was fully current the entire time — this wasn’t a broader outage, just one specific, non-obvious dependency that fell outside the tooling’s own visibility."
+  },
+  {
+    "objectID": "projects/ne-disposal-daily.html#the-fix",
+    "href": "projects/ne-disposal-daily.html#the-fix",
+    "title": "Disposal Facility Volumes — Incident Response",
+    "section": "The Fix",
+    "text": "The Fix\nRestored the model to its correct location in the active model path, verified its two upstream dependencies were untouched by the broader cleanup, and confirmed the fix didn’t disturb anything else the cleanup had legitimately archived. Documented the failure mode for the rest of the platform: any dbt model that only has an external, non-dbt-tracked consumer is invisible to a “looks unused” cleanup pass, and is worth checking first on any future “this dashboard just stopped updating” report."
+  },
+  {
+    "objectID": "projects/ne-disposal-daily.html#results-impact",
+    "href": "projects/ne-disposal-daily.html#results-impact",
+    "title": "Disposal Facility Volumes — Incident Response",
+    "section": "Results & Impact",
+    "text": "Results & Impact\n\n\n3 Layers Deep\nRoot cause traced past the app, into the pipeline\n\n\nZero Impact\nFix touched only the one affected model\n\n\nMulti-Day\nSilent outage window closed\n\n\nDocumented\nFailure mode flagged platform-wide for reuse\n\n\n\nWhat Changed for the Business\n\nRestored trust — the dashboard reflects current data again, with the actual root cause understood, not just papered over\nA named failure mode — “archived but still externally load-bearing” is now a known pattern to check first on similar reports\nNo collateral damage — the fix was scoped precisely enough to leave every other change in the same cleanup pass intact"
+  },
+  {
+    "objectID": "projects/ne-disposal-daily.html#technical-stack",
+    "href": "projects/ne-disposal-daily.html#technical-stack",
+    "title": "Disposal Facility Volumes — Incident Response",
+    "section": "Technical Stack",
+    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nBackend\nFastAPI (Python)\nLive dashboard, no in-app ETL\n\n\nData Pipeline\ndbt, PostgreSQL\nShared warehouse model, scheduled rebuild\n\n\nDiagnosis\nDirect SQL, git history\nTraced the model’s move and its scheduling impact"
+  },
+  {
+    "objectID": "projects/ne-disposal-daily.html#key-skills-demonstrated",
+    "href": "projects/ne-disposal-daily.html#key-skills-demonstrated",
+    "title": "Disposal Facility Volumes — Incident Response",
+    "section": "Key Skills Demonstrated",
+    "text": "Key Skills Demonstrated\n\n\nRoot-Cause Discipline\nDidn’t stop at “the app looks fine” — traced the failure to its actual source\n\n\nShared-Pipeline Awareness\nUnderstood how one team’s cleanup can silently break another team’s dependency\n\n\nMinimal-Blast-Radius Fixes\nRestored exactly what broke without disturbing the rest of the cleanup\n\n\nKnowledge Sharing\nDocumented the failure mode so the next occurrence is diagnosed in minutes, not days\n\n\n\n← Back to All Projects ← Prev: Workforce Turnover Analytics Next: Financial & Volumes Reporting →"
+  },
+  {
+    "objectID": "projects/hr-report.html",
+    "href": "projects/hr-report.html",
+    "title": "Workforce Turnover Analytics",
+    "section": "",
+    "text": "Role: Lead Developer & Analyst · Organization: Select Water Solutions · Status: Production\n\nFastAPI Pandas PostgreSQL Power BI"
+  },
+  {
+    "objectID": "projects/hr-report.html#the-problem",
+    "href": "projects/hr-report.html#the-problem",
+    "title": "Workforce Turnover Analytics",
+    "section": "The Problem",
+    "text": "The Problem\nThe company’s turnover-analytics report — tracking voluntary and involuntary attrition by tenure band — was failing outright on every request when I picked it up. Underneath that, the report’s logic had several deeper correctness bugs: totals that didn’t reconcile with their own breakdown rows, a termination category that was silently excluded from the dashboard’s filter options despite real data existing for it, and a formula that could mathematically explode toward infinite turnover rates for any business unit being wound down."
+  },
+  {
+    "objectID": "projects/hr-report.html#the-solution",
+    "href": "projects/hr-report.html#the-solution",
+    "title": "Workforce Turnover Analytics",
+    "section": "The Solution",
+    "text": "The Solution\n\nStabilized and rebuilt\nFixed the underlying errors causing the page to fail, then rebuilt the tenure-bucket calculations directly against the report’s real per-row data rather than a reconstruction that would have double-counted employees across months — verified by cross-checking computed totals against the raw source data before shipping.\n\n\nExpanded to the real classification set\nThe report’s Term Type filter only exposed two categories (Voluntary/Involuntary) when the underlying data actually carried seven, including RIF, Divestiture, Reorganization, and No-Show categories that had been silently miscounted or hidden. Rebuilt the classification logic to expose and correctly total all seven.\n\n\nCatching a statistical artifact before it misled anyone\nWhile validating results for a business unit that was being wound down, I noticed its turnover rate climbing toward 900%+ — an obviously wrong number for a shrinking, not accelerating, organization. I traced it to a mathematical artifact: a shrinking headcount denominator combined with a fixed trickle of leftover terminations mathematically explodes the rate formula as the denominator approaches zero, even with no real change in attrition behavior. Rather than let a misleading number reach leadership, I added a minimum-roster floor that suppresses the rate calculation (displaying “—” instead of a false figure) whenever a business unit’s headcount drops below a meaningful threshold.\n\n\n\n\n\nflowchart LR\n    A[Shrinking Roster] --&gt; B{Roster &lt; Floor?}\n    B --&gt;|Yes| C[\"Suppress Rate — Show '–'\"]\n    B --&gt;|No| D[Compute Real Rate]"
+  },
+  {
+    "objectID": "projects/hr-report.html#results-impact",
+    "href": "projects/hr-report.html#results-impact",
+    "title": "Workforce Turnover Analytics",
+    "section": "Results & Impact",
+    "text": "Results & Impact\n\n\nProduction\nPromoted from broken page to live tool\n\n\n7\nTermination categories correctly tracked\n\n\n900%+\nFalse rate-spike caught before reaching leadership\n\n\nReconciled\nGrand totals now match their own breakdown rows\n\n\n\nWhat Changed for the Business\n\nA working tool — from a page that 500’d on every request to a production dashboard leadership relies on\nCorrect classification — every real termination category is now visible and counted, not silently folded into the wrong bucket\nTrustworthy rates — a rate that would have mathematically lied about a dissolving org’s attrition is suppressed instead of shipped"
+  },
+  {
+    "objectID": "projects/hr-report.html#technical-stack",
+    "href": "projects/hr-report.html#technical-stack",
+    "title": "Workforce Turnover Analytics",
+    "section": "Technical Stack",
+    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nBackend\nFastAPI (Python), Pandas\nTenure-bucket aggregation, rate calculations\n\n\nData Source\nPostgreSQL, dbt\nTurnover/headcount warehouse model\n\n\nVisualization\nCustom JS charts\nYear-of-Service / Days-of-Service breakdowns\n\n\nTesting\npytest\nAggregation-parity and rate-suppression regression tests"
+  },
+  {
+    "objectID": "projects/hr-report.html#key-skills-demonstrated",
+    "href": "projects/hr-report.html#key-skills-demonstrated",
+    "title": "Workforce Turnover Analytics",
+    "section": "Key Skills Demonstrated",
+    "text": "Key Skills Demonstrated\n\n\nStatistical Judgment\nRecognized a mathematically-explosive rate formula as an artifact, not real signal\n\n\nData Reconciliation\nRebuilt totals to match their own breakdown rows, verified against raw source data\n\n\nProduction Debugging\nDiagnosed and fixed a completely broken page down to its root cause\n\n\nHR/People Analytics\nCorrectly classified and tracked all real termination categories, not just the obvious ones\n\n\n\n← Back to All Projects ← Prev: EHS Compliance Dashboard Next: Disposal Facility Volumes →"
+  },
+  {
+    "objectID": "projects/data-reconciliation.html",
+    "href": "projects/data-reconciliation.html",
+    "title": "Multi-Region Data Reconciliation Framework",
+    "section": "",
+    "text": "Role: Senior Data Analyst · Organization: Select Water Solutions · Scope: NE, Rockies, Permian, MidCon Regions\n\nSQL Postgres Dataverse Power BI Data Governance Process Design"
+  },
+  {
+    "objectID": "projects/data-reconciliation.html#the-problem",
+    "href": "projects/data-reconciliation.html#the-problem",
+    "title": "Multi-Region Data Reconciliation Framework",
+    "section": "The Problem",
+    "text": "The Problem\nSelect Water Solutions operates across four major regions — Northeast, Rockies, Permian, and MidCon — each with its own operational cadence and data entry patterns. Site inventory data lived across 40+ Postgres tables, and discrepancies between the database layer and the Dataverse reporting layer were eroding trust in the numbers.\nThe specific challenges included:\n\nMisclassified site records in Dataverse that didn’t match the underlying Postgres data, making asset visibility unreliable for field operations and leadership reporting\nNo standardized process for identifying, diagnosing, or resolving discrepancies — each analyst had their own ad-hoc approach\nRegional inconsistencies in how data was entered, categorized, and maintained, making cross-region comparison unreliable\nHigh-volume data requiring queries that could handle complexity without sacrificing accuracy — there was no room for “close enough”"
+  },
+  {
+    "objectID": "projects/data-reconciliation.html#the-approach",
+    "href": "projects/data-reconciliation.html#the-approach",
+    "title": "Multi-Region Data Reconciliation Framework",
     "section": "The Approach",
-    "text": "The Approach\nI tackled this from three angles simultaneously: access, tooling, and process standardization.\n\nSecuring Direct Database Access\nThe single highest-impact change was obtaining direct access to the TennCare database. This required:\n\nBuilding trust with the TennCare data team by demonstrating responsible data handling practices and understanding of HIPAA compliance requirements\nDocumenting the specific query patterns the AG’s office needed, showing that direct access would reduce burden on the TennCare team (fewer ad-hoc requests for them to fulfill)\nEstablishing protocols for secure data extraction and storage that met both agencies’ governance requirements\n\nThis alone collapsed the data turnaround from 3 weeks to 2–3 days — the time it takes to write, validate, and document a query rather than wait in a request queue.\n\n\nModernizing the Reporting Stack\nI transitioned the team’s attorney-facing deliverables from Excel to Power BI, which provided:\n\nInteractive exploration — attorneys could filter by provider, date range, procedure code, and billing pattern without requesting new reports\nVisual pattern detection — fraud patterns that were invisible in spreadsheet rows became obvious in visualizations (billing spikes, geographic clustering, procedure code anomalies)\nCompliance-ready formatting — standardized layouts that met courtroom presentation requirements\n\n\n\nStandardizing Data Organization\nI designed a consistent data organization framework for case analytics:\n\nStandard naming conventions for datasets, queries, and deliverables\nTemplate structures for common case types so new analyses started from a proven foundation rather than a blank page\nDocumentation requirements for every dataset — source, extraction date, query logic, and known limitations — so any analyst could pick up where another left off\n\n\n\n\n\n\nflowchart LR\n    A[Case Assignment] --&gt; B[Direct TennCare&lt;br&gt;Database Query]\n    B --&gt; C[Data Extraction&lt;br&gt;& Validation]\n    C --&gt; D[Standardized&lt;br&gt;Dataset Structure]\n    D --&gt; E[Power BI&lt;br&gt;Analysis & Visuals]\n    E --&gt; F[Attorney-Facing&lt;br&gt;Deliverable]\n    F --&gt; G[Case Prosecution]\n\n    style B fill:#3B82F6,color:#fff\n    style E fill:#3B82F6,color:#fff"
+    "text": "The Approach\nI designed a systematic reconciliation framework — not just a one-time cleanup, but a repeatable process the organization could use going forward.\n\nStep 1 — Map the Data Landscape\nBefore writing a single query, I mapped the relationships between the 40+ Postgres tables to understand how site inventory data flowed from source systems into the reporting layer. This included:\n\nDocumenting table relationships, key fields, and join logic\nIdentifying which tables were authoritative for which data elements\nCataloging known data quality issues by region\n\n\n\nStep 2 — Build Diagnostic Queries\nI developed a suite of SQL queries designed to surface discrepancies systematically rather than chasing individual errors:\n-- Example: Identify sites with mismatched status between\n-- Postgres source tables and Dataverse reporting layer\nSELECT\n    p.site_id,\n    p.site_name,\n    p.region,\n    p.operational_status  AS postgres_status,\n    d.operational_status  AS dataverse_status,\n    p.last_updated        AS source_updated,\n    d.last_modified       AS reporting_updated\nFROM site_inventory p\nINNER JOIN dataverse_sites d\n    ON p.site_id = d.site_id\nWHERE p.operational_status &lt;&gt; d.operational_status\nORDER BY p.region, p.site_name;\nThese queries were designed to be reusable — parameterized by region, date range, and data element so any analyst could run them going forward.\n\n\nStep 3 — Document the Troubleshooting Framework\nFor each category of discrepancy, I documented:\n\nWhat it looks like — the specific data pattern that indicates the issue\nWhy it happens — the root cause (data entry timing, system sync lag, classification error, etc.)\nHow to fix it — the specific correction steps in Dataverse or the source system\nHow to prevent it — process changes or validation rules to catch it earlier\n\n\n\nStep 4 — Correct and Validate\nWorking region by region, I applied corrections to misclassified site data in Dataverse, validating each change against the Postgres source of truth. Every correction was logged for audit purposes.\n\n\nStep 5 — Reporting Layer\nBuilt Power BI dashboards that surfaced reconciliation status by region, giving leadership visibility into data quality metrics alongside operational KPIs — making data integrity a visible, measurable priority rather than a background assumption."
   },
   {
-    "objectID": "projects/medicare-fraud.html#working-with-sensitive-data",
-    "href": "projects/medicare-fraud.html#working-with-sensitive-data",
-    "title": "Medicare Fraud Case Analytics",
-    "section": "Working with Sensitive Data",
-    "text": "Working with Sensitive Data\nHealthcare fraud analytics involves protected health information (PHI) and legally sensitive case data. Every aspect of this project was designed with compliance in mind:\n\nAll data access followed HIPAA protocols and agency security policies\nDatasets were stored in secured, access-controlled environments\nPower BI reports were designed for internal use only with appropriate access restrictions\nQuery logic and analytical methods were documented for potential courtroom testimony and cross-examination\n\n\n\n\n\n\n\nTipRecruiter Note\n\n\n\nDue to the sensitive nature of this work (active legal cases, protected health information), I cannot share specific datasets, dashboards, or case details. I’m happy to discuss the methodology, technical approach, and analytical patterns in a conversation setting."
+    "objectID": "projects/data-reconciliation.html#the-framework-in-practice",
+    "href": "projects/data-reconciliation.html#the-framework-in-practice",
+    "title": "Multi-Region Data Reconciliation Framework",
+    "section": "The Framework in Practice",
+    "text": "The Framework in Practice\nThe troubleshooting framework I documented followed a decision-tree pattern:\n\n\n\n\n\nflowchart TD\n    A[Discrepancy Detected] --&gt; B{Source data correct?}\n    B --&gt;|Yes| C{Dataverse record exists?}\n    B --&gt;|No| D[Trace to source system&lt;br&gt;& correct upstream]\n    C --&gt;|Yes| E[Update Dataverse&lt;br&gt;classification]\n    C --&gt;|No| F[Create Dataverse&lt;br&gt;record from source]\n    E --&gt; G[Validate correction&lt;br&gt;against Postgres]\n    F --&gt; G\n    D --&gt; G\n    G --&gt; H[Log correction&lt;br&gt;for audit trail]\n    H --&gt; I[Confirm in Power BI&lt;br&gt;reporting layer]\n\n\n\n\n\n\nThis turned reconciliation from a heroic individual effort into a repeatable team process."
   },
   {
-    "objectID": "projects/medicare-fraud.html#results-impact",
-    "href": "projects/medicare-fraud.html#results-impact",
-    "title": "Medicare Fraud Case Analytics",
+    "objectID": "projects/data-reconciliation.html#visual-walkthrough",
+    "href": "projects/data-reconciliation.html#visual-walkthrough",
+    "title": "Multi-Region Data Reconciliation Framework",
+    "section": "Visual Walkthrough",
+    "text": "Visual Walkthrough\n\n\n\n\n\n📋 Reconciliation Status Dashboard Data quality KPIs by region\n\n\n\n\n\n🛠️ Diagnostic Query Suite Parameterized queries for discrepancy detection\n\n\n\n\n\n📑 Troubleshooting Framework Doc Decision trees and root cause catalog\n\n\n\n\n\n✅ Validation Results View Before/after correction audit trail\n\n\n\n\n\n\n\n\n\nTipScreenshots Available\n\n\n\nAnonymized views of the reconciliation dashboards and framework documentation are available upon request during interviews."
+  },
+  {
+    "objectID": "projects/data-reconciliation.html#results-impact",
+    "href": "projects/data-reconciliation.html#results-impact",
+    "title": "Multi-Region Data Reconciliation Framework",
     "section": "Results & Impact",
-    "text": "Results & Impact\n\n\n3 wks → 2 days\nDataset turnaround reduction\n\n\nDirect Access\nTennCare database query capability\n\n\nExcel → Power BI\nAttorney-facing reporting modernized\n\n\nStandardized\nData organization across all cases\n\n\n\nAdditional Outcomes\n\nStronger cases — faster access to fresher data meant analyses were based on current information rather than snapshots that were weeks old\nAttorney empowerment — interactive Power BI reports let attorneys explore the data themselves during case preparation, reducing back-and-forth with the analytics team\nTeam scalability — standardized processes and templates meant new analysts could become productive faster and produce consistent outputs\nCross-case pattern recognition — standardized data structures made it easier to identify patterns that spanned multiple cases or providers"
+    "text": "Results & Impact\n\n\n40+\nPostgres tables reconciled\n\n\n4 Regions\nNE · Rockies · Permian · MidCon\n\n\n100%\nQuery accuracy maintained\n\n\nReusable\nFramework adopted by team\n\n\n\nAdditional Outcomes\n\nRestored trust in reporting — leadership could make operational decisions knowing the data reflected reality\nReduced future reconciliation time — the documented framework and reusable queries meant subsequent reconciliation cycles were significantly faster\nImproved data entry practices — root cause documentation led to process changes that reduced new discrepancies at the source\nGovernance visibility — Power BI dashboards made data quality a measurable KPI, not an invisible assumption"
   },
   {
-    "objectID": "projects/medicare-fraud.html#lessons-learned",
-    "href": "projects/medicare-fraud.html#lessons-learned",
-    "title": "Medicare Fraud Case Analytics",
-    "section": "Lessons Learned",
-    "text": "Lessons Learned\n1. Access is the first bottleneck to solve. The most sophisticated analytical tools in the world don’t matter if you’re waiting 3 weeks for data. Securing direct database access was a relationship and trust-building exercise as much as a technical one — and it delivered the single largest time savings.\n2. Analysts aren’t the only users. Attorneys needed to interact with the data directly, not just receive static reports. Designing for their workflow (filtering by provider, exploring billing patterns, presenting in court) produced better outcomes than designing for analytical elegance.\n3. Standardization pays compound interest. The time invested in templates, naming conventions, and documentation standards felt slow at first, but it paid back exponentially as the team handled more cases in parallel with consistent quality."
+    "objectID": "projects/data-reconciliation.html#why-this-project-matters",
+    "href": "projects/data-reconciliation.html#why-this-project-matters",
+    "title": "Multi-Region Data Reconciliation Framework",
+    "section": "Why This Project Matters",
+    "text": "Why This Project Matters\nMost organizations have data quality problems. What separates good analysts from great ones is whether the fix is a one-time cleanup or a lasting capability. This project delivered both — immediate corrections to restore reporting accuracy, and a framework that ensures the organization can maintain that accuracy going forward.\nThe key insight was treating data reconciliation as a process design problem, not just a SQL problem. The queries were necessary but not sufficient — the documentation, the decision trees, and the Power BI visibility layer are what made it sustainable."
   },
   {
-    "objectID": "projects/medicare-fraud.html#technical-stack",
-    "href": "projects/medicare-fraud.html#technical-stack",
-    "title": "Medicare Fraud Case Analytics",
+    "objectID": "projects/data-reconciliation.html#technical-stack",
+    "href": "projects/data-reconciliation.html#technical-stack",
+    "title": "Multi-Region Data Reconciliation Framework",
     "section": "Technical Stack",
-    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nData Source\nTennCare Database (direct access)\nMedicare/Medicaid claims, provider data\n\n\nQuery Layer\nSQL\nData extraction, validation, case-specific analysis\n\n\nVisualization\nPower BI\nInteractive attorney-facing dashboards\n\n\nPrior Tooling\nExcel (replaced)\nLegacy reporting format\n\n\nGovernance\nHIPAA-compliant protocols\nPHI handling, access controls\n\n\nProcess\nStandardized templates\nConsistent data organization across cases\n\n\n\n\n← Back to All Projects ← Prev: Data Reconciliation"
+    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nSource Data\nPostgres (40+ tables)\nSite inventory, operational data\n\n\nReporting Layer\nDataverse\nAsset classification, governance\n\n\nQuery Development\nSQL (Postgres)\nDiagnostic queries, validation\n\n\nVisualization\nPower BI\nReconciliation dashboards, KPI tracking\n\n\nDocumentation\nTroubleshooting framework\nDecision trees, root cause catalog\n\n\nProcess\nRegion-by-region validation\nSystematic correction and audit logging\n\n\n\n\n← Back to All Projects Next: Medicare Fraud Analytics →"
   },
   {
-    "objectID": "projects/data-detective.html",
-    "href": "projects/data-detective.html",
-    "title": "Data Detective — AI Data Quality Diagnostic Tool",
+    "objectID": "projects/chm-logistics.html",
+    "href": "projects/chm-logistics.html",
+    "title": "Chemical Logistics Operations Dashboard",
     "section": "",
-    "text": "Role: Developer & Analyst · Organization: Select Water Services · Status: Working — Ready for Team Deployment\n\nReact Express.js Claude API PostgreSQL dbt SSE Streaming Docker"
+    "text": "Role: Lead Developer & Analyst · Organization: Select Water Solutions · Status: Production\n\nFastAPI PostgreSQL Power BI Python Chart.js Data Integrity"
   },
   {
-    "objectID": "projects/data-detective.html#the-problem",
-    "href": "projects/data-detective.html#the-problem",
-    "title": "Data Detective — AI Data Quality Diagnostic Tool",
+    "objectID": "projects/chm-logistics.html#the-problem",
+    "href": "projects/chm-logistics.html#the-problem",
+    "title": "Chemical Logistics Operations Dashboard",
     "section": "The Problem",
-    "text": "The Problem\nData quality issues in a modern analytics stack are hard to diagnose. When a number looks wrong in a dashboard, the investigation typically requires an analyst to:\n\nUnderstand the dbt DAG — which models feed which, and where the issue might originate\nRead multiple SQL files to trace how the value was calculated\nRun diagnostic queries against live data to confirm the root cause\nDetermine which layer owns the fix — dbt transformation, source system, ETL, or data entry\n\nAt Select Water, this process routinely took hours — and required deep familiarity with the dbt project structure, the Postgres schema, and the underlying source systems. Analysts who were newer to the stack were especially dependent on senior teammates for diagnosis."
+    "text": "The Problem\nThe chemical logistics business (dispatch, drivers, and freight carriers) had no live operational view. Managers were working from static exports and manual spreadsheets to answer basic questions — which carriers were active this month, how drivers were performing against safety and fuel metrics, and whether shipments were moving on time."
   },
   {
-    "objectID": "projects/data-detective.html#the-solution",
-    "href": "projects/data-detective.html#the-solution",
-    "title": "Data Detective — AI Data Quality Diagnostic Tool",
+    "objectID": "projects/chm-logistics.html#the-solution",
+    "href": "projects/chm-logistics.html#the-solution",
+    "title": "Chemical Logistics Operations Dashboard",
     "section": "The Solution",
-    "text": "The Solution\nData Detective replaces the manual investigation process with a conversational interface. An analyst describes the issue in plain English — “the billed volume for Permian last month looks too low” — and the tool autonomously traces dbt lineage, runs SQL queries, and returns a root cause analysis with a recommended fix owner.\n\nHow It Works\nThe core of Data Detective is a Claude-powered tool-use loop with three specialized tools:\n\n\n\n\n\nflowchart TD\n    A[Analyst describes issue\\nin plain English] --&gt; B[Claude reasons about\\nwhere to investigate]\n    B --&gt; C{Which tool\\nis needed?}\n    C --&gt;|Trace the DAG| D[get_model_lineage\\nWalks dbt SQL files,\\nbuilds upstream tree]\n    C --&gt;|Read SQL logic| E[get_model_sql\\nReads specific model\\ntransformation logic]\n    C --&gt;|Check live data| F[run_sql\\nExecutes SELECT query\\nagainst PostgreSQL]\n    D --&gt; B\n    E --&gt; B\n    F --&gt; B\n    B --&gt; G[Root cause identified\\nFix owner named]\n\n\n\n\n\n\nget_model_lineage — Traverses the dbt project’s SQL files to build an upstream lineage tree for any model. This shows Claude exactly which source tables and intermediate transformations contribute to the value being investigated.\nget_model_sql — Reads the full SQL for a specific dbt model, allowing Claude to examine transformation logic, filter conditions, join strategies, and aggregation patterns for signs of the issue.\nrun_sql — Executes SELECT-only queries against the live PostgreSQL read-only replica, returning actual data at any point in the lineage to confirm where values diverge from expectations.\n\n\nLineage Coverage\nData Detective traverses both active dbt repositories:\n\nsws_bi_projects — all 8 BI project domains\ndbtproject-trino — the Trino-backed data warehouse models\n\nThis gives Claude a complete picture of the lineage stack, regardless of which repo a model lives in.\n\n\nReal-Time Streaming\nThe investigation runs as a real-time stream — analysts watch Claude reason through the problem, call tools, and refine its hypothesis as results come back. This transparency builds confidence in the diagnosis and helps analysts learn the lineage structure as they watch it unfold.\n\n\nSession Export\nEvery investigation session can be exported as a structured Markdown document:\n\nLineage trees rendered as indented hierarchy\nSQL results formatted as Markdown tables\nModel SQL captured as fenced code blocks\nRoot cause summary and fix owner recommendation\n\nExports are named data-detective-YYYY-MM-DD.md for easy reference and filing."
+    "text": "The Solution\nI built a FastAPI dashboard with three views — Dispatch, Drivers, and Executive — reading live from the operational data warehouse, alongside a parallel Power BI DAX rebuild of the same two core pages for teams that needed the dashboard embedded directly in Power BI.\n\nArchitecture\n\n\n\n\n\nflowchart LR\n    A[Postgres&lt;br&gt;Shipment & Driver Data] --&gt; B[FastAPI Queries&lt;br&gt;Parameterized SQL]\n    B --&gt; C[Dispatch View]\n    B --&gt; D[Drivers View]\n    B --&gt; E[Executive View]\n    C --&gt; F[Click-Through&lt;br&gt;Drill-Down]\n    D --&gt; F\n    E --&gt; F\n\n\n\n\n\n\n\n\nFinding and fixing a data-integrity bug that mattered\nEarly in the build, freight-cost figures on the dashboard looked absurd — one chart’s axis read in the tens of billions of dollars. I traced it to a join fan-out: a shipment-level table was actually stored one row per stop, so a shipment with several stops had its cost figure duplicated and summed that many times over. A naive SUM() was returning ~$17.3B against a correct value of ~$29M. I fixed it by deduplicating to one row per shipment before any aggregation — a pattern I then applied everywhere that table fed a KPI or chart.\n\n\nFilter audit\nWhen a stakeholder reported that a specific region/role combination on the Drivers page “looked wrong,” I didn’t just patch the one complaint — I audited every filter across all three tabs against live data. That surfaced several real, previously-invisible bugs: filters that silently zeroed out results for entire regions due to mismatched value formats between data sources, charts that ignored the active time period entirely, and dead filter controls left over from removed features. All were fixed and verified the same day.\n\n\nExternal fuel spend map\nA stakeholder wanted to see where offsite fuel spend was actually happening. The raw transaction data only carried abbreviated pump-receipt addresses, no coordinates. I geocoded roughly 1,600 distinct addresses using the free U.S. Census Bureau batch geocoder, falling back to ZIP-code population centroids for addresses too messy to match exactly — reaching 99.7% coverage — and built a live map showing exact vs. approximate matches distinctly."
   },
   {
-    "objectID": "projects/data-detective.html#results-impact",
-    "href": "projects/data-detective.html#results-impact",
-    "title": "Data Detective — AI Data Quality Diagnostic Tool",
+    "objectID": "projects/chm-logistics.html#results-impact",
+    "href": "projects/chm-logistics.html#results-impact",
+    "title": "Chemical Logistics Operations Dashboard",
     "section": "Results & Impact",
-    "text": "Results & Impact\n\n\nHours → Minutes\nData issue diagnosis time\n\n\n2 Repos\nFull lineage coverage across all dbt projects\n\n\nFix Owner\nAlways identifies who resolves the issue\n\n\nTeam-Ready\nDocker deployment for full team rollout\n\n\n\nWhat Changed\n\nJunior analysts can self-serve — the tool provides the dbt context expertise that previously required a senior analyst to diagnose\nFaster resolution — root cause in minutes rather than hours means data quality fixes reach production sooner\nLearning tool — watching Claude trace lineage in real time teaches analysts the DAG structure as they use it\nConsistent documentation — every investigation produces an exportable record of what was found and why"
+    "text": "Results & Impact\n\n\n$17.3B → $29M\nCost-KPI data-integrity fix\n\n\nSame-Day\nFull 3-tab filter audit, fix, and verification\n\n\n99.7%\nGeocode coverage for the fuel-spend map\n\n\nLive\nClick-through drill-down on every chart\n\n\n\nWhat Changed for the Business\n\nTrustworthy numbers — the dashboard’s KPIs now match what a direct database query returns, not an inflated join artifact\nConfidence in filters — every filter on every tab is verified against live data, not assumed correct because it renders without error\nOperational visibility — dispatchers and managers get a live view of carriers, shipments, and driver performance instead of static exports"
   },
   {
-    "objectID": "projects/data-detective.html#technical-stack",
-    "href": "projects/data-detective.html#technical-stack",
-    "title": "Data Detective — AI Data Quality Diagnostic Tool",
+    "objectID": "projects/chm-logistics.html#technical-stack",
+    "href": "projects/chm-logistics.html#technical-stack",
+    "title": "Chemical Logistics Operations Dashboard",
     "section": "Technical Stack",
-    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nFrontend\nReact + Vite\nChat interface, SSE stream rendering, export\n\n\nBackend\nExpress.js (Node)\nSession store, tool execution, SSE endpoint\n\n\nAI Engine\nClaude API (claude-sonnet-4-6)\nTool-use loop, reasoning, root cause synthesis\n\n\nTool: Lineage\ndbt SQL file traversal\nDAG mapping, upstream model discovery\n\n\nTool: SQL Reader\nFile system (dbt repos)\nModel SQL inspection\n\n\nTool: Query Runner\nPostgreSQL (pg driver, read-only)\nLive data validation\n\n\nDeployment\nDocker + batch file\nTeam distribution without infrastructure overhead\n\n\nExport\nMarkdown (.md)\nStructured session documentation"
+    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nBackend\nFastAPI (Python)\nDispatch/Drivers/Executive routes, parameterized queries\n\n\nData Source\nPostgreSQL\nLive operational warehouse, dbt-modeled\n\n\nVisualization\nChart.js, Leaflet\nCharts and the offsite fuel-spend map\n\n\nParallel Track\nPower BI (DAX)\nSame two core pages, native PBI embed\n\n\nGeocoding\nUS Census Batch Geocoder\nFree, no-API-key address-to-coordinate matching\n\n\nTesting\npytest\nRegression coverage for filter and aggregation logic"
   },
   {
-    "objectID": "projects/data-detective.html#key-skills-demonstrated",
-    "href": "projects/data-detective.html#key-skills-demonstrated",
-    "title": "Data Detective — AI Data Quality Diagnostic Tool",
+    "objectID": "projects/chm-logistics.html#key-skills-demonstrated",
+    "href": "projects/chm-logistics.html#key-skills-demonstrated",
+    "title": "Chemical Logistics Operations Dashboard",
     "section": "Key Skills Demonstrated",
-    "text": "Key Skills Demonstrated\n\n\nAI Tool Use Architecture\nMulti-tool Claude agent designed for autonomous investigation — with lineage traversal, SQL reading, and live query execution as discrete, composable tools\n\n\ndbt Expertise\nDeep understanding of dbt project structure, DAG traversal, and schema.yml documentation — enabling accurate lineage mapping across two active repos\n\n\nData Quality Engineering\nSystematic root cause analysis methodology: trace the lineage, read the logic, validate with live data, identify the fix owner\n\n\nDeveloper Tooling\nBuilt a tool for analysts by an analyst — prioritizing transparency (streaming), learnability (lineage visualization), and reusability (session export)\n\n\n\n← Back to All Projects"
+    "text": "Key Skills Demonstrated\n\n\nData Integrity Debugging\nTraced a 500x cost-KPI inflation to its root cause (join fan-out) and fixed it at the source\n\n\nFull-Stack Dashboard Development\nFastAPI + Chart.js + Leaflet, end-to-end from query to interactive chart\n\n\nSystematic QA\nAudited every filter on every page against live data instead of patching one complaint at a time\n\n\nPractical Data Engineering\nFree-tier geocoding pipeline reaching 99.7% coverage with no paid API\n\n\n\n← Back to All Projects Next: EHS Compliance Dashboard →"
   },
   {
     "objectID": "projects/afe-portfolio-dashboard.html",
     "href": "projects/afe-portfolio-dashboard.html",
     "title": "AFE Portfolio Executive Dashboard",
     "section": "",
-    "text": "Role: Lead Developer & Analyst · Organization: Select Water Services · Status: Production — Executive Use\n\nPower BI DAX HTML/CSS JavaScript Capital Project Analytics"
+    "text": "Role: Lead Developer & Analyst · Organization: Select Water Solutions · Status: Production — Executive Use\n\nPower BI DAX HTML/CSS JavaScript Capital Project Analytics"
   },
   {
     "objectID": "projects/afe-portfolio-dashboard.html#the-problem",
@@ -326,7 +438,7 @@
     "href": "index.html#dear-hiring-manager",
     "title": "Hi, I’m Shane Christian",
     "section": "Dear Hiring Manager,",
-    "text": "Dear Hiring Manager,\n\nI am writing to express my strong interest in the Senior Data Analyst position. With a career that spans from managing driver divisions at Knight Transportation to leading multi-system data reconciliation at Select Water Services, I offer a rare combination of deep transportation domain knowledge and advanced technical expertise in SQL and Power BI.\n\nFrom the Field to the Data Layer\nIn my current role as a Senior Data Analyst at Select Water Services, I specialize in transforming complex operational data into clarity. I recently reconciled site inventory data across four major regions — NE, Rockies, Permian, and MidCon — documenting troubleshooting frameworks to resolve discrepancies and ensure reporting accuracy. This experience in maintaining data integrity within Dataverse and Postgres environments directly aligns with any organization’s need for an analyst who understands data quality frameworks and governance.\n\n\nOperations Intuition Meets Technical Depth\nWhat sets me apart is my foundational experience in the logistics industry. During my tenure at Knight Transportation, I led a fleet of 60+ drivers and successfully reduced idle time from 55% to 20% while increasing gross revenue by 12%. I understand the “day in the life” of transportation processes, which allows me to evaluate systems and identify inefficiencies that a purely technical analyst might overlook.\n\n\nMaking Data Speak to Everyone\nI have a proven ability to translate complicated analytics for non-technical stakeholders. Whether it was reducing Medicare fraud case preparation time from 3 weeks to 2 days for the Tennessee Attorney General’s Office, or developing global dashboards for HP, I focused on making data accessible and actionable. I also led the enterprise-wide migration from Domo to Power BI at Select Water, eliminating $1.2M in external consulting fees through internal resource optimization and technical leadership.\nI am eager to bring my entrepreneurial mindset and technical toolkit to help drive insights and operational excellence. Thank you for your time and consideration.\nSincerely,\nEdward Shane Christian\n📧 schristian625@aol.com · 📱 615-852-0233 · 🔗 LinkedIn"
+    "text": "Dear Hiring Manager,\n\nI am writing to express my strong interest in the Senior Data Analyst position. With a career that spans from managing driver divisions at Knight Transportation to leading multi-system data reconciliation at Select Water Solutions, I offer a rare combination of deep transportation domain knowledge and advanced technical expertise in SQL and Power BI.\n\nFrom the Field to the Data Layer\nIn my current role as a Senior Data Analyst at Select Water Solutions, I specialize in transforming complex operational data into clarity. I recently reconciled site inventory data across four major regions — NE, Rockies, Permian, and MidCon — documenting troubleshooting frameworks to resolve discrepancies and ensure reporting accuracy. This experience in maintaining data integrity within Dataverse and Postgres environments directly aligns with any organization’s need for an analyst who understands data quality frameworks and governance.\n\n\nOperations Intuition Meets Technical Depth\nWhat sets me apart is my foundational experience in the logistics industry. During my tenure at Knight Transportation, I led a fleet of 60+ drivers and successfully reduced idle time from 55% to 20% while increasing gross revenue by 12%. I understand the “day in the life” of transportation processes, which allows me to evaluate systems and identify inefficiencies that a purely technical analyst might overlook.\n\n\nMaking Data Speak to Everyone\nI have a proven ability to translate complicated analytics for non-technical stakeholders. Whether it was reducing Medicare fraud case preparation time from 3 weeks to 2 days for the Tennessee Attorney General’s Office, or developing global dashboards for HP, I focused on making data accessible and actionable. I also led the enterprise-wide migration from Domo to Power BI at Select Water, eliminating $1.2M in external consulting fees through internal resource optimization and technical leadership.\nI am eager to bring my entrepreneurial mindset and technical toolkit to help drive insights and operational excellence. Thank you for your time and consideration.\nSincerely,\nEdward Shane Christian\n📧 schristian625@aol.com · 📱 615-852-0233 · 🔗 LinkedIn"
   },
   {
     "objectID": "index.html#what-i-bring-to-the-table",
@@ -350,32 +462,46 @@
     "text": "Real-world projects that demonstrate how I turn complex data problems into measurable business outcomes — from enterprise BI migrations to fraud analytics."
   },
   {
+    "objectID": "projects.html#select-water-solutions",
+    "href": "projects.html#select-water-solutions",
+    "title": "Project Showcase",
+    "section": "Select Water Solutions",
+    "text": "Select Water Solutions"
+  },
+  {
+    "objectID": "projects.html#previous-experience",
+    "href": "projects.html#previous-experience",
+    "title": "Project Showcase",
+    "section": "Previous Experience",
+    "text": "Previous Experience"
+  },
+  {
     "objectID": "projects.html#skills-demonstrated-across-projects",
     "href": "projects.html#skills-demonstrated-across-projects",
     "title": "Project Showcase",
     "section": "Skills Demonstrated Across Projects",
-    "text": "Skills Demonstrated Across Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSkill Area\nInfra Dashboard\nData Recon\nFraud Analytics\nBI Forge\nStreamline\nData Detective\nAFE Dashboard\nSCADA\nTRE Chem\n\n\n\n\nSQL & Query Development\n✅\n✅\n✅\n✅\n✅\n✅\n◻️\n✅\n◻️\n\n\nPower BI & Dashboard Design\n✅\n✅\n✅\n◻️\n✅\n◻️\n✅\n◻️\n✅\n\n\nData Modeling & DAX\n✅\n◻️\n◻️\n◻️\n◻️\n◻️\n✅\n◻️\n✅\n\n\nAI / Claude API Integration\n◻️\n◻️\n◻️\n✅\n✅\n✅\n◻️\n◻️\n◻️\n\n\nFull-Stack Development\n◻️\n◻️\n◻️\n✅\n✅\n✅\n◻️\n✅\n◻️\n\n\nData Governance & Quality\n✅\n✅\n✅\n✅\n✅\n✅\n◻️\n✅\n◻️\n\n\ndbt & Pipeline Engineering\n◻️\n◻️\n◻️\n✅\n✅\n✅\n◻️\n✅\n◻️\n\n\nStakeholder Communication\n✅\n✅\n✅\n✅\n✅\n◻️\n✅\n◻️\n✅\n\n\nProcess Optimization\n✅\n✅\n✅\n✅\n✅\n✅\n◻️\n✅\n✅\n\n\nOperations & Logistics\n✅\n✅\n◻️\n◻️\n◻️\n◻️\n✅\n✅\n✅"
+    "text": "Skills Demonstrated Across Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSkill Area\nInfra Dashboard\nData Recon\nBI Forge\nStreamline\nData Detective\nAFE Dashboard\nSCADA\nTRE Chem\nCHM Logistics\nEHS Report\nHR Report\nNE Disposal\nTRE Reports\nPlatform Reliability\n\n\n\n\nSQL & Query Development\n✅\n✅\n✅\n✅\n✅\n◻️\n✅\n◻️\n✅\n✅\n✅\n✅\n✅\n◻️\n\n\nPower BI & Dashboard Design\n✅\n✅\n◻️\n✅\n◻️\n✅\n◻️\n✅\n✅\n◻️\n✅\n◻️\n✅\n◻️\n\n\nData Modeling & DAX\n✅\n◻️\n◻️\n◻️\n◻️\n✅\n◻️\n✅\n✅\n◻️\n◻️\n◻️\n◻️\n◻️\n\n\nAI / Claude API Integration\n◻️\n◻️\n✅\n✅\n✅\n◻️\n◻️\n◻️\n◻️\n◻️\n◻️\n◻️\n◻️\n◻️\n\n\nFull-Stack Development\n◻️\n◻️\n✅\n✅\n✅\n◻️\n✅\n◻️\n✅\n✅\n✅\n✅\n✅\n◻️\n\n\nData Governance & Quality\n✅\n✅\n✅\n✅\n✅\n◻️\n✅\n◻️\n✅\n✅\n✅\n✅\n✅\n✅\n\n\ndbt & Pipeline Engineering\n◻️\n◻️\n✅\n✅\n✅\n◻️\n✅\n◻️\n✅\n✅\n◻️\n✅\n◻️\n✅\n\n\nStakeholder Communication\n✅\n✅\n✅\n✅\n◻️\n✅\n◻️\n✅\n✅\n✅\n✅\n✅\n✅\n✅\n\n\nProcess Optimization\n✅\n✅\n✅\n✅\n✅\n◻️\n✅\n✅\n✅\n✅\n✅\n✅\n✅\n✅\n\n\nOperations & Logistics\n✅\n✅\n◻️\n◻️\n◻️\n✅\n✅\n✅\n✅\n◻️\n◻️\n✅\n✅\n◻️\n\n\nSecurity & Access Control\n◻️\n◻️\n✅\n◻️\n◻️\n◻️\n◻️\n◻️\n◻️\n✅\n◻️\n◻️\n◻️\n✅"
   },
   {
     "objectID": "projects.html#the-thread-that-connects-it-all",
     "href": "projects.html#the-thread-that-connects-it-all",
     "title": "Project Showcase",
     "section": "The Thread That Connects It All",
-    "text": "The Thread That Connects It All\n\nEvery role in my career shares a common thread: finding what’s broken and making it work better. At Knight Transportation, that meant cutting idle time and boosting revenue. At the Attorney General’s Office, it meant turning a 3-week legal data process into a 2-day turnaround. At Select Water, it means reconciling millions of records across regions so leadership can trust the numbers.\nI’m not a data analyst who learned operations — I’m an operations professional who mastered data. That distinction matters when the dashboard needs to reflect what’s actually happening on the ground."
+    "text": "The Thread That Connects It All\n\nEvery role in my career shares a common thread: finding what’s broken and making it work better. At Knight Transportation, that meant cutting idle time and boosting revenue. At the Attorney General’s Office, it meant turning a 3-week legal data process into a 2-day turnaround. At Select Water, it means building the platforms, pipelines, and AI tools that give everyone in the organization — not just analysts — access to trusted data.\nI’m not a data analyst who learned operations — I’m an operations professional who mastered data, then built the tools to scale that mastery across an entire organization."
   },
   {
     "objectID": "projects/bi-forge.html",
     "href": "projects/bi-forge.html",
     "title": "BI Forge — Enterprise AI Analytics Platform",
     "section": "",
-    "text": "Role: Architect & Lead Developer · Organization: Select Water Services · Status: Architecture & Design Phase\n\nReact FastAPI Claude API PostgreSQL Azure AD AWS ECS dbt Dagster"
+    "text": "Role: Architect & Lead Developer · Organization: Select Water Solutions · Status: Architecture & Design Phase\n\nReact FastAPI Claude API PostgreSQL Azure AD AWS ECS dbt Dagster"
   },
   {
     "objectID": "projects/bi-forge.html#the-problem",
     "href": "projects/bi-forge.html#the-problem",
     "title": "BI Forge — Enterprise AI Analytics Platform",
     "section": "The Problem",
-    "text": "The Problem\nSelect Water Services operates across multiple business units, each generating data through different systems — Postgres databases, Dataverse, financial platforms, SCADA pipelines. The challenge wasn’t a lack of data; it was a lack of access:\n\nOnly technical users could query databases directly. Business users had to submit requests and wait for analyst-generated reports.\nNo unified dashboard hub — dashboards for SCADA, Blue Line, OTC, HR, CapEx, and other domains lived in separate places with no single entry point.\nAd-hoc request backlog — the analytics team spent significant time fielding one-off data questions that users could have answered themselves with the right tooling.\nNo visibility into pipeline health — consumers of data had no way to know whether the data they were viewing was fresh or stale."
+    "text": "The Problem\nSelect Water Solutions operates across multiple business units, each generating data through different systems — Postgres databases, Dataverse, financial platforms, SCADA pipelines. The challenge wasn’t a lack of data; it was a lack of access:\n\nOnly technical users could query databases directly. Business users had to submit requests and wait for analyst-generated reports.\nNo unified dashboard hub — dashboards for SCADA, Blue Line, OTC, HR, CapEx, and other domains lived in separate places with no single entry point.\nAd-hoc request backlog — the analytics team spent significant time fielding one-off data questions that users could have answered themselves with the right tooling.\nNo visibility into pipeline health — consumers of data had no way to know whether the data they were viewing was fresh or stale."
   },
   {
     "objectID": "projects/bi-forge.html#the-solution",
@@ -406,158 +532,305 @@
     "text": "Key Skills Demonstrated\n\n\nEnterprise Architecture\nFull-stack platform design from identity layer through AI query engine — built to enterprise security and governance standards\n\n\nAI Integration\nClaude API integration with schema-aware context, SQL validation layer, and read-only enforcement for safe production use\n\n\nData Governance\nRole-based access control, schema permission checks, audit logging, and read-only enforcement across every query path\n\n\nFull-Stack Development\nReact frontend, FastAPI backend, PostgreSQL, Azure AD integration, and AWS infrastructure — end to end\n\n\n\n← Back to All Projects"
   },
   {
-    "objectID": "projects/data-reconciliation.html",
-    "href": "projects/data-reconciliation.html",
-    "title": "Multi-Region Data Reconciliation Framework",
+    "objectID": "projects/data-detective.html",
+    "href": "projects/data-detective.html",
+    "title": "Data Detective — AI Data Quality Diagnostic Tool",
     "section": "",
-    "text": "Role: Senior Data Analyst · Organization: Select Water Services · Scope: NE, Rockies, Permian, MidCon Regions\n\nSQL Postgres Dataverse Power BI Data Governance Process Design"
+    "text": "Role: Developer & Analyst · Organization: Select Water Solutions · Status: Working — Ready for Team Deployment\n\nReact Express.js Claude API PostgreSQL dbt SSE Streaming Docker"
   },
   {
-    "objectID": "projects/data-reconciliation.html#the-problem",
-    "href": "projects/data-reconciliation.html#the-problem",
-    "title": "Multi-Region Data Reconciliation Framework",
+    "objectID": "projects/data-detective.html#the-problem",
+    "href": "projects/data-detective.html#the-problem",
+    "title": "Data Detective — AI Data Quality Diagnostic Tool",
     "section": "The Problem",
-    "text": "The Problem\nSelect Water Services operates across four major regions — Northeast, Rockies, Permian, and MidCon — each with its own operational cadence and data entry patterns. Site inventory data lived across 40+ Postgres tables, and discrepancies between the database layer and the Dataverse reporting layer were eroding trust in the numbers.\nThe specific challenges included:\n\nMisclassified site records in Dataverse that didn’t match the underlying Postgres data, making asset visibility unreliable for field operations and leadership reporting\nNo standardized process for identifying, diagnosing, or resolving discrepancies — each analyst had their own ad-hoc approach\nRegional inconsistencies in how data was entered, categorized, and maintained, making cross-region comparison unreliable\nHigh-volume data requiring queries that could handle complexity without sacrificing accuracy — there was no room for “close enough”"
+    "text": "The Problem\nData quality issues in a modern analytics stack are hard to diagnose. When a number looks wrong in a dashboard, the investigation typically requires an analyst to:\n\nUnderstand the dbt DAG — which models feed which, and where the issue might originate\nRead multiple SQL files to trace how the value was calculated\nRun diagnostic queries against live data to confirm the root cause\nDetermine which layer owns the fix — dbt transformation, source system, ETL, or data entry\n\nAt Select Water, this process routinely took hours — and required deep familiarity with the dbt project structure, the Postgres schema, and the underlying source systems. Analysts who were newer to the stack were especially dependent on senior teammates for diagnosis."
   },
   {
-    "objectID": "projects/data-reconciliation.html#the-approach",
-    "href": "projects/data-reconciliation.html#the-approach",
-    "title": "Multi-Region Data Reconciliation Framework",
+    "objectID": "projects/data-detective.html#the-solution",
+    "href": "projects/data-detective.html#the-solution",
+    "title": "Data Detective — AI Data Quality Diagnostic Tool",
+    "section": "The Solution",
+    "text": "The Solution\nData Detective replaces the manual investigation process with a conversational interface. An analyst describes the issue in plain English — “the billed volume for Permian last month looks too low” — and the tool autonomously traces dbt lineage, runs SQL queries, and returns a root cause analysis with a recommended fix owner.\n\nHow It Works\nThe core of Data Detective is a Claude-powered tool-use loop with three specialized tools:\n\n\n\n\n\nflowchart TD\n    A[Analyst describes issue\\nin plain English] --&gt; B[Claude reasons about\\nwhere to investigate]\n    B --&gt; C{Which tool\\nis needed?}\n    C --&gt;|Trace the DAG| D[get_model_lineage\\nWalks dbt SQL files,\\nbuilds upstream tree]\n    C --&gt;|Read SQL logic| E[get_model_sql\\nReads specific model\\ntransformation logic]\n    C --&gt;|Check live data| F[run_sql\\nExecutes SELECT query\\nagainst PostgreSQL]\n    D --&gt; B\n    E --&gt; B\n    F --&gt; B\n    B --&gt; G[Root cause identified\\nFix owner named]\n\n\n\n\n\n\nget_model_lineage — Traverses the dbt project’s SQL files to build an upstream lineage tree for any model. This shows Claude exactly which source tables and intermediate transformations contribute to the value being investigated.\nget_model_sql — Reads the full SQL for a specific dbt model, allowing Claude to examine transformation logic, filter conditions, join strategies, and aggregation patterns for signs of the issue.\nrun_sql — Executes SELECT-only queries against the live PostgreSQL read-only replica, returning actual data at any point in the lineage to confirm where values diverge from expectations.\n\n\nLineage Coverage\nData Detective traverses both active dbt repositories:\n\nsws_bi_projects — all 8 BI project domains\ndbtproject-trino — the Trino-backed data warehouse models\n\nThis gives Claude a complete picture of the lineage stack, regardless of which repo a model lives in.\n\n\nReal-Time Streaming\nThe investigation runs as a real-time stream — analysts watch Claude reason through the problem, call tools, and refine its hypothesis as results come back. This transparency builds confidence in the diagnosis and helps analysts learn the lineage structure as they watch it unfold.\n\n\nSession Export\nEvery investigation session can be exported as a structured Markdown document:\n\nLineage trees rendered as indented hierarchy\nSQL results formatted as Markdown tables\nModel SQL captured as fenced code blocks\nRoot cause summary and fix owner recommendation\n\nExports are named data-detective-YYYY-MM-DD.md for easy reference and filing."
+  },
+  {
+    "objectID": "projects/data-detective.html#results-impact",
+    "href": "projects/data-detective.html#results-impact",
+    "title": "Data Detective — AI Data Quality Diagnostic Tool",
+    "section": "Results & Impact",
+    "text": "Results & Impact\n\n\nHours → Minutes\nData issue diagnosis time\n\n\n2 Repos\nFull lineage coverage across all dbt projects\n\n\nFix Owner\nAlways identifies who resolves the issue\n\n\nTeam-Ready\nDocker deployment for full team rollout\n\n\n\nWhat Changed\n\nJunior analysts can self-serve — the tool provides the dbt context expertise that previously required a senior analyst to diagnose\nFaster resolution — root cause in minutes rather than hours means data quality fixes reach production sooner\nLearning tool — watching Claude trace lineage in real time teaches analysts the DAG structure as they use it\nConsistent documentation — every investigation produces an exportable record of what was found and why"
+  },
+  {
+    "objectID": "projects/data-detective.html#technical-stack",
+    "href": "projects/data-detective.html#technical-stack",
+    "title": "Data Detective — AI Data Quality Diagnostic Tool",
+    "section": "Technical Stack",
+    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nFrontend\nReact + Vite\nChat interface, SSE stream rendering, export\n\n\nBackend\nExpress.js (Node)\nSession store, tool execution, SSE endpoint\n\n\nAI Engine\nClaude API (claude-sonnet-4-6)\nTool-use loop, reasoning, root cause synthesis\n\n\nTool: Lineage\ndbt SQL file traversal\nDAG mapping, upstream model discovery\n\n\nTool: SQL Reader\nFile system (dbt repos)\nModel SQL inspection\n\n\nTool: Query Runner\nPostgreSQL (pg driver, read-only)\nLive data validation\n\n\nDeployment\nDocker + batch file\nTeam distribution without infrastructure overhead\n\n\nExport\nMarkdown (.md)\nStructured session documentation"
+  },
+  {
+    "objectID": "projects/data-detective.html#key-skills-demonstrated",
+    "href": "projects/data-detective.html#key-skills-demonstrated",
+    "title": "Data Detective — AI Data Quality Diagnostic Tool",
+    "section": "Key Skills Demonstrated",
+    "text": "Key Skills Demonstrated\n\n\nAI Tool Use Architecture\nMulti-tool Claude agent designed for autonomous investigation — with lineage traversal, SQL reading, and live query execution as discrete, composable tools\n\n\ndbt Expertise\nDeep understanding of dbt project structure, DAG traversal, and schema.yml documentation — enabling accurate lineage mapping across two active repos\n\n\nData Quality Engineering\nSystematic root cause analysis methodology: trace the lineage, read the logic, validate with live data, identify the fix owner\n\n\nDeveloper Tooling\nBuilt a tool for analysts by an analyst — prioritizing transparency (streaming), learnability (lineage visualization), and reusability (session export)\n\n\n\n← Back to All Projects"
+  },
+  {
+    "objectID": "projects/ehs-report.html",
+    "href": "projects/ehs-report.html",
+    "title": "EHS Compliance Dashboard & RLS Security Pattern",
+    "section": "",
+    "text": "Role: Lead Developer & Analyst · Organization: Select Water Solutions · Status: Production\n\nFastAPI PostgreSQL dbt Row-Level Security Jira API"
+  },
+  {
+    "objectID": "projects/ehs-report.html#the-problem",
+    "href": "projects/ehs-report.html#the-problem",
+    "title": "EHS Compliance Dashboard & RLS Security Pattern",
+    "section": "The Problem",
+    "text": "The Problem\nThe EHS (Environmental, Health & Safety) compliance report was a static document, re-rendered offline and manually redeployed whenever its underlying data changed — no live query, no interactivity beyond what was baked in at render time. Separately, every dashboard on the platform had an all-or-nothing access model: a viewer either saw everything or was denied entirely, with no way to scope what a specific business unit or region’s staff could see."
+  },
+  {
+    "objectID": "projects/ehs-report.html#the-solution",
+    "href": "projects/ehs-report.html#the-solution",
+    "title": "EHS Compliance Dashboard & RLS Security Pattern",
+    "section": "The Solution",
+    "text": "The Solution\n\nLive data layer\nI replaced the static report with a FastAPI app that queries the safety data warehouse live on every request — incident records, OSHA metrics, training completion, safety observations, and regulatory status — with click-through drill-down from every chart into its underlying records.\n\n\nRow-level security, built as a reusable pattern\nRather than building a one-off access rule for this app, I designed an RLS (row-level security) admin pattern from the start: an admin page where someone can grant a specific viewer access scoped to a business unit, region, or site, enforced both in the rows returned and in the filter dropdowns a scoped viewer sees (so a restricted viewer never even sees options for data they can’t access). I documented the pattern as a portable guide — including several real bugs found and fixed during the build — so it can be dropped into any other dashboard on the platform without repeating the same mistakes.\n\n\n\n\n\nflowchart LR\n    A[Admin grants access&lt;br&gt;by BU / Region / Site] --&gt; B[(RLS Assignment Table)]\n    B --&gt; C[Viewer requests report]\n    C --&gt; D[Scope resolved&lt;br&gt;from assignment]\n    D --&gt; E[Rows filtered&lt;br&gt;server-side]\n    D --&gt; F[Filter dropdowns&lt;br&gt;scoped too]\n\n\n\n\n\n\n\n\nShared access-request and feedback pages\nEvery dashboard on the platform used to show a bare, confusing error page when a user lacked access. I built a real “Request Access” page and a “Submit Feedback” page — both filing tickets automatically — and architected them to be shared across every app on the platform rather than duplicated app-by-app, so adding a new dashboard means one registration entry, not a new set of pages and credentials."
+  },
+  {
+    "objectID": "projects/ehs-report.html#results-impact",
+    "href": "projects/ehs-report.html#results-impact",
+    "title": "EHS Compliance Dashboard & RLS Security Pattern",
+    "section": "Results & Impact",
+    "text": "Results & Impact\n\n\nProduction\nPromoted from static report to live dashboard\n\n\nFirst\nRLS admin pattern on the platform\n\n\nOrg-Wide\nShared access-request/feedback pages adopted across every app\n\n\nScoped\nAccess enforced by business unit, region, and site\n\n\n\nWhat Changed for the Business\n\nLive compliance data — no more manually re-rendering and redeploying a static report when the underlying numbers change\nReal access control — viewers can be scoped to exactly the data their role needs instead of an all-or-nothing gate\nA reusable pattern — every future dashboard needing scoped access starts from a documented, battle-tested implementation instead of reinventing it"
+  },
+  {
+    "objectID": "projects/ehs-report.html#technical-stack",
+    "href": "projects/ehs-report.html#technical-stack",
+    "title": "EHS Compliance Dashboard & RLS Security Pattern",
+    "section": "Technical Stack",
+    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nBackend\nFastAPI (Python)\nLive report rendering, admin CRUD, drill-down\n\n\nData Source\nPostgreSQL, dbt\nSafety/compliance warehouse, governed transforms\n\n\nAccess Control\nCustom RLS admin pattern\nBusiness-unit/region/site-scoped viewer access\n\n\nTicketing\nJira REST API\nAutomated Request Access / Feedback ticket filing\n\n\nTesting\npytest\nAccess-control and drill-down enforcement tests"
+  },
+  {
+    "objectID": "projects/ehs-report.html#key-skills-demonstrated",
+    "href": "projects/ehs-report.html#key-skills-demonstrated",
+    "title": "EHS Compliance Dashboard & RLS Security Pattern",
+    "section": "Key Skills Demonstrated",
+    "text": "Key Skills Demonstrated\n\n\nSecurity Architecture\nDesigned a row-level-security model enforced in both data and UI, not just data\n\n\nReusable Pattern Design\nBuilt for one app, documented so five more could reuse it correctly\n\n\nPlatform Thinking\nShared infrastructure (access-request/feedback) instead of app-by-app duplication\n\n\nLive Data Architecture\nReplaced a static, manually-refreshed report with a real-time data layer\n\n\n\n← Back to All Projects ← Prev: CHM Logistics Next: Workforce Turnover Analytics →"
+  },
+  {
+    "objectID": "projects/medicare-fraud.html",
+    "href": "projects/medicare-fraud.html",
+    "title": "Medicare Fraud Case Analytics",
+    "section": "",
+    "text": "Role: Lead Healthcare Data Analyst · Organization: Tennessee Attorney General’s Office · Timeline: February 2021 – April 2023\n\nSQL Power BI TennCare Healthcare Data Legal Analytics Data Standardization"
+  },
+  {
+    "objectID": "projects/medicare-fraud.html#the-problem",
+    "href": "projects/medicare-fraud.html#the-problem",
+    "title": "Medicare Fraud Case Analytics",
+    "section": "The Problem",
+    "text": "The Problem\nThe Tennessee Attorney General’s Office prosecutes Medicare fraud cases that involve large, complex healthcare datasets. When I joined the team, the analytical workflow had several critical bottlenecks:\n\n3-week turnaround for dataset requests — analysts had to submit requests through intermediaries to access TennCare (Tennessee’s Medicaid program) data, with no direct query capability\nExcel-based reporting for attorney-facing deliverables, which limited the depth of analysis and made it difficult to explore data interactively during case preparation\nNo standardized data organization — each analyst structured their outputs differently, creating inconsistencies across cases and making it difficult for attorneys to compare analyses\nTime pressure — fraud cases have legal deadlines, and a 3-week data turnaround meant analysts were often working with stale information or rushing to compensate for delays"
+  },
+  {
+    "objectID": "projects/medicare-fraud.html#the-approach",
+    "href": "projects/medicare-fraud.html#the-approach",
+    "title": "Medicare Fraud Case Analytics",
     "section": "The Approach",
-    "text": "The Approach\nI designed a systematic reconciliation framework — not just a one-time cleanup, but a repeatable process the organization could use going forward.\n\nStep 1 — Map the Data Landscape\nBefore writing a single query, I mapped the relationships between the 40+ Postgres tables to understand how site inventory data flowed from source systems into the reporting layer. This included:\n\nDocumenting table relationships, key fields, and join logic\nIdentifying which tables were authoritative for which data elements\nCataloging known data quality issues by region\n\n\n\nStep 2 — Build Diagnostic Queries\nI developed a suite of SQL queries designed to surface discrepancies systematically rather than chasing individual errors:\n-- Example: Identify sites with mismatched status between\n-- Postgres source tables and Dataverse reporting layer\nSELECT\n    p.site_id,\n    p.site_name,\n    p.region,\n    p.operational_status  AS postgres_status,\n    d.operational_status  AS dataverse_status,\n    p.last_updated        AS source_updated,\n    d.last_modified       AS reporting_updated\nFROM site_inventory p\nINNER JOIN dataverse_sites d\n    ON p.site_id = d.site_id\nWHERE p.operational_status &lt;&gt; d.operational_status\nORDER BY p.region, p.site_name;\nThese queries were designed to be reusable — parameterized by region, date range, and data element so any analyst could run them going forward.\n\n\nStep 3 — Document the Troubleshooting Framework\nFor each category of discrepancy, I documented:\n\nWhat it looks like — the specific data pattern that indicates the issue\nWhy it happens — the root cause (data entry timing, system sync lag, classification error, etc.)\nHow to fix it — the specific correction steps in Dataverse or the source system\nHow to prevent it — process changes or validation rules to catch it earlier\n\n\n\nStep 4 — Correct and Validate\nWorking region by region, I applied corrections to misclassified site data in Dataverse, validating each change against the Postgres source of truth. Every correction was logged for audit purposes.\n\n\nStep 5 — Reporting Layer\nBuilt Power BI dashboards that surfaced reconciliation status by region, giving leadership visibility into data quality metrics alongside operational KPIs — making data integrity a visible, measurable priority rather than a background assumption."
+    "text": "The Approach\nI tackled this from three angles simultaneously: access, tooling, and process standardization.\n\nSecuring Direct Database Access\nThe single highest-impact change was obtaining direct access to the TennCare database. This required:\n\nBuilding trust with the TennCare data team by demonstrating responsible data handling practices and understanding of HIPAA compliance requirements\nDocumenting the specific query patterns the AG’s office needed, showing that direct access would reduce burden on the TennCare team (fewer ad-hoc requests for them to fulfill)\nEstablishing protocols for secure data extraction and storage that met both agencies’ governance requirements\n\nThis alone collapsed the data turnaround from 3 weeks to 2–3 days — the time it takes to write, validate, and document a query rather than wait in a request queue.\n\n\nModernizing the Reporting Stack\nI transitioned the team’s attorney-facing deliverables from Excel to Power BI, which provided:\n\nInteractive exploration — attorneys could filter by provider, date range, procedure code, and billing pattern without requesting new reports\nVisual pattern detection — fraud patterns that were invisible in spreadsheet rows became obvious in visualizations (billing spikes, geographic clustering, procedure code anomalies)\nCompliance-ready formatting — standardized layouts that met courtroom presentation requirements\n\n\n\nStandardizing Data Organization\nI designed a consistent data organization framework for case analytics:\n\nStandard naming conventions for datasets, queries, and deliverables\nTemplate structures for common case types so new analyses started from a proven foundation rather than a blank page\nDocumentation requirements for every dataset — source, extraction date, query logic, and known limitations — so any analyst could pick up where another left off\n\n\n\n\n\n\nflowchart LR\n    A[Case Assignment] --&gt; B[Direct TennCare&lt;br&gt;Database Query]\n    B --&gt; C[Data Extraction&lt;br&gt;& Validation]\n    C --&gt; D[Standardized&lt;br&gt;Dataset Structure]\n    D --&gt; E[Power BI&lt;br&gt;Analysis & Visuals]\n    E --&gt; F[Attorney-Facing&lt;br&gt;Deliverable]\n    F --&gt; G[Case Prosecution]\n\n    style B fill:#3B82F6,color:#fff\n    style E fill:#3B82F6,color:#fff"
   },
   {
-    "objectID": "projects/data-reconciliation.html#the-framework-in-practice",
-    "href": "projects/data-reconciliation.html#the-framework-in-practice",
-    "title": "Multi-Region Data Reconciliation Framework",
-    "section": "The Framework in Practice",
-    "text": "The Framework in Practice\nThe troubleshooting framework I documented followed a decision-tree pattern:\n\n\n\n\n\nflowchart TD\n    A[Discrepancy Detected] --&gt; B{Source data correct?}\n    B --&gt;|Yes| C{Dataverse record exists?}\n    B --&gt;|No| D[Trace to source system&lt;br&gt;& correct upstream]\n    C --&gt;|Yes| E[Update Dataverse&lt;br&gt;classification]\n    C --&gt;|No| F[Create Dataverse&lt;br&gt;record from source]\n    E --&gt; G[Validate correction&lt;br&gt;against Postgres]\n    F --&gt; G\n    D --&gt; G\n    G --&gt; H[Log correction&lt;br&gt;for audit trail]\n    H --&gt; I[Confirm in Power BI&lt;br&gt;reporting layer]\n\n\n\n\n\n\nThis turned reconciliation from a heroic individual effort into a repeatable team process."
+    "objectID": "projects/medicare-fraud.html#working-with-sensitive-data",
+    "href": "projects/medicare-fraud.html#working-with-sensitive-data",
+    "title": "Medicare Fraud Case Analytics",
+    "section": "Working with Sensitive Data",
+    "text": "Working with Sensitive Data\nHealthcare fraud analytics involves protected health information (PHI) and legally sensitive case data. Every aspect of this project was designed with compliance in mind:\n\nAll data access followed HIPAA protocols and agency security policies\nDatasets were stored in secured, access-controlled environments\nPower BI reports were designed for internal use only with appropriate access restrictions\nQuery logic and analytical methods were documented for potential courtroom testimony and cross-examination\n\n\n\n\n\n\n\nTipRecruiter Note\n\n\n\nDue to the sensitive nature of this work (active legal cases, protected health information), I cannot share specific datasets, dashboards, or case details. I’m happy to discuss the methodology, technical approach, and analytical patterns in a conversation setting."
   },
   {
-    "objectID": "projects/data-reconciliation.html#visual-walkthrough",
-    "href": "projects/data-reconciliation.html#visual-walkthrough",
-    "title": "Multi-Region Data Reconciliation Framework",
-    "section": "Visual Walkthrough",
-    "text": "Visual Walkthrough\n\n\n\n\n\n📋 Reconciliation Status Dashboard Data quality KPIs by region\n\n\n\n\n\n🛠️ Diagnostic Query Suite Parameterized queries for discrepancy detection\n\n\n\n\n\n📑 Troubleshooting Framework Doc Decision trees and root cause catalog\n\n\n\n\n\n✅ Validation Results View Before/after correction audit trail\n\n\n\n\n\n\n\n\n\nTipScreenshots Available\n\n\n\nAnonymized views of the reconciliation dashboards and framework documentation are available upon request during interviews."
-  },
-  {
-    "objectID": "projects/data-reconciliation.html#results-impact",
-    "href": "projects/data-reconciliation.html#results-impact",
-    "title": "Multi-Region Data Reconciliation Framework",
+    "objectID": "projects/medicare-fraud.html#results-impact",
+    "href": "projects/medicare-fraud.html#results-impact",
+    "title": "Medicare Fraud Case Analytics",
     "section": "Results & Impact",
-    "text": "Results & Impact\n\n\n40+\nPostgres tables reconciled\n\n\n4 Regions\nNE · Rockies · Permian · MidCon\n\n\n100%\nQuery accuracy maintained\n\n\nReusable\nFramework adopted by team\n\n\n\nAdditional Outcomes\n\nRestored trust in reporting — leadership could make operational decisions knowing the data reflected reality\nReduced future reconciliation time — the documented framework and reusable queries meant subsequent reconciliation cycles were significantly faster\nImproved data entry practices — root cause documentation led to process changes that reduced new discrepancies at the source\nGovernance visibility — Power BI dashboards made data quality a measurable KPI, not an invisible assumption"
+    "text": "Results & Impact\n\n\n3 wks → 2 days\nDataset turnaround reduction\n\n\nDirect Access\nTennCare database query capability\n\n\nExcel → Power BI\nAttorney-facing reporting modernized\n\n\nStandardized\nData organization across all cases\n\n\n\nAdditional Outcomes\n\nStronger cases — faster access to fresher data meant analyses were based on current information rather than snapshots that were weeks old\nAttorney empowerment — interactive Power BI reports let attorneys explore the data themselves during case preparation, reducing back-and-forth with the analytics team\nTeam scalability — standardized processes and templates meant new analysts could become productive faster and produce consistent outputs\nCross-case pattern recognition — standardized data structures made it easier to identify patterns that spanned multiple cases or providers"
   },
   {
-    "objectID": "projects/data-reconciliation.html#why-this-project-matters",
-    "href": "projects/data-reconciliation.html#why-this-project-matters",
-    "title": "Multi-Region Data Reconciliation Framework",
-    "section": "Why This Project Matters",
-    "text": "Why This Project Matters\nMost organizations have data quality problems. What separates good analysts from great ones is whether the fix is a one-time cleanup or a lasting capability. This project delivered both — immediate corrections to restore reporting accuracy, and a framework that ensures the organization can maintain that accuracy going forward.\nThe key insight was treating data reconciliation as a process design problem, not just a SQL problem. The queries were necessary but not sufficient — the documentation, the decision trees, and the Power BI visibility layer are what made it sustainable."
+    "objectID": "projects/medicare-fraud.html#lessons-learned",
+    "href": "projects/medicare-fraud.html#lessons-learned",
+    "title": "Medicare Fraud Case Analytics",
+    "section": "Lessons Learned",
+    "text": "Lessons Learned\n1. Access is the first bottleneck to solve. The most sophisticated analytical tools in the world don’t matter if you’re waiting 3 weeks for data. Securing direct database access was a relationship and trust-building exercise as much as a technical one — and it delivered the single largest time savings.\n2. Analysts aren’t the only users. Attorneys needed to interact with the data directly, not just receive static reports. Designing for their workflow (filtering by provider, exploring billing patterns, presenting in court) produced better outcomes than designing for analytical elegance.\n3. Standardization pays compound interest. The time invested in templates, naming conventions, and documentation standards felt slow at first, but it paid back exponentially as the team handled more cases in parallel with consistent quality."
   },
   {
-    "objectID": "projects/data-reconciliation.html#technical-stack",
-    "href": "projects/data-reconciliation.html#technical-stack",
-    "title": "Multi-Region Data Reconciliation Framework",
+    "objectID": "projects/medicare-fraud.html#technical-stack",
+    "href": "projects/medicare-fraud.html#technical-stack",
+    "title": "Medicare Fraud Case Analytics",
     "section": "Technical Stack",
-    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nSource Data\nPostgres (40+ tables)\nSite inventory, operational data\n\n\nReporting Layer\nDataverse\nAsset classification, governance\n\n\nQuery Development\nSQL (Postgres)\nDiagnostic queries, validation\n\n\nVisualization\nPower BI\nReconciliation dashboards, KPI tracking\n\n\nDocumentation\nTroubleshooting framework\nDecision trees, root cause catalog\n\n\nProcess\nRegion-by-region validation\nSystematic correction and audit logging\n\n\n\n\n← Back to All Projects Next: Medicare Fraud Analytics →"
+    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nData Source\nTennCare Database (direct access)\nMedicare/Medicaid claims, provider data\n\n\nQuery Layer\nSQL\nData extraction, validation, case-specific analysis\n\n\nVisualization\nPower BI\nInteractive attorney-facing dashboards\n\n\nPrior Tooling\nExcel (replaced)\nLegacy reporting format\n\n\nGovernance\nHIPAA-compliant protocols\nPHI handling, access controls\n\n\nProcess\nStandardized templates\nConsistent data organization across cases\n\n\n\n\n← Back to All Projects ← Prev: Data Reconciliation"
   },
   {
-    "objectID": "projects/power-bi-migration.html",
-    "href": "projects/power-bi-migration.html",
-    "title": "Executive Infrastructure Dashboard",
+    "objectID": "projects/platform-reliability.html",
+    "href": "projects/platform-reliability.html",
+    "title": "Platform Reliability & Data Governance Initiative",
     "section": "",
-    "text": "Role: Lead Developer & Analyst · Organization: Select Water Services · Status: Production — Used by Executive Leadership\n\nPower BI SQL Postgres Dataverse DAX Data Modeling KPI Design"
+    "text": "Role: Technical Lead · Organization: Select Water Solutions · Status: In Progress — Ongoing\n\nCI/CD pytest Row-Level Security dbt GitLab CI"
   },
   {
-    "objectID": "projects/power-bi-migration.html#the-problem",
-    "href": "projects/power-bi-migration.html#the-problem",
-    "title": "Executive Infrastructure Dashboard",
+    "objectID": "projects/platform-reliability.html#the-problem",
+    "href": "projects/platform-reliability.html#the-problem",
+    "title": "Platform Reliability & Data Governance Initiative",
     "section": "The Problem",
-    "text": "The Problem\nSelect Water Services operates across multiple business units and facilities, each generating its own stream of financial and operational data. The executive team needed a unified view to make informed, timely decisions — but what they had was fragmented:\n\nScattered reporting — financial performance, operational metrics, and capacity data lived in separate systems and separate reports, requiring manual consolidation to get a full picture\nLagging visibility — by the time data was compiled and formatted for leadership, it was often days or weeks old, limiting its usefulness for real-time decision-making\nNo drill-through capability — high-level summaries existed, but executives couldn’t easily drill from a portfolio-level view down to individual business units or facilities without requesting ad-hoc reports\nDisconnected financial and operational data — revenue and margin figures were tracked separately from utilization rates, capacity, and throughput, making it difficult to see the operational drivers behind financial outcomes"
+    "text": "The Problem\nAs the analytics platform grew to a family of production dashboard apps, three structural risks grew with it: no automated gate stopped an untested regression from merging, no consistent pattern existed for scoping who can see what data, and a meaningful amount of business logic lived scattered across application code instead of governed, testable data models."
   },
   {
-    "objectID": "projects/power-bi-migration.html#the-solution",
-    "href": "projects/power-bi-migration.html#the-solution",
-    "title": "Executive Infrastructure Dashboard",
-    "section": "The Solution",
-    "text": "The Solution\nI designed and built a comprehensive, real-time executive dashboard in Power BI that consolidated financial and operational performance into a single, interactive platform.\n\nDesign Philosophy\nThe guiding principle was: every screen answers a decision. Rather than building a data dump with every available metric, I worked with executive stakeholders to identify the specific decisions they make weekly and monthly, then designed each dashboard view to directly support those decisions.\n\n\nArchitecture\n\n\n\n\n\nflowchart LR\n    A[Postgres&lt;br&gt;Operational Data] --&gt; D[Data Model&lt;br&gt;Star Schema]\n    B[Dataverse&lt;br&gt;Asset & Site Data] --&gt; D\n    C[Financial Systems&lt;br&gt;Revenue & Cost] --&gt; D\n    D --&gt; E[DAX Measures&lt;br&gt;KPIs & Calculations]\n    E --&gt; F[Power BI Dashboard&lt;br&gt;Executive Views]\n    F --&gt; G[Business Unit&lt;br&gt;Drill-Through]\n    F --&gt; H[Facility-Level&lt;br&gt;Detail]\n    F --&gt; I[Trend & Variance&lt;br&gt;Analysis]\n\n\n\n\n\n\n\n\nWhat the Dashboard Delivers\nFinancial Performance Layer:\n\nRevenue by business unit and facility — with actuals vs. forecast comparison and variance highlighting so executives immediately see where results are tracking ahead or behind plan\nGross profit and margin percentages — broken down by segment to assess the profitability mix across the portfolio and identify which units are driving margin expansion or compression\nPeriod-over-period trending — monthly and quarterly views that surface trajectory, not just snapshots, enabling executives to distinguish between one-time blips and emerging trends\n\nOperational Performance Layer:\n\nUtilization rates — how effectively assets are being deployed across facilities, surfacing underutilized capacity that represents revenue opportunity or overutilized assets that signal risk\nCapacity and throughput metrics — real-time visibility into operational bottlenecks, enabling proactive resource allocation before constraints impact financial performance\nOperational volume tracking — activity-level metrics that provide context for the financial numbers, connecting revenue outcomes to the operational work that produces them\n\nExecutive Decision Support:\n\nDrill-through from portfolio to facility — executives start with a high-level view of all business units, then click through to individual facilities for granular detail without switching reports\nVariance analysis — automated flagging of actuals-to-forecast variances beyond threshold, so leadership focuses attention on the exceptions rather than reviewing every line item\nStrategic alignment views — progress tracking against strategic objectives, connecting daily operational metrics to quarterly and annual goals"
+    "objectID": "projects/platform-reliability.html#the-approach",
+    "href": "projects/platform-reliability.html#the-approach",
+    "title": "Platform Reliability & Data Governance Initiative",
+    "section": "The Approach",
+    "text": "The Approach\n\nTest coverage, then a real CI gate\nRather than jump straight to a code-review process, I audited test coverage app-by-app first — the reasoning being that reviewing code nothing ever tests is “checking on sand.” That survey found real gaps: one app’s security-admin pattern had zero access-control tests at all; several others had only smoke-test-level coverage. I closed the highest-risk gaps first, then stood up a pytest job in the CI pipeline so a merge with failing tests is now visibly blocked rather than silently shipping.\n\n\n\n\n\nflowchart LR\n    A[Audit Test Coverage&lt;br&gt;Per App] --&gt; B[Close Highest-Risk&lt;br&gt;Gaps First]\n    B --&gt; C[CI Runs pytest&lt;br&gt;on Every Merge]\n    C --&gt; D[Regression Caught&lt;br&gt;Before It Ships]\n\n\n\n\n\n\n\n\nA reusable security pattern\nRather than let each dashboard invent its own row-level-security implementation, I authored a portable pattern — piloted first in one app — covering the admin UI, the scope-enforcement logic, and a documented list of real bugs already hit during the pilot, so a future port inherits the fixes instead of repeating the mistakes.\n\n\nA data-logic migration plan\nI led an audit of business logic living in application code (joins, aggregations, recoding) that belonged in governed dbt SQL models instead — cataloging roughly 139 candidate items across every app on the platform, then prioritizing and sequencing them so the highest-value, lowest-risk items move first. Several of the highest-priority items have already shipped, each verified against live production data before cutover, not just tested in isolation."
   },
   {
-    "objectID": "projects/power-bi-migration.html#implementation-approach",
-    "href": "projects/power-bi-migration.html#implementation-approach",
-    "title": "Executive Infrastructure Dashboard",
-    "section": "Implementation Approach",
-    "text": "Implementation Approach\n\nPhase 1 — Stakeholder Discovery\nBefore touching a data model, I spent time with the executive team to understand their decision-making cadence:\n\nWhat decisions do you make weekly? Monthly? Quarterly?\nWhat data do you wish you had when making those decisions?\nWhere do you currently go to find answers, and what’s frustrating about that process?\nWhat does “good” look like for each business unit?\n\nThis discovery shaped every subsequent design decision and ensured the dashboard solved real problems rather than displaying data for its own sake.\n\n\nPhase 2 — Data Modeling\nBuilt a star schema data model that unified financial and operational data into a single queryable structure:\n\nDesigned fact tables for financial transactions, operational volumes, and capacity metrics\nCreated dimension tables for business units, facilities, time periods, and asset categories\nDeveloped DAX measures for calculated KPIs — margin percentages, utilization rates, variance calculations, and period-over-period comparisons\n\n\n\nPhase 3 — Dashboard Development\nBuilt the dashboard in iterative cycles, validating each view with stakeholders before moving to the next:\n\nExecutive Summary — portfolio-level KPIs with traffic-light status indicators\nBusiness Unit Views — detailed performance by segment with drill-through to facilities\nOperational Detail — utilization, capacity, and throughput metrics with trend context\nVariance & Forecasting — actuals vs. forecast with automated exception flagging\n\n\n\nPhase 4 — Deployment & Adoption\n\nConfigured automated data refreshes to ensure the dashboard reflected current operational reality\nTrained executive users on navigation, drill-through, and filtering\nEstablished a feedback loop for iterating on views based on how leadership actually used the tool in practice"
-  },
-  {
-    "objectID": "projects/power-bi-migration.html#visual-walkthrough",
-    "href": "projects/power-bi-migration.html#visual-walkthrough",
-    "title": "Executive Infrastructure Dashboard",
-    "section": "Visual Walkthrough",
-    "text": "Visual Walkthrough\n\n\n\n\n📊 Executive Summary View Portfolio KPIs — revenue, gross profit, margin, utilization\n\n\n\n\n🏢 Business Unit Drill-Through Segment performance with actuals vs. forecast\n\n\n\n\n⚙️ Operational Metrics View Utilization rates, capacity, throughput by facility\n\n\n\n\n📈 Trend & Variance Analysis Period-over-period trends with variance flagging\n\n\n\n\n\n\n\n\n\nTipScreenshots Available\n\n\n\nAnonymized screenshots or a live walkthrough of the dashboard are available upon request during interviews. The dashboard contains proprietary financial and operational data."
-  },
-  {
-    "objectID": "projects/power-bi-migration.html#results-impact",
-    "href": "projects/power-bi-migration.html#results-impact",
-    "title": "Executive Infrastructure Dashboard",
+    "objectID": "projects/platform-reliability.html#results-impact",
+    "href": "projects/platform-reliability.html#results-impact",
+    "title": "Platform Reliability & Data Governance Initiative",
     "section": "Results & Impact",
-    "text": "Results & Impact\n\n\nReal-Time\nExecutive visibility into all business units\n\n\nUnified\nFinancial + operational data in one platform\n\n\nSelf-Service\nDrill-through eliminates ad-hoc requests\n\n\nAdopted\nUsed by executive team for weekly decisions\n\n\n\nWhat Changed for Leadership\n\nFaster decisions — executives no longer wait for compiled reports; they open the dashboard and have current data with drill-through capability at any time\nBetter decisions — connecting financial outcomes to operational drivers in a single view means leadership sees why numbers are moving, not just that they’re moving\nProactive management — variance flagging and trend views surface problems early, enabling intervention before small issues compound\nAligned organization — a shared dashboard creates a shared understanding of performance, reducing the “my spreadsheet says something different” problem in leadership meetings\nReduced ad-hoc burden — the analytics team saw a significant reduction in one-off data requests because leadership could self-serve through drill-through navigation"
+    "text": "Results & Impact\n\n\nCI Gate\npytest now blocks untested merges on multiple apps\n\n\n1 → Many\nSecurity pattern piloted once, rolling out platform-wide\n\n\n139 Items\nData-logic migration plan scoped and prioritized\n\n\nVerified\nEvery shipped change checked against live production data\n\n\n\nWhat Changed for the Business\n\nRegressions get caught before they ship — a merge with a failing test is now a visible, blocking signal instead of a silent risk\nSecurity stops being reinvented per app — one documented, tested pattern instead of five different ad-hoc implementations\nA clear roadmap for data governance — instead of “someday we should clean this up,” a prioritized, sequenced plan the team can actually execute against"
   },
   {
-    "objectID": "projects/power-bi-migration.html#why-this-project-matters",
-    "href": "projects/power-bi-migration.html#why-this-project-matters",
-    "title": "Executive Infrastructure Dashboard",
-    "section": "Why This Project Matters",
-    "text": "Why This Project Matters\nThis wasn’t a reporting project — it was a decision-support platform. The difference matters. Reporting asks: “What happened?” Decision support asks: “What should we do about it?”\nBy combining financial KPIs with operational drivers, the dashboard gives executives the full picture: not just that revenue is up or down, but what’s driving it — utilization, capacity, throughput, mix. That operational context is what turns a number on a screen into an actionable insight.\nThe design approach — starting with stakeholder decisions, not available data — is something I bring to every project. The best dashboards aren’t the ones with the most data; they’re the ones that answer the right questions."
-  },
-  {
-    "objectID": "projects/power-bi-migration.html#technical-stack",
-    "href": "projects/power-bi-migration.html#technical-stack",
-    "title": "Executive Infrastructure Dashboard",
+    "objectID": "projects/platform-reliability.html#technical-stack",
+    "href": "projects/platform-reliability.html#technical-stack",
+    "title": "Platform Reliability & Data Governance Initiative",
     "section": "Technical Stack",
-    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nBI Platform\nPower BI\nInteractive dashboards, drill-through, scheduled refresh\n\n\nData Sources\nPostgres, Dataverse, Financial Systems\nOperational, asset, and financial data\n\n\nData Modeling\nStar schema (DAX)\nUnified fact/dimension model, calculated measures\n\n\nKPI Engine\nDAX measures\nMargin %, utilization rates, variance calculations\n\n\nQuery Layer\nSQL (Postgres)\nData extraction, validation, transformation\n\n\nGovernance\nDataverse\nAsset classification, data quality enforcement\n\n\nRefresh\nAutomated schedule\nNear-real-time data currency"
+    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nTesting\npytest\nPer-app regression and access-control test suites\n\n\nCI/CD\nGitLab CI\nMerge-blocking test gate across multiple apps\n\n\nSecurity\nRow-level security admin pattern\nReusable scoped-access implementation\n\n\nData Governance\ndbt, PostgreSQL\nMigration target for application-layer business logic"
   },
   {
-    "objectID": "projects/power-bi-migration.html#key-skills-demonstrated",
-    "href": "projects/power-bi-migration.html#key-skills-demonstrated",
-    "title": "Executive Infrastructure Dashboard",
+    "objectID": "projects/platform-reliability.html#key-skills-demonstrated",
+    "href": "projects/platform-reliability.html#key-skills-demonstrated",
+    "title": "Platform Reliability & Data Governance Initiative",
     "section": "Key Skills Demonstrated",
-    "text": "Key Skills Demonstrated\n\n\nDashboard Architecture\nEnd-to-end design from data model through interactive executive views with drill-through navigation\n\n\nStakeholder Discovery\nInterview-driven design that starts with decisions, not data — ensuring every view has a purpose\n\n\nData Modeling\nStar schema design unifying financial and operational data into a single queryable model\n\n\nDAX & Calculated Measures\nComplex KPI calculations including margin percentages, utilization rates, and variance analysis\n\n\n\n← Back to All Projects Next: Data Reconciliation →"
+    "text": "Key Skills Demonstrated\n\n\nEngineering Leadership\nSet platform-wide priorities (test coverage first, then review) instead of jumping to the flashiest fix\n\n\nCI/CD & Quality Gates\nTurned a testing gap into an enforced, automated merge gate\n\n\nSecurity Pattern Design\nBuilt once, documented for reuse, with known bugs disclosed up front\n\n\nCross-App Data Governance\nAudited and sequenced a 139-item plan spanning every app on the platform\n\n\n\n← Back to All Projects ← Prev: Financial & Volumes Reporting"
   },
   {
-    "objectID": "projects/streamline.html",
-    "href": "projects/streamline.html",
-    "title": "Streamline — BI Visual Development Pipeline",
+    "objectID": "projects/scada-volumes.html",
+    "href": "projects/scada-volumes.html",
+    "title": "SCADA Disposal Facility Volumes Dashboard",
     "section": "",
-    "text": "Role: Architect & Lead Developer · Organization: Select Water Services — BI Team · Status: Active Build Target\n\nReact Express.js Claude API PostgreSQL dbt Docker Power BI"
+    "text": "Role: Data Analyst & Developer · Organization: Select Water Solutions · Scope: All Disposal Facility Regions\n\nHTML/CSS Chart.js Python dbt PostgreSQL Dagster SCADA"
   },
   {
-    "objectID": "projects/streamline.html#the-problem",
-    "href": "projects/streamline.html#the-problem",
-    "title": "Streamline — BI Visual Development Pipeline",
+    "objectID": "projects/scada-volumes.html#the-problem",
+    "href": "projects/scada-volumes.html#the-problem",
+    "title": "SCADA Disposal Facility Volumes Dashboard",
     "section": "The Problem",
-    "text": "The Problem\nThe BI team at Select Water builds dashboard visuals constantly — for executives, operations, field teams, and finance. But the path from “stakeholder wants a visual” to “visual is live in Power BI” was inconsistent, slow, and dependent on individual effort:\n\nNo standardized workflow — each analyst took a different path from requirements to delivery, with no consistent quality checkpoints\nDisconnected from live data — visuals were built against assumptions about the data, not validated against actual Postgres results during development\nManual Power BI conversion — getting a visual from development into Power BI required manual steps that varied by analyst and often introduced errors\nNo formal sign-off gate — visuals moved from dev to production without a structured review and approval process\nContext switching overhead — analysts had to jump between dbt schema docs, database clients, and BI tools to piece together what they needed"
+    "text": "The Problem\nSelect Water Solutions operates disposal facilities across multiple regions, each processing produced water volumes from oilfield operations. Facility managers and regional leadership needed answers to questions they couldn’t easily get from existing reporting:\n\nUtilization by facility — which sites are operating near capacity, and which are underutilized relative to their contract type?\nVolume trends — how are billed and recycled volumes trending month over month across the portfolio?\nSkim oil recovery — how much skim oil is being recovered, and how does that trend over time?\nForward visibility — what does the next six months look like based on current trajectory?\n\nThe SCADA data pipeline already captured this information — the gap was a visualization layer that made it accessible to operational decision-makers without requiring ad-hoc SQL queries."
   },
   {
-    "objectID": "projects/streamline.html#the-solution",
-    "href": "projects/streamline.html#the-solution",
-    "title": "Streamline — BI Visual Development Pipeline",
+    "objectID": "projects/scada-volumes.html#the-solution",
+    "href": "projects/scada-volumes.html#the-solution",
+    "title": "SCADA Disposal Facility Volumes Dashboard",
     "section": "The Solution",
-    "text": "The Solution\nStreamline is a 7-stage pipeline that takes a dashboard visual from initial requirements all the way to a production-ready Power BI artifact — with AI assistance, live data validation, and a formal sign-off gate built in at every stage.\n\nThe 7-Stage Pipeline\n\n\n\n\n\nflowchart LR\n    A[1\\nRequirements\\nCapture] --&gt; B[2\\nSchema\\nExploration]\n    B --&gt; C[3\\nData\\nPreview]\n    C --&gt; D[4\\nAI Visual\\nBuilder]\n    D --&gt; E[5\\nValidation\\nChecks]\n    E --&gt; F[6\\nSign-Off\\nGate]\n    F --&gt; G[7\\nPower BI\\nConversion]\n\n    style D fill:#3B82F6,color:#fff\n    style F fill:#10B981,color:#fff\n    style G fill:#F59E0B,color:#fff\n\n\n\n\n\n\n\n\nStage 1 — Requirements Capture\nStakeholder requirements are entered in a structured form: visual type, KPIs to display, data source, filters, audience, and acceptance criteria. This becomes the brief that guides every subsequent stage.\n\n\nStage 2 — Schema Exploration\nStreamline auto-loads dbt schema.yml files from all 8 sws_bi_projects repositories on startup. Analysts can browse column definitions, table relationships, and documented business logic without leaving the tool — eliminating the context-switching overhead of digging through dbt docs separately.\n\n\nStage 3 — Live Data Preview\nBefore building anything, analysts can run parameterized queries against the PostgreSQL read-only replica to see actual data shapes, value distributions, and record counts. This catches data mismatches before they become design problems.\n\n\nStage 4 — AI Visual Builder\nClaude generates HTML/CSS/JavaScript visuals (Chart.js-based) from the requirements brief and schema context. Analysts can iterate with plain English feedback — “make the bars grouped by region,” “add a trend line” — and the AI updates the visual in real time.\n\n\nStage 5 — Automated Validation\nEvery generated visual passes through automated checks before it can move to sign-off:\n\nColumn alignment — referenced columns exist in the dbt schema\nDesign token compliance — colors, fonts, and spacing match the Select Water design system\nStructure validation — visual renders correctly across standard viewport sizes\nData binding verification — DAX measure references resolve against the target data model\n\n\n\nStage 6 — Formal Sign-Off Gate\nAnalysts submit the visual for review. Reviewers (lead analysts or BI manager) can approve, request changes, or reject with written feedback. Nothing moves to production without an explicit approval — creating a clear audit trail for every visual.\n\n\nStage 7 — Power BI Conversion\nApproved visuals are automatically converted to Power BI-safe format:\n\nHTML output optimized for the Power BI HTML Content visual\nCompanion DAX measures generated for all calculated fields\nTOM (Tabular Object Model) deployment scripts for model modifications\nDocumented handoff package for the Power BI developer"
+    "text": "The Solution\nI built a self-contained HTML dashboard that reads from the tfm_scada_volumes dbt model and presents the full picture of disposal facility performance — reactive to filters, visually clear about utilization thresholds, and forward-looking with a 6-month forecast built in.\nThe dashboard refreshes via a Python script (refresh_dashboard.py) that queries PostgreSQL directly, transforms the results, and injects them into the HTML template — keeping the output self-contained and portable for distribution.\n\nDashboard Architecture\n\n\n\n\n\nflowchart LR\n    A[SCADA Source Systems] --&gt; B[dbt Pipeline\\ntfm_scada_volumes]\n    B --&gt; C[PostgreSQL\\nData Warehouse]\n    C --&gt; D[Python Refresh Script\\nrefresh_dashboard.py]\n    D --&gt; E[Self-Contained HTML\\nDashboard Output]\n    F[Dagster Orchestration] --&gt; B\n\n\n\n\n\n\n\n\nInteractive Filters\nThe dashboard provides four reactive filter controls that narrow all charts and tables simultaneously:\n\nRegion — filter to a specific operational region\nSite — drill to individual facility\nContract type — Modular vs. Fixed capacity contracts\nUtilization flag — isolate over-utilized (≥85%) or under-utilized (&lt;65%) sites for focused operational review"
   },
   {
-    "objectID": "projects/streamline.html#technical-stack",
-    "href": "projects/streamline.html#technical-stack",
-    "title": "Streamline — BI Visual Development Pipeline",
+    "objectID": "projects/scada-volumes.html#dashboard-content",
+    "href": "projects/scada-volumes.html#dashboard-content",
+    "title": "SCADA Disposal Facility Volumes Dashboard",
+    "section": "Dashboard Content",
+    "text": "Dashboard Content\n\n5 Executive KPI Cards\n\n\n\n\n\n\n\nMetric\nWhat It Shows\n\n\n\n\nTotal Billed Volume\nAggregate billed volumes across selected sites/regions\n\n\nTotal Recycled Volume\nRecycled water volumes — a key sustainability metric\n\n\nAvg Utilization %\nCapacity utilization across the filtered site set\n\n\nSkim Oil Recovered\nTotal skim oil recovery (barrels)\n\n\nActive Sites\nCount of sites with recorded activity in the period\n\n\n\n\n\n4 Operational Charts\nMonthly Volumes — stacked/grouped view of billed, recycled, and facility-out volumes by month. Shows the volume mix and how it shifts over time.\nUtilization % by Site — horizontal bar chart with three-tier color coding: - Green (≥65%) — operating at or above efficient utilization - Amber (&lt;65%) — underutilized, potential capacity opportunity - Red (≥85%) — over-utilized, risk of capacity constraints\nBilled Volume by Region — YTD cumulative volume comparison across regions, enabling leadership to see relative scale and growth rate.\nSkim Oil Recovered by Month — monthly skim recovery trend with volume annotations, supporting operational and environmental reporting.\n\n\nSite Detail Table\nA sortable site-level table showing: Billed volume · Treated volume · Skim recovered · Daily capacity · Utilization % with an inline utilization bar for visual comparison.\n\n\n6-Month Forward Forecast\nThe dashboard includes a linear-trend forecast for April through September — projecting billed volumes, recycled volumes, and utilization for each site. Four dynamic insight cards summarize key forecast signals:\n\nSites trending toward capacity constraints\nRegions with strongest volume growth\nSkim recovery trajectory\nAggregate utilization forecast vs. current"
+  },
+  {
+    "objectID": "projects/scada-volumes.html#technical-implementation",
+    "href": "projects/scada-volumes.html#technical-implementation",
+    "title": "SCADA Disposal Facility Volumes Dashboard",
+    "section": "Technical Implementation",
+    "text": "Technical Implementation\n\ndbt Model Documentation\nI wrote complete schema.yml documentation for the tfm_scada_volumes model — all 18 columns with descriptions, data types, and business definitions. This documentation serves both the dashboard (as query context) and the broader team (as the canonical reference for what each column means).\n\n\nPython Refresh Script\nrefresh_dashboard.py handles the connection between the data warehouse and the dashboard output:\n\nReads dbt profiles (~/.dbt/profiles.yml) to connect to the correct PostgreSQL environment\nSupports --profile dev/prod flag for environment switching\nSupports --months N flag to control the historical lookback window\nQueries the tfm_scada_volumes model and transforms results into the dashboard’s expected data shape\nInjects the JSON payload into the HTML template and writes the output file\n\nThis design keeps the dashboard fully self-contained — no server required, no live database connection in the browser. The HTML file can be emailed, shared via Teams, or hosted as a static artifact.\n\n\nQuery Performance\nIn building the underlying queries, I identified and documented seven performance optimizations in the dbt model:\n\nPushing the year_month &gt;= '2024-01' filter earlier in the CTE chain to reduce downstream data volume\nReplacing two correlated NOT EXISTS subqueries with LEFT JOIN anti-joins\nCollapsing four aggregation passes into two\nRemoving unused CTEs (final_2, oft_volume) that added overhead without contributing to output\nAddressing case normalization in joins that prevented index utilization"
+  },
+  {
+    "objectID": "projects/scada-volumes.html#visual-walkthrough",
+    "href": "projects/scada-volumes.html#visual-walkthrough",
+    "title": "SCADA Disposal Facility Volumes Dashboard",
+    "section": "Visual Walkthrough",
+    "text": "Visual Walkthrough\n\n\n\n\n📊 KPI Summary + Filters 5 KPI cards with Region, Site, Contract, and Utilization filters\n\n\n\n\n📈 Monthly Volume Trends Billed, recycled, and facility-out volumes by month\n\n\n\n\n🏭 Utilization % by Site Color-coded bars: green ≥65%, amber &lt;65%, red ≥85%\n\n\n\n\n🔮 6-Month Forecast Linear trend projections with 4 insight summary cards\n\n\n\n\n\n\n\n\n\nTipScreenshots Available\n\n\n\nAnonymized screenshots of the dashboard are available upon request. The dashboard contains operational volume data from production facilities."
+  },
+  {
+    "objectID": "projects/scada-volumes.html#results-impact",
+    "href": "projects/scada-volumes.html#results-impact",
+    "title": "SCADA Disposal Facility Volumes Dashboard",
+    "section": "Results & Impact",
+    "text": "Results & Impact\n\n\nReal-Time\nOperational visibility via daily refresh\n\n\n6-Month\nForward forecast built in\n\n\nSelf-Contained\nPortable HTML — no server required\n\n\n18 Columns\nFull dbt model documentation written"
+  },
+  {
+    "objectID": "projects/scada-volumes.html#technical-stack",
+    "href": "projects/scada-volumes.html#technical-stack",
+    "title": "SCADA Disposal Facility Volumes Dashboard",
     "section": "Technical Stack",
-    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nFrontend\nReact + Vite\nPipeline UI, visual builder, dashboard hub\n\n\nBackend\nExpress.js (Node)\nAPI layer, session management, file handling\n\n\nAI Engine\nClaude API (claude-sonnet-4-6)\nVisual generation, iteration, schema interpretation\n\n\nDatabase\nPostgreSQL (read-only)\nLive data preview and validation queries\n\n\nSchema Context\ndbt schema.yml (8 repos)\nColumn definitions loaded on startup\n\n\nOrchestration\nDagster\nPipeline status visibility\n\n\nDeployment\nDocker Compose\nContainerized local/team deployment\n\n\nOutput\nPower BI HTML Content visual\nProduction deployment target"
+    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nDashboard\nHTML5 + Chart.js\nInteractive visuals, filters, forecast\n\n\nRefresh Engine\nPython (psycopg2, PyYAML)\nData extraction and HTML injection\n\n\nData Model\ndbt (tfm_scada_volumes)\nTransformation and business logic layer\n\n\nDatabase\nPostgreSQL\nData warehouse query target\n\n\nOrchestration\nDagster\nPipeline scheduling and health monitoring\n\n\nDocumentation\ndbt schema.yml\n18-column model documentation"
   },
   {
-    "objectID": "projects/streamline.html#key-skills-demonstrated",
-    "href": "projects/streamline.html#key-skills-demonstrated",
-    "title": "Streamline — BI Visual Development Pipeline",
+    "objectID": "projects/scada-volumes.html#key-skills-demonstrated",
+    "href": "projects/scada-volumes.html#key-skills-demonstrated",
+    "title": "SCADA Disposal Facility Volumes Dashboard",
     "section": "Key Skills Demonstrated",
-    "text": "Key Skills Demonstrated\n\n\nWorkflow Design\nEnd-to-end pipeline design with structured stages, automated validation, and a formal sign-off gate — turning ad-hoc development into a repeatable process\n\n\nAI-Assisted Development\nClaude API integration for visual generation and iteration — with schema context injection and live data grounding to produce accurate, not just plausible, results\n\n\nPower BI Architecture\nDeep understanding of the Power BI HTML Content visual, DAX measure generation, and TOM deployment — enabling full-stack BI delivery\n\n\nFull-Stack Engineering\nReact + Express + Docker stack built for team deployment, with dbt schema auto-loading and PostgreSQL integration across all 8 BI project repos\n\n\n\n← Back to All Projects"
+    "text": "Key Skills Demonstrated\n\n\nOperational Analytics\nUtilization tracking, volume trending, and forward forecasting for a multi-site, multi-region disposal facility network\n\n\nEnd-to-End Delivery\nBuilt the full stack — dbt documentation, Python refresh script, and HTML dashboard — as a portable, self-contained artifact\n\n\ndbt Expertise\nComplete schema.yml documentation for the model and seven query performance optimizations identified and documented\n\n\nData Visualization\nChart.js implementation with three-tier color coding, reactive filters, and 6-month linear trend forecasting\n\n\n\n← Back to All Projects"
+  },
+  {
+    "objectID": "projects/tre-chem-cost.html",
+    "href": "projects/tre-chem-cost.html",
+    "title": "Labour & Chemical Cost Dashboards",
+    "section": "",
+    "text": "Role: Lead Developer & Analyst · Organization: Select Water Solutions — TRE Chem · Status: Production\n\nPower BI DAX HTML/CSS JavaScript Cost Analytics Labour Analytics"
+  },
+  {
+    "objectID": "projects/tre-chem-cost.html#the-problem",
+    "href": "projects/tre-chem-cost.html#the-problem",
+    "title": "Labour & Chemical Cost Dashboards",
+    "section": "The Problem",
+    "text": "The Problem\nTRE Chem facilities operate at the intersection of labour-intensive site work and high-value chemical treatment processes. Leadership needed to track cost performance at a level that existing reporting couldn’t provide:\n\nNo cost-per-barrel metric — knowing total spend without relating it to volume processed made it impossible to assess true efficiency\nLabour costs untracked by site — total headcount and payroll were visible, but cost distribution across specific sites and teams was opaque\nAnomalies invisible — unusual cost spikes or efficiency drops had no automated flagging; issues were found reactively, not proactively\nNo employee-level drill-down — managers couldn’t see which teams or employees were driving cost variance without manual data extraction\nChemical costs disconnected from labour — the two biggest cost drivers were tracked separately, making total operational cost analysis difficult"
+  },
+  {
+    "objectID": "projects/tre-chem-cost.html#the-solution",
+    "href": "projects/tre-chem-cost.html#the-solution",
+    "title": "Labour & Chemical Cost Dashboards",
+    "section": "The Solution",
+    "text": "The Solution\nI built two linked Power BI HTML Content visuals that give leadership a layered view of operational cost — from portfolio-level KPIs down to individual site and employee detail.\n\nLabour Dashboard\nThe Labour Dashboard is the primary analytical surface, organized in three panels:\nLeft Panel — Site Selector: A site listing with inline indicators for: - Labour spend distribution (relative spend vs. other sites) - Monthly spend trend (sparkline-style) - Employee headcount - Anomaly indicator (amber/red dot for sites with unusual activity)\nMain Panel — KPI Summary: 16 KPI cards organized in 4 rows covering:\n\n\n\n\n\n\n\nRow\nMetrics\n\n\n\n\nSpend\nLabor Spend YTD · Monthly Spend · Spend vs. Prior Period · Forecast\n\n\nEfficiency\nAvg Cost/Bbl · Labor Efficiency Index · Cost Variance · Trend Direction\n\n\nWorkforce\nActive Employees · Avg Cost/Employee · Headcount Change · Turnover Rate\n\n\nPerformance\nSite Performance Score · Ranking vs. Portfolio · Goal Attainment · Alert Count\n\n\n\nRight Panel — Drill-Down Detail: Selecting a site reveals: - Site-specific KPIs with period-over-period comparison - Employee detail table (name, role, hours, cost, cost/bbl) - Monthly cost breakdown table - Cost component breakdown (labour categories)\nAlert System: An automated alert banner at the top of the dashboard surfaces anomalies before users have to find them: - Red banner — high-variance sites requiring immediate attention - Amber banner — medium-variance sites to monitor - Alert dots on site selector for at-a-glance triage\n\n\nChemical Cost Overview Dashboard\nThe companion overview dashboard focuses on chemical treatment costs alongside the labour view:\n\nHeader KPI metrics (total chemical cost, cost per barrel, variance)\nMonthly trend charts with cost trajectory analysis\nSite-level cost breakdown tables\nCost variance visualization comparing sites and periods"
+  },
+  {
+    "objectID": "projects/tre-chem-cost.html#design-system",
+    "href": "projects/tre-chem-cost.html#design-system",
+    "title": "Labour & Chemical Cost Dashboards",
+    "section": "Design System",
+    "text": "Design System\n\nDark Theme\nBoth dashboards use a consistent dark theme designed for screen display in control rooms and field offices:\n\n\n\nVariable\nColor\nUsage\n\n\n\n\n--bg\n#08101e\nPrimary background\n\n\n--sf\n#0d1929\nSurface / card background\n\n\n--s2\n#122035\nSecondary surface\n\n\n--tx\n#e8f0fe\nPrimary text\n\n\n--bl\n#4d9fff\nBlue accent / charts\n\n\n--cy\n#00d4ff\nCyan highlights\n\n\n--gn\n#00e676\nPositive / on-track\n\n\n--rd\n#ff5252\nNegative / alert\n\n\n\n\n\nTheme Toggle\nBoth dashboards include a light/dark theme toggle — allowing presentation in bright meeting rooms (light mode) without a separate report version.\n\n\nResponsive Grid\nThe layout adjusts across viewport sizes: - 4-column — full dashboard on wide displays - 2-column — narrower panels or split screen - 1-column — single-focus or mobile view\n\n\nAnimation & Interactivity\n\nPulsing alert dots on anomaly indicators\nHover transitions on site selector and detail cards\nScrollable tables for large site lists or employee rosters\nTooltip system providing metric context on hover"
+  },
+  {
+    "objectID": "projects/tre-chem-cost.html#dax-architecture",
+    "href": "projects/tre-chem-cost.html#dax-architecture",
+    "title": "Labour & Chemical Cost Dashboards",
+    "section": "DAX Architecture",
+    "text": "DAX Architecture\nThe dashboards are driven by a structured set of DAX measures across four measure files:\n\n\n\n\n\n\n\nFile\nPurpose\n\n\n\n\nlabor_kpis.dax\nYTD spend, efficiency index, performance score, alert logic\n\n\nlabor_monthdata.dax\nMonthly cost trends, period-over-period calculations\n\n\nlabor_sitedata.dax\nSite-level aggregations, ranking, goal attainment\n\n\nlabor_employeedata.dax\nEmployee-level cost, hours, cost-per-barrel attribution\n\n\navg_lbr_cost_per_bbl.dax\nThe key efficiency metric — labour cost per barrel processed\n\n\n\nThe avg_lbr_cost_per_bbl measure is the cornerstone metric of the dashboard — normalizing raw labour spend against volume to produce a true efficiency comparison across sites of different scale."
+  },
+  {
+    "objectID": "projects/tre-chem-cost.html#visual-walkthrough",
+    "href": "projects/tre-chem-cost.html#visual-walkthrough",
+    "title": "Labour & Chemical Cost Dashboards",
+    "section": "Visual Walkthrough",
+    "text": "Visual Walkthrough\n\n\n\n\n👔 Labour KPI Summary 16 KPI cards across spend, efficiency, workforce, and performance rows\n\n\n\n\n🏭 Site Selector Panel Site list with spend distribution, trends, and anomaly indicators\n\n\n\n\n👤 Employee Drill-Down Per-employee cost, hours, and cost/bbl for selected site\n\n\n\n\n⚗️ Chemical Cost Overview Chemical cost per barrel, monthly trends, site variance\n\n\n\n\n\n\n\n\n\nTipScreenshots Available\n\n\n\nAnonymized screenshots of both dashboards are available upon request. The visuals contain operational cost and headcount data."
+  },
+  {
+    "objectID": "projects/tre-chem-cost.html#results-impact",
+    "href": "projects/tre-chem-cost.html#results-impact",
+    "title": "Labour & Chemical Cost Dashboards",
+    "section": "Results & Impact",
+    "text": "Results & Impact\n\n\n16 KPIs\nLabour metrics across 4 dimensions\n\n\nCost/Bbl\nKey efficiency metric surfaced\n\n\nProactive\nAutomated anomaly alerting\n\n\nEmployee Level\nDrill-down to individual contributor"
+  },
+  {
+    "objectID": "projects/tre-chem-cost.html#technical-stack",
+    "href": "projects/tre-chem-cost.html#technical-stack",
+    "title": "Labour & Chemical Cost Dashboards",
+    "section": "Technical Stack",
+    "text": "Technical Stack\n\n\n\n\n\n\n\n\nComponent\nTechnology\nPurpose\n\n\n\n\nBI Platform\nPower BI\nDashboard embedding, slicer integration\n\n\nCalculations\nDAX (3,000+ lines across 5 files)\nAll KPI calculations and HTML generation\n\n\nVisual Layer\nHTML/CSS/JavaScript\nRendering within Power BI HTML Content visual\n\n\nTheme System\nCSS variables (12 tokens)\nConsistent dark/light theming\n\n\nData Sources\ndbt load models (5 tables)\nLabour, employee, site, and monthly data\n\n\nLayout\nCSS Grid (responsive)\n4-col / 2-col / 1-col breakpoints"
+  },
+  {
+    "objectID": "projects/tre-chem-cost.html#key-skills-demonstrated",
+    "href": "projects/tre-chem-cost.html#key-skills-demonstrated",
+    "title": "Labour & Chemical Cost Dashboards",
+    "section": "Key Skills Demonstrated",
+    "text": "Key Skills Demonstrated\n\n\nCost Analytics\nLabour efficiency measurement (cost per barrel), site performance scoring, anomaly detection, and chemical cost tracking in a multi-site operational environment\n\n\nAdvanced Power BI\nMulti-dashboard architecture with linked visuals, complex DAX across 5 measure files, and HTML Content visual with full interactivity\n\n\nExecutive Design\nAlert-driven layout that surfaces what needs attention first — anomaly banners, color-coded indicators, and a progressive drill-down from portfolio to employee level\n\n\nOperational Domain Knowledge\nUnderstanding of oilfield service economics — cost-per-barrel as the unit of measure, labour distribution across site types, and chemical treatment cost drivers\n\n\n\n← Back to All Projects"
   },
   {
     "objectID": "references.html",
@@ -571,7 +844,7 @@
     "href": "references.html#what-people-say",
     "title": "References & Endorsements",
     "section": "What People Say",
-    "text": "What People Say\n\n\n\n“Shane has a rare ability to understand both the data and the business. He doesn’t just build dashboards — he asks the right questions first, then builds exactly what leadership needs to make decisions. His work on our executive dashboard transformed how we run the business.”\n\n\n[Name Available Upon Request] Senior Leader — Select Water Services\n\n\n\n\n“Shane took our fraud case data process from a 3-week bottleneck to a 2-day turnaround. But what impressed me most was how he made complex healthcare data understandable for attorneys who aren’t technical. He changed how our entire team works.”\n\n\n[Name Available Upon Request] Colleague — Tennessee Attorney General’s Office\n\n\n\n\n“I worked with Shane at HP and watched him go from a new contractor to leading senior management’s highest-priority dashboard initiative. He earns trust fast because he delivers results and communicates clearly with every level of the organization.”\n\n\n[Name Available Upon Request] Team Member — HP Inc\n\n\n\n\n“Shane identified $4,000 a month in revenue we didn’t even know we were missing. He has an eye for finding what’s broken in a process and fixing it — not just once, but building systems that keep it fixed.”\n\n\n[Name Available Upon Request] Colleague — Covenant Health\n\n\n\n\n“Best dispatcher I’ve ever worked with. Shane didn’t just manage our schedules — he used the data to optimize routes, cut idle time, and actually boost our pay. The drivers voted him Best Dispatcher for a reason.”\n\n\n[Name Available Upon Request] Driver — Knight Transportation\n\n\n\n\n“Shane was the first Clinical Support Analyst ever promoted to Focus Manager in our company’s history. His 99% customer satisfaction rate wasn’t a fluke — it was the result of genuinely caring about solving problems and redesigning our knowledge base so the whole team improved.”\n\n\n[Name Available Upon Request] Manager — MEDHOST Incorporated"
+    "text": "What People Say\n\n\n\n“Shane has a rare ability to understand both the data and the business. He doesn’t just build dashboards — he asks the right questions first, then builds exactly what leadership needs to make decisions. His work on our executive dashboard transformed how we run the business.”\n\n\n[Name Available Upon Request] Senior Leader — Select Water Solutions\n\n\n\n\n“Shane took our fraud case data process from a 3-week bottleneck to a 2-day turnaround. But what impressed me most was how he made complex healthcare data understandable for attorneys who aren’t technical. He changed how our entire team works.”\n\n\n[Name Available Upon Request] Colleague — Tennessee Attorney General’s Office\n\n\n\n\n“I worked with Shane at HP and watched him go from a new contractor to leading senior management’s highest-priority dashboard initiative. He earns trust fast because he delivers results and communicates clearly with every level of the organization.”\n\n\n[Name Available Upon Request] Team Member — HP Inc\n\n\n\n\n“Shane identified $4,000 a month in revenue we didn’t even know we were missing. He has an eye for finding what’s broken in a process and fixing it — not just once, but building systems that keep it fixed.”\n\n\n[Name Available Upon Request] Colleague — Covenant Health\n\n\n\n\n“Best dispatcher I’ve ever worked with. Shane didn’t just manage our schedules — he used the data to optimize routes, cut idle time, and actually boost our pay. The drivers voted him Best Dispatcher for a reason.”\n\n\n[Name Available Upon Request] Driver — Knight Transportation\n\n\n\n\n“Shane was the first Clinical Support Analyst ever promoted to Focus Manager in our company’s history. His 99% customer satisfaction rate wasn’t a fluke — it was the result of genuinely caring about solving problems and redesigning our knowledge base so the whole team improved.”\n\n\n[Name Available Upon Request] Manager — MEDHOST Incorporated"
   },
   {
     "objectID": "references.html#references-available-upon-request",
