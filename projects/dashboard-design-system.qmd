@@ -1,0 +1,139 @@
+---
+title: "Power BI HTML Dashboard Design System"
+subtitle: "A reusable library of tokens, constraints, and copy-paste DAX templates for building consistent HTML Content dashboards"
+page-layout: full
+toc: true
+toc-location: left
+toc-title: "Project Details"
+toc-depth: 2
+---
+
+::: {.project-hero}
+::: {.project-hero-content}
+
+# Power BI HTML Dashboard Design System {.project-hero-title}
+
+**Role:** Creator & Maintainer
+· **Organization:** Select Water Solutions
+· **Status:** In Use
+
+::: {.project-hero-tags}
+`Power BI` `DAX` `HTML/SVG` `Design Tokens` `Documentation`
+:::
+
+:::
+:::
+
+
+## The Problem {.project-section-heading}
+
+Each Power BI HTML Content dashboard was being built from scratch. Colors,
+fonts, abbreviations, and threshold logic drifted from one report to the
+next, and every new visual re-learned the same Power BI WebView rendering
+gotchas — locale decimal separators in SVG coordinates, string-escaping
+rules, sizing inside a fixed card.
+
+
+## The Solution {.project-section-heading}
+
+I built a standards library that turns those lessons into reusable
+building blocks. The key constraint it is designed around: one HTML
+Content visual renders one measure, so every card in a dashboard section
+lives inside a single DAX measure assembled from a shared shell.
+
+### What's in the library
+
+- **Design tokens** — the single source of truth for colors, typography,
+  and spacing, plus consistent threshold colors (green / amber / red)
+  with a configurable "high is good" direction
+- **A dashboard shell** — a starting measure that injects CSS once,
+  defines the grid, and hosts any number of cards, plus a master-detail
+  variant
+- **Seven visual templates, each with a spec** — KPI card, donut, bar +
+  line, progress/budget bar, data table, gauge/dial, and a dark/light
+  theme toggle; every template has a clearly marked configure block
+- **Platform notes** — documented Power BI WebView constraints, JavaScript
+  capabilities, filtering patterns, and DAX string-escaping rules, so the
+  next builder reads them before hitting them
+
+```{mermaid}
+%%| fig-width: 8
+flowchart LR
+    A[Design Tokens] --> B[Dashboard Shell<br>CSS + Grid]
+    C[Visual Templates<br>KPI, Donut, Table...] --> B
+    B --> D[One DAX Measure]
+    D --> E[Power BI<br>HTML Content Visual]
+```
+
+### Proven on real dashboards
+
+The library ships with a worked example — a treatment-cost dashboard
+built as a 450+ line single measure — and new reports start from a
+template and a checklist rather than a blank measure.
+
+
+## Results & Impact {.project-section-heading}
+
+::: {.impact-grid}
+
+::: {.impact-card}
+### 7 Visual Types {.impact-number}
+Each with a template and sizing spec
+:::
+
+::: {.impact-card}
+### 1 Shell {.impact-number}
+Shared CSS and grid for every dashboard section
+:::
+
+::: {.impact-card}
+### Documented {.impact-number}
+WebView gotchas captured once instead of rediscovered
+:::
+
+:::
+
+### What Changed for the Business
+
+- **Visual consistency** across executive dashboards without a design review
+  on every report
+- **Faster starts** — copy the shell, pick visuals, fill in the `TODO`s
+- **Lower rework** — known rendering pitfalls are written down next to
+  the templates that avoid them
+
+
+## Technical Stack {.project-section-heading}
+
+| Component | Technology | Purpose |
+|:----------|:-----------|:--------|
+| Templates | DAX | Measures that emit HTML/SVG strings |
+| Rendering | Power BI HTML Content visual | Host for the generated markup |
+| Standards | Markdown specs, design tokens | Source of truth for look and behavior |
+
+
+## Key Skills Demonstrated {.project-section-heading}
+
+::: {.skills-grid}
+
+::: {.skill-category}
+#### Design Systems Thinking
+Extracted repeatable patterns and tokens from one-off dashboards
+:::
+
+::: {.skill-category}
+#### Advanced DAX
+Generated HTML and SVG from measures within strict rendering constraints
+:::
+
+::: {.skill-category}
+#### Technical Documentation
+Wrote specs and checklists other developers can follow without me
+:::
+
+:::
+
+
+::: {.project-nav}
+[← Back to All Projects](../projects.qmd){.btn-secondary}
+[← Prev: Labor Cost Per Barrel](labor-cost-per-barrel.qmd){.btn-secondary}
+:::

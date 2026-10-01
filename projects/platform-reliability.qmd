@@ -63,6 +63,19 @@ implementation, I authored a portable pattern — piloted first in one app
 list of real bugs already hit during the pilot, so a future port
 inherits the fixes instead of repeating the mistakes.
 
+### Per-app deployments and a starter scaffold
+
+In September 2026 I reworked the CI/CD pipeline so each app deploys on
+its own: a change to one dashboard builds and ships only that dashboard,
+and every app carries its own semantic version tag (`<app>/vX.Y.Z`)
+instead of one repo-wide release number. The deploy runbook documents the
+UAT-to-PROD path and the versioning rules. I also extracted a
+`base-suite` scaffold — the trimmed common core the existing apps had
+converged on, with a test job built into its CI snippet and two fleet-wide
+defects (error-detail leakage on the deep health check, an unbounded
+auth cache) fixed rather than copied forward — so the next app starts
+from the settled shape instead of a copy of whichever app is nearest.
+
 ### A data-logic migration plan
 
 I led an audit of business logic living in application code (joins,
@@ -151,4 +164,5 @@ Audited and sequenced a 139-item plan spanning every app on the platform
 ::: {.project-nav}
 [← Back to All Projects](../projects.qmd){.btn-secondary}
 [← Prev: Financial & Volumes Reporting](tre-reports.qmd){.btn-secondary}
+[Next: Labor Cost Per Barrel →](labor-cost-per-barrel.qmd){.btn-primary}
 :::

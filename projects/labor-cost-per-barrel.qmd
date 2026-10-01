@@ -1,0 +1,155 @@
+---
+title: "Labor Cost Per Barrel"
+subtitle: "Porting a one-string Power BI HTML measure into a governed, tested FastAPI app — and getting the grain of the data right"
+page-layout: full
+toc: true
+toc-location: left
+toc-title: "Project Details"
+toc-depth: 2
+---
+
+::: {.project-hero}
+::: {.project-hero-content}
+
+# Labor Cost Per Barrel {.project-hero-title}
+
+**Role:** Lead Developer & Analyst
+· **Organization:** Select Water Solutions
+· **Status:** Built — Aug 2026
+
+::: {.project-hero-tags}
+`FastAPI` `Jinja2` `PostgreSQL` `pandas` `dbt` `pytest`
+:::
+
+:::
+:::
+
+
+## The Problem {.project-section-heading}
+
+Labor cost per barrel was being served by a single Power BI measure that
+assembled an entire client-side JavaScript dashboard inside one DAX
+string. It worked, but it was hard to test, hard to change, impossible to
+version-control meaningfully, and tied to Power BI's rendering quirks.
+Operations leaders wanted a faster, filterable view with drill-through to
+the people and sites behind each number.
+
+
+## The Solution {.project-section-heading}
+
+I ported the dashboard to a server-rendered FastAPI + Jinja2 app on the
+same platform as the rest of the reporting fleet, translating the
+original shaping logic into SQL and pandas as written — port first, don't
+"fix" anything mid-port — so the new app could be verified line for line
+against the Power BI version.
+
+```{mermaid}
+%%| fig-width: 8
+flowchart LR
+    A[dbt model<br>load_labor_cost_per_bbl] --> B[Parameterized SQL<br>+ pandas shaping]
+    B --> C[Ranked Site Table]
+    B --> D[Single-Site Detail]
+    C --> E[Drill-Through<br>to Employees]
+    D --> E
+    B --> F[CSV Export]
+```
+
+### Getting the grain right
+
+The source table is not a clean date × site table. Open-month rows carry
+one record per employee, while closed-month rows are site-level only —
+and the barrel volume is a *site-level* figure repeated onto every
+employee row. Summing it would multiply-count volume by headcount and
+quietly deflate every cost-per-barrel number. The app aggregates volume
+with `MAX` and labor cost with `SUM` at the site-and-day level, and the
+test suite pins that behavior down.
+
+### Filters and timeframes
+
+Region, sub-region, and site are independent multi-select filters using
+the platform's shared filter pattern. Timeframes cover month-to-date,
+trailing twelve months, all-time, and — added after launch feedback — a
+custom date range with graceful fallback when the range is unusable.
+Every on-screen table has a matching CSV export that honors the same
+filters.
+
+
+## Results & Impact {.project-section-heading}
+
+::: {.impact-grid}
+
+::: {.impact-card}
+### 1 DAX string → app {.impact-number}
+Opaque Power BI measure replaced by reviewable, testable code
+:::
+
+::: {.impact-card}
+### 4 Timeframes {.impact-number}
+MTD, TTM, all-time, and custom date range
+:::
+
+::: {.impact-card}
+### 23 Tests {.impact-number}
+Offline route tests covering every timeframe and drill-through
+:::
+
+::: {.impact-card}
+### Non-additive {.impact-number}
+Barrel-volume double-count avoided by design
+:::
+
+:::
+
+### What Changed for the Business
+
+- **Cost per barrel is traceable** — from a ranked site table down to the
+  employees behind a site's number
+- **Maintainable** — logic lives in version-controlled Python and SQL
+  rather than inside a measure string
+- **Consistent with the fleet** — same auth, health checks, filter UI,
+  and export behavior as every other analytics app
+
+
+## Technical Stack {.project-section-heading}
+
+| Component | Technology | Purpose |
+|:----------|:-----------|:--------|
+| Backend | FastAPI, Jinja2 | Server-rendered pages and routes |
+| Data Source | PostgreSQL, dbt | Cross-schema read from a governed dbt model |
+| Shaping | pandas | Ports the original dashboard's rollup logic |
+| Auth | Entra group membership | Same access model as sibling apps |
+| Testing | pytest | Offline rendering tests with an in-memory query fake |
+
+
+## Key Skills Demonstrated {.project-section-heading}
+
+::: {.skills-grid}
+
+::: {.skill-category}
+#### Legacy-to-Code Migration
+Translated a monolithic DAX/JS measure into tested, maintainable code without changing its meaning
+:::
+
+::: {.skill-category}
+#### Data Grain Awareness
+Spotted a non-additive measure at mixed grain and aggregated it correctly
+:::
+
+::: {.skill-category}
+#### Full-Stack Dashboard Development
+FastAPI routes, Jinja templates, drill-through, and CSV export end to end
+:::
+
+::: {.skill-category}
+#### Test Design
+Built a query fake so rendering and filter logic is verified without a database
+:::
+
+:::
+
+
+::: {.project-nav}
+[← Back to All Projects](../projects.qmd){.btn-secondary}
+[← Prev: Platform Reliability](platform-reliability.qmd){.btn-secondary}
+[Next: Dashboard Design System →](dashboard-design-system.qmd){.btn-primary}
+:::

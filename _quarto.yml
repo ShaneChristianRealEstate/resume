@@ -94,6 +94,10 @@ website:
             href: projects/tre-reports.qmd
           - text: "Platform Reliability & Data Governance"
             href: projects/platform-reliability.qmd
+          - text: "Labor Cost Per Barrel"
+            href: projects/labor-cost-per-barrel.qmd
+          - text: "Power BI HTML Dashboard Design System"
+            href: projects/dashboard-design-system.qmd
           - text: "---"
           - text: "Other Experience"
           - text: "Medicare Fraud Analytics"

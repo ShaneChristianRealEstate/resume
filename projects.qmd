@@ -345,13 +345,61 @@ apps: audited test coverage app-by-app, stood up a pytest gate in CI so
 merges can no longer ship untested regressions, and authored a portable
 row-level-security admin pattern now rolling out platform-wide. In
 parallel, scoped and prioritized a 139-item audit moving business logic
-out of application code and into governed dbt SQL models.
+out of application code and into governed dbt SQL models, and reworked
+CI/CD so each app deploys independently with its own version tags.
 
 ::: {.project-impact}
 **Impact:** CI test gate live across multiple apps · Reusable RLS pattern documented for platform-wide reuse · 139-item data-logic migration plan scoped
 :::
 
 [View Details →](projects/platform-reliability.qmd){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 16: LABOR COST PER BARREL ===== -->
+::: {.project-card}
+
+### Labor Cost Per Barrel {.project-name}
+
+::: {.project-tags}
+`FastAPI` `Jinja2` `PostgreSQL` `pandas` `dbt`
+:::
+
+Ported a Power BI measure that rendered a whole dashboard from one DAX
+string into a tested FastAPI app with ranked site tables, single-site
+detail, employee drill-through, CSV export, and a custom date range.
+Handled a mixed-grain source table where barrel volume is non-additive
+across employees, so cost per barrel isn't silently deflated.
+
+::: {.project-impact}
+**Impact:** Opaque DAX string → tested app · 4 timeframes incl. custom range · Non-additive volume handled correctly
+:::
+
+[View Details →](projects/labor-cost-per-barrel.qmd){.project-link}
+
+:::
+
+
+<!-- ===== PROJECT 17: DASHBOARD DESIGN SYSTEM ===== -->
+::: {.project-card}
+
+### Power BI HTML Dashboard Design System {.project-name}
+
+::: {.project-tags}
+`Power BI` `DAX` `HTML/SVG` `Design Tokens` `Documentation`
+:::
+
+Created a standards library for Power BI HTML Content dashboards: design
+tokens, a shared dashboard shell, seven visual templates with specs, and
+documented WebView constraints — so new reports start from a template and
+checklist instead of a blank measure.
+
+::: {.project-impact}
+**Impact:** 7 reusable visual types · Consistent look across dashboards · Rendering gotchas documented once
+:::
+
+[View Details →](projects/dashboard-design-system.qmd){.project-link}
 
 :::
 

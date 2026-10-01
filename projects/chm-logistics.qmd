@@ -88,6 +88,18 @@ population centroids for addresses too messy to match exactly — reaching
 matches distinctly.
 
 
+### Ongoing driver-safety and fuel analytics
+
+Since the initial build the app has kept growing with stakeholder
+requests: a miles-per-gallon KPI and by-employee and by-vehicle MPG
+charts for fuel-efficiency standardization, drill-through on those KPIs
+and charts so every number opens the rows behind it, pinned x-axes on
+scrollable bar charts, and a production deployment stack. A dashboard-wide
+date-basis change (to shipped and delivery dates) and the removal of
+"top-N plus Other" caps on carrier charts made the figures match what
+dispatchers see in the source systems.
+
+
 ## Results & Impact {.project-section-heading}
 
 ::: {.impact-grid}
